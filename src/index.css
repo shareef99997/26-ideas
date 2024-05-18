@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --main-color:rgb(22, 140, 165);
+  --second-color:rgba(14, 105, 117, 1);
+  --main-gradient:linear-gradient(90deg, rgba(14, 105, 117, 1) 0%, rgba(33, 189, 196, 1) 50%, rgba(14, 105, 117, 1) 100%);
+
+
+}
+
+h1{
+  
+  background: var(--main-gradient);
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+}
+
+a{
+  text-decoration: none;
+}
