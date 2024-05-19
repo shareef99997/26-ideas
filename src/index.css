@@ -32,6 +32,13 @@ h1{
   -webkit-background-clip: text; 
   background-clip: text; 
 }
+h3{
+  
+  background: var(--main-gradient);
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+}
 
 a{
   text-decoration: none;
