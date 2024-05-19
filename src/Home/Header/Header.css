@@ -1,0 +1,27 @@
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Place the header above the slider */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.Home-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  transition: ease 0.3s;
+}
+
+.Header-Body{
+  height: 100vh;
+  width: 100%;
+}
+
+.Home-Header{
+  h1{
+    padding-top: 100px;
+  }
+}

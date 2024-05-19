@@ -15,7 +15,7 @@ code {
 :root{
   --main-color:rgb(22, 140, 165);
   --second-color:rgba(14, 105, 117, 1);
-  --main-gradient:linear-gradient(90deg, rgba(14, 105, 117, 1) 0%, rgba(33, 189, 196, 1) 50%, rgba(14, 105, 117, 1) 100%);
+  --main-gradient:linear-gradient(90deg, rgb(21, 139, 154) 0%, rgb(23, 147, 154) 50%, rgb(20, 164, 183) 100%);
 
 
 }
@@ -30,4 +30,21 @@ h1{
 
 a{
   text-decoration: none;
+}
+
+button{
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 18px;
+  background: var(--main-gradient);
+  border: transparent;
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover{
+  opacity: 0.7;
+  border: transparent;
+  color: rgba(255, 255, 255, 0.712);
+  cursor: pointer;
 }
