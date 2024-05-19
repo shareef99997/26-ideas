@@ -6,7 +6,7 @@ function Header() {
       <header>
        <NavBar />
        <body className='Header-Body'>
-        <h1>Header</h1>
+        <h1>26 IDEAS FOR MARKETING SERVICES</h1>
        </body>
       </header>
     </div>
