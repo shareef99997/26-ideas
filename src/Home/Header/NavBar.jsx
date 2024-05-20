@@ -1,30 +1,54 @@
 import './NavBar.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+
 
 function NavBar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
+
+  ///burger menu ///
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+  ///burger menu ///
+  ///Scroll Sensor///
+  
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    setScrolled(offset > 200); // You can adjust the scroll offset value as needed
+  };
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  ///Scroll Sensor///
+
+  
 
   return (
-    <nav>
+    <nav className={scrolled ? 'scrolled' : ''}>
       <div className="nav-content">
         <div className="logo">
           <a href="/ar">
-            <img src={require('../../Assets/Logo/LOGO.png')} alt="Main Logo" />
+            <img
+              src={require('../../Assets/Logo/LOGO.png')}
+              alt="Main Logo"
+              className={scrolled ? 'scrolled-logo' : ''}
+            />
           </a>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-
           <li><button className='Contact-btn'> تواصل معنا </button></li>
           <li><a href="">مشاريعنا</a></li>
           <li><a href="">خدماتنا</a></li>
           <li><a href="">من نحن</a></li>
           <li><a href="">الرئيسية</a></li>
-          
         </ul>
         <div className='lang'>
           <a href='#' className='en'>English</a>

@@ -16,7 +16,8 @@ function Home() {
           </div>
           
         <h3>تواصل معنا</h3>
-     </nav></a> 
+      </nav>
+     </a> 
       <Header />
       <About />
       <Services />

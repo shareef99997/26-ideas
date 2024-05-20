@@ -18,9 +18,10 @@ code {
 }
 
 :root{
-  --main-color:rgb(22, 140, 165);
+  --main-color:#168ca5;
   --second-color:rgba(14, 105, 117, 1);
   --main-gradient:linear-gradient(90deg, rgb(21, 139, 154) 0%, rgb(23, 147, 154) 50%, rgb(20, 164, 183) 100%);
+  --background-gradient:linear-gradient(90deg, rgb(12, 83, 93) 0%, rgb(29, 106, 110) 50%, rgb(2, 60, 68) 100%);
 
 
 }
@@ -46,18 +47,23 @@ a{
 
 button{
   font-family: 'Bein Normal';
-  padding:2px 10px;
-  border-radius: 10px;
-  font-size: 15px;
-  background: var(--main-gradient);
-  border: transparent;
-  color: white;
-  transition: 0.3s ease;
+  padding:5px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #168ca5;
+  font-weight: bold;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: 0.4s ease;
 }
 
 button:hover{
-  opacity: 0.7;
+  opacity: 0.8;
   border: transparent;
-  color: rgba(255, 255, 255, 0.712);
+  
   cursor: pointer;
 }
