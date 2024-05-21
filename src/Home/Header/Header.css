@@ -5,105 +5,257 @@
   margin: 0;
   transition: ease 0.3s;
   background: var(--background-gradient);
-}
-
-.Header-Body{
-  padding-top: 100px; ;
   height: 100vh;
-  width: 100%;
 }
 
-.Header-Body h1{
-  text-align: center;
-  font-size: 35px;
+.Header-Body {
+  padding-top: 100px;
+
 }
 
 .home-content {
+  margin-top: 5%;
   display: flex;
-  flex-direction: row; /* Ensures the sections are in a row */
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; 
+  flex-direction: row;
+  padding: 0 100px; 
 }
 
-.left-section {
-  flex: 1;
-  padding: 10px;
-  align-self: center;
-  max-width:800px;
-}
-
-.home-pic {
-  max-width: 100%;
-  height: auto;
-}
-
-
-.middle-section{
-  flex: 1;
-  padding: 10px;
-  align-self: last baseline;
-  display: flex;
-  justify-content: center;
-}
-
-
-
-.middle-section a{
-  border-radius: 100px;
-  color: #fff;
-  padding: 27px 25px;
-  background-color: #168ca5;
-  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-  box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.332);
-  font-weight: bold;
-  font-size: 16px;
-  border: 0;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  transition: 0.4s ease;
-  cursor: pointer;
-  animation: glowing 2s infinite alternate; 
-  
-}
-
-
-.middle-section a:hover{
-  opacity: 0.8;
-  border: transparent;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
+.left-section,
 .right-section {
-  flex: 1;
-  padding: 10px;
-  padding-right: 30px;
-  max-width: 600px;
-  min-width: 500px;
-  align-self:  center;
-  background: linear-gradient(90deg, transparent 0%, rgb(23, 147, 154) 50%, rgb(52, 201, 221) 100%);
-  width: 720px;
-  padding-left: 50px;
-  padding-bottom: 20px;
-  height: auto;
-  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.right-section{
+  max-width: 650px;
+  
+
+}
+
+.right-section h1 ,
+.right-section p {
+  text-align: end;
 }
 
 .right-section h1 {
-  margin-bottom: 10px;
-  text-align: right;
+  font-size: 50px;
+  font-weight: bold;
   color: white;
-  position: relative;
 }
 
-.right-section p {
-  text-align: right;
-  margin: 0;
-  color: rgb(38, 38, 38);
-  margin-bottom: 10px;
-  position: relative;
+.right-section p{
+  color: #ffffff;
+  font-size: 18px;
 }
+
+.button-container {
+  display: flex;
+  justify-content: end; /* Centers the button horizontally */
+  margin-top: 20px; /* Optional: add some spacing above the button */
+}
+
+.right-section button {
+  padding: 10px 40px; 
+  font-size: 18px;
+  background-color: white;
+  color: var(--main-color);
+}
+
+
+.left-section{
+  max-width: 500px;
+  
+}
+
+.home-pic{
+  width: 100%;
+}
+
+/* Swiper */
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  
+  border-radius: 50%; /* Rounded buttons */
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important; /* Adjust this value to change the arrow size */
+  color: #000; /* Change to your desired color */
+  width: 18px; /* Width of the buttons */
+  height: 18px; /* Height of the buttons */
+  text-align: center;
+  
+}
+
+@media (max-width: 1336px) {
+  .left-section{
+    max-width: 400px;
+  }
+
+  .right-section{
+    max-width: 550px;
+  }
+
+  .right-section h1{
+    font-size: 40px;
+  }
+  .right-section p {
+    
+  }
+}
+
+@media (max-width: 1100px) {
+  .left-section{
+    max-width: 300px;
+  }
+  .right-section h1{
+    font-size: 32px;
+  }
+  .right-section p {
+    font-size: 15px;
+  }
+
+  .right-section button {
+    padding: 5px 30px; 
+    font-size: 15px;
+  }
+  .right-section{
+    max-width: 450px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  .left-section{
+    max-width: 270px;
+  }
+  .right-section h1{
+    font-size: 26px;
+  }
+  .right-section p {
+    font-size: 12px;
+  }
+
+  .right-section button {
+    padding: 5px 30px; 
+    font-size: 13px;
+  }
+
+  .right-section{
+    max-width: 350px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .home-content {
+    flex-direction: column-reverse;
+    padding: 0 100px;
+    align-items: center; 
+  }
+
+  .left-section{
+    max-width:250px ;
+  }
+
+
+  .right-section{
+    padding: 30px;
+  }
+
+  .right-section h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .right-section p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .right-section button {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 460px) {
+  .home-content {
+    padding: 0 60px;
+  }
+
+  .left-section{
+    max-width:250px ;
+  }
+
+
+  .right-section{
+    padding: 30px;
+  }
+
+  .right-section h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .right-section p {
+    font-size:9px;
+    text-align: center;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .right-section button {
+    font-size: 8px;
+    padding: 4px 15px;
+  }
+}
+
+
+/* @media (max-width: 480px) {
+  .Header-Body {
+    padding-top: 80px;
+  }
+
+  .home-content {
+    margin-top: 10%;
+    padding: 0 10px;
+  }
+
+  .right-section h1 {
+    font-size: 32px;
+  }
+
+  .right-section p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .right-section button {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .wave {
+    transform: rotate(180deg) scale(1.5);
+  }
+} */
+
 
 .wave {
   position: absolute;

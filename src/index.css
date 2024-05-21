@@ -21,7 +21,7 @@ code {
   --main-color:#168ca5;
   --second-color:rgba(14, 105, 117, 1);
   --main-gradient:linear-gradient(90deg, rgb(21, 139, 154) 0%, rgb(23, 147, 154) 50%, rgb(20, 164, 183) 100%);
-  --background-gradient:linear-gradient(90deg, rgb(12, 83, 93) 0%, rgb(29, 106, 110) 50%, rgb(2, 60, 68) 100%);
+  --background-gradient:linear-gradient(90deg, rgb(7, 60, 67) 0%, rgb(21, 77, 80) 50%, rgb(5, 56, 62) 100%);
 
 
 }
@@ -48,7 +48,7 @@ a{
 button{
   font-family: 'Bein Normal';
   padding:5px 15px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 14px;
   color: #fff;
   background-color: #168ca5;
