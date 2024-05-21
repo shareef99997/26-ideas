@@ -1,16 +1,22 @@
-
 .Home-Header {
   position: relative;
   padding: 0;
   margin: 0;
   transition: ease 0.3s;
-  background: var(--background-gradient);
+  background-image: url('../../Assets/Images/night_dark.jpg');
+  background-size: cover; /* Ensure the background image covers the entire header */
+  background-position: center; /* Center the background image */
   height: 100vh;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.39);
+  overflow: hidden; /* Prevent overflow causing white edges */
 }
 
 .Header-Body {
-  padding-top: 100px;
-
+  padding-top: 70px;
+  height: 100%; /* Ensure Header-Body takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .home-content {
@@ -39,8 +45,8 @@
 }
 
 .right-section h1 {
-  font-size: 50px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 500;
   color: white;
 }
 
@@ -51,8 +57,8 @@
 
 .button-container {
   display: flex;
-  justify-content: end; /* Centers the button horizontally */
-  margin-top: 20px; /* Optional: add some spacing above the button */
+  justify-content: end;
+  margin-top: 20px; 
 }
 
 .right-section button {
@@ -119,7 +125,7 @@
     max-width: 300px;
   }
   .right-section h1{
-    font-size: 32px;
+    font-size: 36px;
   }
   .right-section p {
     font-size: 15px;
@@ -140,10 +146,10 @@
     max-width: 270px;
   }
   .right-section h1{
-    font-size: 26px;
+    font-size: 30px;
   }
   .right-section p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .right-section button {
@@ -152,16 +158,19 @@
   }
 
   .right-section{
-    max-width: 350px;
+    max-width: 380px;
   }
 }
 
 
 @media (max-width: 800px) {
+
   .home-content {
     flex-direction: column-reverse;
-    padding: 0 100px;
+    padding: 0 80px;
     align-items: center; 
+    
+    
   }
 
   .left-section{
@@ -170,11 +179,11 @@
 
 
   .right-section{
-    padding: 30px;
+    padding:  30px;
   }
 
   .right-section h1 {
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
   }
 
@@ -194,7 +203,8 @@
 }
 @media (max-width: 460px) {
   .home-content {
-    padding: 0 60px;
+    padding: 0 50px;
+    
   }
 
   .left-section{
@@ -203,11 +213,11 @@
 
 
   .right-section{
-    padding: 30px;
+    padding: 20px;
   }
 
   .right-section h1 {
-    font-size: 20px;
+    font-size: 23px;
     text-align: center;
   }
 
@@ -227,34 +237,6 @@
 }
 
 
-/* @media (max-width: 480px) {
-  .Header-Body {
-    padding-top: 80px;
-  }
-
-  .home-content {
-    margin-top: 10%;
-    padding: 0 10px;
-  }
-
-  .right-section h1 {
-    font-size: 32px;
-  }
-
-  .right-section p {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .right-section button {
-    font-size: 14px;
-    padding: 8px 20px;
-  }
-
-  .wave {
-    transform: rotate(180deg) scale(1.5);
-  }
-} */
 
 
 .wave {

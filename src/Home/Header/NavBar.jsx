@@ -18,7 +18,7 @@ function NavBar() {
   
   const handleScroll = () => {
     const offset = window.scrollY;
-    setScrolled(offset > 200); // You can adjust the scroll offset value as needed
+    setScrolled(offset > 100); // You can adjust the scroll offset value as needed
   };
   
   useEffect(() => {
@@ -34,12 +34,12 @@ function NavBar() {
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
       <div className="nav-content">
-        <div className="logo">
+        <div className={`logo ${scrolled ? 'scrolled-logo' : ''}`}>
           <a href="/ar">
             <img
               src={require('../../Assets/Logo/LOGO.png')}
               alt="Main Logo"
-              className={scrolled ? 'scrolled-logo' : ''}
+              
             />
           </a>
         </div>
@@ -56,7 +56,7 @@ function NavBar() {
             <a href=''>العربية</a>
           </div>
         </div>
-        <div className={`burger-menu ${menuOpen ? 'toggle' : ''}`} onClick={toggleMenu}>
+        <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} onClick={toggleMenu}>
           <div></div>
           <div></div>
           <div></div>

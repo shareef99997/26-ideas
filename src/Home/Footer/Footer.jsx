@@ -1,7 +1,7 @@
 import './Footer.css';
 function Footer() {
   return (
-    <div className="Footer">
+    <div className="Footer" id="Footer">
       <body className='Footer-Body'>
         
         </body>

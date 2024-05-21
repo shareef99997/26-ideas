@@ -12,6 +12,7 @@
 
 nav.scrolled {
   background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.167);
 }
 
 .nav-content {
@@ -46,6 +47,7 @@ nav.scrolled {
 .nav-menu li a {
   font-size: 20px;
   color: white;
+  font-weight: 400;
 }
 
 .nav-menu li::after {
@@ -99,10 +101,10 @@ nav.scrolled .Contact-btn {
 }
 
 .logo img {
-  width: 150px;
+  width: 100%;
 }
 
-.logo img.scrolled-logo {
+.logo.scrolled-logo {
   width: 120px; /* Adjust the size as needed */
 }
 
@@ -116,7 +118,6 @@ nav.scrolled .Contact-btn {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  padding: 0.5rem 1rem;
   display: flex;
   align-items: center;
 }
@@ -168,7 +169,7 @@ nav.scrolled .Contact-btn {
 
 @media (max-width: 920px) {
   .nav-content {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .nav-menu {
@@ -209,16 +210,20 @@ nav.scrolled .Contact-btn {
     display: block;
     cursor: pointer;
     order: 2;
-    margin-left:45px ;
+    margin-left:25px;
     z-index: 1001; /* Ensure burger menu is on top */
   }
 
   .burger-menu div {
     width: 30px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 6px 0;
     transition: all 0.3s ease;
+  }
+
+  .burger-menu.scrolled div {
+    background-color: black;
   }
 
   .burger-menu.toggle div:nth-child(1) {
@@ -233,12 +238,25 @@ nav.scrolled .Contact-btn {
     transform: rotate(45deg) translate(-7px, -6px);
   }
 
+  .burger-menu.toggle.scrolled div:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+
+  .burger-menu.toggle.scrolled div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.toggle.scrolled div:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+
   .logo {
     order: 2;
+    transform: scale(0.8);
   }
 
   .logo img {
-    transform: scale(0.8);
+    
   }
 
   .lang {
@@ -246,7 +264,7 @@ nav.scrolled .Contact-btn {
     
   }
   .lang a{
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .lang:active .lang-dropdown {
@@ -259,7 +277,7 @@ nav.scrolled .Contact-btn {
     display: block;
     cursor: pointer;
     order: 2;
-    margin-left:25px ;
+    
   }
   .lang a{
     font-size: 12px;
