@@ -1,7 +1,7 @@
 import './Home.css';
 import Header from './Header/Header';
 import Services from './Services/Services';
-import Products from './Products/Products';
+import Store from './Store/Store';
 import Footer from './Footer/Footer';
 
 function Home() {
@@ -19,7 +19,7 @@ function Home() {
      </a> 
       <Header />
       <Services />
-      <Products />
+      <Store />
       <Footer />
     </div>
   );

@@ -1,18 +1,25 @@
+/* Services.css */
 .Services {
   text-align: center;
-  padding: 50px 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.167);
+  padding: 0 0;
+  padding-bottom: 30px;
+}
+
+.title-wrapper{
+  background: var(--main-gradient);
 }
 
 .Services-Title {
-  font-size: 2.5em;
+  font-size: 2.2em;
   margin-bottom: 10px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  padding: 20px 0;
+  padding-bottom: 10px ;
+  color: white;
+  padding:  55px 0;
 }
 
 .Services-Description {
@@ -22,18 +29,19 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  padding:  55px 0;
 }
 
 .Services-Grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 20px;
+  gap: 50px;
   margin-top: 20px;
+  padding: 0 200px;
 }
 
 .Service-Box {
   background: linear-gradient(120deg, rgba(230, 230, 230, 1) 0%, rgba(249, 249, 249, 1) 50%, rgba(230, 230, 230, 1) 100%);
-  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.167);
   transition: 0.3s ease;
@@ -47,8 +55,14 @@
   box-shadow: 0 8px 16px rgba(0, 40, 48, 0.586);
 }
 
-.Service-Box h2:hover {
-  color: black;
+.Service-Upper {
+  padding: 20px;
+  background: var(--main-gradient); /* Change the color of upper half */
+  border-radius: 10px 10px 0 0; /* Rounded corners only on top */
+}
+
+.Service-Lower {
+  padding: 5px;
 }
 
 .Service-Image {
@@ -58,20 +72,21 @@
   margin-bottom: 10px;
 }
 
-.Service-Box h2 {
+.Service-Lower h2 {
   font-size: 1.5em;
   margin: 10px 0;
-  font-weight: 300;
+  font-weight: 400;
   background: var(--main-gradient);
   color: transparent; 
   -webkit-background-clip: text; 
   background-clip: text; 
 }
 
-.Service-Box p {
-  font-size: 1em;
+.Service-Lower p {
+  font-size: 0.9em;
   color: #555;
   margin: 0;
+  display: none;
 }
 
 .Button-Container {
@@ -79,10 +94,11 @@
   justify-content: center;
   align-items: center;
   margin-top: 80px;
+
 }
 
 .Learn-More-Button {
-  padding: 10px;
+  padding: 15px 30px;
 }
 
 
@@ -95,10 +111,11 @@
 @media (max-width: 768px) {
   .Services-Grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 50px;
   }
 
   .Service-Box {
-    padding: 15px;
+    
   }
 
   .Service-Image {
@@ -112,6 +129,7 @@
 
   .Service-Box p {
     font-size: 0.9em;
+    padding: 0 10px 10px;
   }
   .Services-Description {
     font-size: 1em;
@@ -122,8 +140,11 @@
 @media (max-width: 508px) {
   .Services-Grid {
     grid-template-columns: repeat(1, 1fr);
+    padding: 0 80px;
   }
-
+  .Service-Box p{
+    font-size: 12px;
+  }
 }
 
 

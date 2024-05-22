@@ -42,7 +42,7 @@ function Header() {
             <p> نساعدك لتحقيق أهدافك التقنية سواء كانت تطوير البرمجيات، التجارة الإلكترونية، التسويق الرقمي، أو الاستشارات التقنية، بإستخدام تقنيات الذكاء الاصطناعي لتحليل البيانات وتوجيه القرارات </p>
             <div className="button-container">
               <a href="#Services">
-                <button alt='#Services'> ابدأ الأن </button>
+                <button alt='#Services'> ابدأ الآن </button>
                 </a>
               
             </div>

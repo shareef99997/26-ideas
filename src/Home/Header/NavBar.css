@@ -41,11 +41,11 @@ nav.scrolled {
   padding: 5px 20px;
   flex: 0 0 auto;
   position: relative;
-  transition: 0.3s ease;
+  transition: 0.8s ease;
 }
 
 .nav-menu li a {
-  font-size: 20px;
+  font-size: 19px;
   color: white;
   font-weight: 400;
 }
@@ -104,7 +104,7 @@ nav.scrolled .Contact-btn {
   width: 100%;
 }
 
-.logo.scrolled-logo {
+.logo.scrolled-logo img {
   width: 120px; /* Adjust the size as needed */
 }
 
@@ -161,7 +161,7 @@ nav.scrolled .Contact-btn {
 }
 
 .lang .lang-dropdown:hover {
-  background-color: #00000043;
+  opacity: 0.5;
 }
 
 /* Responsive styles */
@@ -178,7 +178,7 @@ nav.scrolled .Contact-btn {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(2, 68, 84, 0.297);
+    background-color: rgba(1, 33, 41, 0.799);
     width: 30%;
     height: calc(100vh);
     justify-content: center;

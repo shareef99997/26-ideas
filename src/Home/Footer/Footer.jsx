@@ -3,9 +3,9 @@ function Footer() {
   return (
     <div className="Footer" id="Footer">
       <body className='Footer-Body'>
-        
-        </body>
-      <h1>Footer</h1>
+              <h1>Footer</h1>
+      </body>
+
     </div>
   );
 }

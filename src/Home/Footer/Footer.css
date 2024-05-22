@@ -1,4 +1,9 @@
 .Footer-Body{
-  height: 100vh;
+  height: 50vh;
   width: 100%;
+  background-color:rgb(2, 38, 46);
+}
+
+h1{
+  margin: 0;
 }
