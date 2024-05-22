@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Services from './Services/Services';
 import Store from './Store/Store';
 import Footer from './Footer/Footer';
+import About from './About/About';
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
       </nav>
      </a> 
       <Header />
+      <About/>
       <Services />
       <Store />
       <Footer />
