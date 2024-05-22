@@ -30,14 +30,18 @@ code {
 }
 
 h1{
-  
+  font-family: 'Bein Normal';
   background: var(--main-gradient);
   color: transparent; 
   -webkit-background-clip: text; 
   background-clip: text; 
 }
+h2{
+  font-family: 'Bein Normal';
+}
+
 h3{
-  
+  font-family: 'Bein Normal';
   background: var(--main-gradient);
   color: transparent; 
   -webkit-background-clip: text; 

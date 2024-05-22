@@ -5,9 +5,7 @@
   padding-bottom: 30px;
 }
 
-.title-wrapper{
-  background: var(--main-gradient);
-}
+
 
 .Services-Title {
   font-size: 2.2em;
@@ -17,9 +15,22 @@
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  padding-bottom: 10px ;
-  color: white;
-  padding:  55px 0;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  padding-top: 55px;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+}
+
+.Services-Title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 4px; /* Adjust the height of the line */
+  background: var(--main-color); /* Adjust the color of the line */
+  
 }
 
 .Services-Description {
@@ -29,7 +40,7 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding:  55px 0;
+  padding:  25px 0;
 }
 
 .Services-Grid {
@@ -41,35 +52,40 @@
 }
 
 .Service-Box {
-  background: linear-gradient(120deg, rgba(230, 230, 230, 1) 0%, rgba(249, 249, 249, 1) 50%, rgba(230, 230, 230, 1) 100%);
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.167);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.174);
   transition: 0.3s ease;
   cursor: pointer;
-  border: 2px solid transparent;
+
 }
 
 .Service-Box:hover {
   transform: translateY(-10px);
-  border: 2px solid var(--main-color);
-  box-shadow: 0 8px 16px rgba(0, 40, 48, 0.586);
+  box-shadow: 0 10px 18px rgba(1, 66, 80, 0.699);
+  background:var(--main-color);
+
+}
+
+.Service-Box:hover p,.Service-Box:hover h2,.Service-Box:hover .Service-Icon {
+  color: white ;
 }
 
 .Service-Upper {
-  padding: 20px;
-  background: var(--main-gradient); /* Change the color of upper half */
-  border-radius: 10px 10px 0 0; /* Rounded corners only on top */
+  padding:0 20px;
+  padding-top:10px ;
+
 }
 
 .Service-Lower {
-  padding: 5px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
-.Service-Image {
-  width: 80px; 
-  height: 80px; 
-  border-radius: 10px;
-  margin-bottom: 10px;
+.Service-Icon {
+  font-size: 50px; 
+  color: var(--main-color); 
+  margin-bottom: 10px; 
 }
 
 .Service-Lower h2 {
@@ -83,10 +99,11 @@
 }
 
 .Service-Lower p {
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: #555;
   margin: 0;
-  display: none;
+  font-weight: 500;
+
 }
 
 .Button-Container {
@@ -118,9 +135,8 @@
     
   }
 
-  .Service-Image {
-    width: 60px;
-    height: 60px;
+  .Service-Icon {
+    font-size: 40px;
   }
 
   .Service-Box h2 {
@@ -140,10 +156,18 @@
 @media (max-width: 508px) {
   .Services-Grid {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 80px;
+    padding: 0 50px;
   }
   .Service-Box p{
     font-size: 12px;
+  }
+  .Service-Icon {
+    font-size: 35px;
+  }
+  .Services-Title::after {
+    width: 200px;
+
+    
   }
 }
 

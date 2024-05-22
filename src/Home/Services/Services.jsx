@@ -1,7 +1,5 @@
-// Services.js
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Services.css';
-import { useEffect, useRef } from 'react';
 
 function Services() {
   const servicesRef = useRef(null);
@@ -13,12 +11,11 @@ function Services() {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
             entry.target.classList.remove('hidden');
-            // Optionally stop observing once it's visible
             observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.1 } // Adjust threshold as needed
+      { threshold: 0.1 }
     );
 
     const servicesSection = servicesRef.current;
@@ -35,8 +32,6 @@ function Services() {
     };
   }, []);
 
-
-  
   return (
     <div className="Services" id="Services" ref={servicesRef}>
       <div className='title-wrapper'>
@@ -49,7 +44,7 @@ function Services() {
       <div className="Services-Grid fade-in-element hidden">
         <div className="Service-Box fade-in-element hidden">
           <div className="Service-Upper">
-            <img src={require('../../Assets/Images/web.png')} alt="Web Development" className="Service-Image" />
+            <i className="fas fa-robot Service-Icon"></i>
           </div>
           <div className="Service-Lower">
             <h2>حلول الذكاء الاصطناعي</h2>
@@ -57,26 +52,26 @@ function Services() {
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
-        <div className="Service-Upper">
-          <img src={require('../../Assets/Images/web.png')} alt="Cloud Services" className="Service-Image" />
-        </div>
-        <div className="Service-Lower">
-          <h2>تطوير المواقع الإلكترونية</h2>
-          <p>نقدم تصميمًا مبتكرًا وتطويرًا للمواقع الإلكترونية وتطوير تطبيقات الهاتف المحمول</p>
-        </div>
-        </div>
-        <div className="Service-Box fade-in-element hidden">
-        <div className="Service-Upper">
-          <img src={require('../../Assets/Images/web.png')} alt="Cloud Services" className="Service-Image" />
+          <div className="Service-Upper">
+            <i className="fas fa-laptop-code Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-          <h2>تطوير تطبيقات الجوال</h2>
-          <p>نقدم تصميمًا مبتكرًا لتطوير تطبيقات الهاتف المحمول</p>
+            <h2>تطوير المواقع الإلكترونية</h2>
+            <p>نقدم تصميمًا مبتكرًا وتطويرًا للمواقع الإلكترونية وتطوير تطبيقات الهاتف المحمول</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
           <div className="Service-Upper">
-          <img src={require('../../Assets/Images/web.png')} alt="Mobile Development" className="Service-Image" />
+            <i className="fas fa-mobile-alt Service-Icon"></i>
+          </div>
+          <div className="Service-Lower">
+            <h2>تطوير تطبيقات الجوال</h2>
+            <p>نقدم تصميمًا مبتكرًا لتطوير تطبيقات الهاتف المحمول</p>
+          </div>
+        </div>
+        <div className="Service-Box fade-in-element hidden">
+          <div className="Service-Upper">
+            <i className="fas fa-bullhorn Service-Icon"></i>
           </div>
           <div className="Service-Lower">
             <h2>التسويق الإلكتروني</h2>
@@ -84,25 +79,25 @@ function Services() {
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
-        <div className="Service-Upper">
-          <img src={require('../../Assets/Images/web.png')} alt="Cyber Security" className="Service-Image" />
-        </div>
-        <div className="Service-Lower">
-          <h2>منتجات التقنية مبتكرة</h2>
-          <p>نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل والمهام اليومية.</p>
-        </div>
+          <div className="Service-Upper">
+            <i className="fas fa-lightbulb Service-Icon"></i>
+          </div>
+          <div className="Service-Lower">
+            <h2>منتجات التقنية مبتكرة</h2>
+            <p>نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل والمهام اليومية.</p>
+          </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
           <div className="Service-Upper">
-          <img src={require('../../Assets/Images/web.png')} alt="Cyber Security" className="Service-Image" />
+            <i className="fas fa-handshake Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-          <h2>الاستشارات</h2>
-          <p>نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجيات وأدوات حديثة</p>
-        </div>
+            <h2>الاستشارات</h2>
+            <p>نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجيات وأدوات حديثة</p>
+          </div>
         </div>
       </div>
-        
+
       <div className="Button-Container fade-in-element hidden">
         <button className="Learn-More-Button">تعرف على خدماتنا</button>
       </div>

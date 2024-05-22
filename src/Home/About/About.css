@@ -1,7 +1,7 @@
 .About-Body{
   height: 100vh;
   width: 100%;
-  background-color:rgb(2, 38, 46);
+  background:var(--main-gradient);
 }
 
 h1{
