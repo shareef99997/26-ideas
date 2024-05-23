@@ -1,0 +1,10 @@
+.Contact-Body{
+  height: 60vh;
+  width: 100%;
+  background: var(--background-gradient);
+}
+
+h1{
+  margin: 0;
+  color: white;
+}

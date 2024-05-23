@@ -166,8 +166,12 @@
   }
   .Services-Title::after {
     width: 200px;
+  }
 
-    
+  @media (max-width: 360px) {
+    .Services-Title::after {
+      width: 50px;
+    }
   }
 }
 
@@ -186,34 +190,34 @@
 /* Initial hidden state */
 .fade-in {
   opacity: 0;
-  animation: fadeIn 2s forwards; /* Adjust duration as needed */
+  animation: fadeIn 3s forwards; /* Adjust duration as needed */
 }
 
 /* Delay for different elements */
 .fade-in-1 {
-  animation-delay: 0.5s;
-}
-.fade-in-2 {
-  animation-delay: 0.5s;
-}
-.fade-in-3 {
-  animation-delay: 0.8s;
-}
-.fade-in-4 {
   animation-delay: 1s;
 }
+.fade-in-2 {
+  animation-delay: 1s;
+}
+.fade-in-3 {
+  animation-delay: 1.3s;
+}
+.fade-in-4 {
+  animation-delay: 1.5s;
+}
 .fade-in-5 {
-  animation-delay: 1.2s;
+  animation-delay: 1.8s;
 }
 .fade-in-6 {
-  animation-delay: 1.4s;
+  animation-delay: 2s;
 }
 
 /* Define the initial hidden state */
 .hidden {
   opacity: 0;
-  transform: translateY(20px); /* Optional: slight upward movement */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(50px); /* Optional: slight upward movement */
+  transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
 /* Define the visible state */

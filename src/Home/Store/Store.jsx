@@ -43,7 +43,7 @@ function Store() {
       <h2> </h2>
       <div className="MostOrderedProducts-Grid">
         {/* Product 1 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>
@@ -55,7 +55,7 @@ function Store() {
           </div>
         </div>
         {/* Product 2 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>
@@ -67,7 +67,7 @@ function Store() {
           </div>
         </div>
         {/* Product 3 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>
@@ -79,7 +79,7 @@ function Store() {
           </div>
         </div>
         {/* Product 4 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>
@@ -91,7 +91,7 @@ function Store() {
           </div>
         </div>
         {/* Product 5 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>
@@ -103,7 +103,7 @@ function Store() {
           </div>
         </div>
         {/* Product 6 */}
-        <div className="MostOrderedProduct-Box">
+        <div className="MostOrderedProduct-Box fade-in-element hidden">
           <img src={require('../../Assets/Images/Door.webp')} alt="Product 1" className="MostOrderedProduct-Image" />
           <div className="MostOrderedProduct-Description">
             <h3>   Hikvision محطة باب وحدات للفيلا  </h3>

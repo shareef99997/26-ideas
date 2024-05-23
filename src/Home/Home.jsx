@@ -4,6 +4,7 @@ import Services from './Services/Services';
 import Store from './Store/Store';
 import Footer from './Footer/Footer';
 import About from './About/About';
+import Contact from './Contact/Contact';
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
       <About/>
       <Services />
       <Store />
+      <Contact />
       <Footer />
     </div>
   );
