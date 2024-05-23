@@ -45,7 +45,7 @@ function NavBar() {
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
           <li><button className='Contact-btn'> تواصل معنا </button></li>
-          <li><a href=""> متجرنا </a></li>
+          <li><a href=""> متاجرنا </a></li>
           <li><a href=""> خدماتنا </a></li>
           <li><a href="">من نحن</a></li>
           <li><a href="">الرئيسية</a></li>

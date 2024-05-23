@@ -1,7 +1,7 @@
 import './Home.css';
 import Header from './Header/Header';
 import Services from './Services/Services';
-import Store from './Store/Store';
+import Market from './Market/Market';
 import Footer from './Footer/Footer';
 import About from './About/About';
 import Contact from './Contact/Contact';
@@ -22,7 +22,7 @@ function Home() {
       <Header />
       <About/>
       <Services />
-      <Store />
+      <Market />
       <Contact />
       <Footer />
     </div>
