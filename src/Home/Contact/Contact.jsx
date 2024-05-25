@@ -5,8 +5,10 @@ function Contact() {
     <div className="Contact" id="Footer">
       <div className='Contact-Body'>
         <div className="content-wrapper">
-          <button className="contact-button">تواصل معنا</button>
-          <h1 className="contact-heading">Your Heading Text</h1>
+          <button className="contact-button">
+            <i className="fas fa-phone"></i>  إتصل بنا
+          </button>
+          <h2 className="contact-heading"> لبدأ مشروعك الآن او للإستفسارات </h2>
         </div>
       </div>
     </div>

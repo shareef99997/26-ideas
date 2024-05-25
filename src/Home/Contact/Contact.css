@@ -16,20 +16,48 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background: var(--main-gradient);
+  padding: 20px 200px;
+  background: url('../../Assets/Images/contact.jpg') no-repeat center center; /* Specify the path to your image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-attachment: fixed; /* Make the background fixed */
   width: 100%;
   box-sizing: border-box; /* Ensure padding is included in the total width */
+  position: relative; /* Position relative for the pseudo-element */
+}
+
+.content-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.737); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+
+.contact-button, .contact-heading {
+  position: relative; /* Ensure these elements are above the overlay */
+  z-index: 2;
 }
 
 .contact-button {
-  padding: 10px 20px;
-  background:white;
+  background: white;
   color: var(--main-color);
   border: none;
+  font-size: 20px;
+  padding: 10px 50px;
 }
 
 .contact-heading {
-  padding: 10px;
   color: #fff;
+  font-size: 40px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.fa-phone{
+  padding-right: 5px;
+  color:rgb(89, 89, 89) ;
+  font-size: 15px;
 }
