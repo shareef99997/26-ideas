@@ -33,7 +33,9 @@ function NavBar() {
 
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
+
       <div className="nav-content">
+
         <div className={`logo ${scrolled ? 'scrolled-logo' : ''}`}>
           <a href="/ar">
             <img
@@ -44,18 +46,21 @@ function NavBar() {
           </a>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-          <li><button className='Contact-btn'> تواصل معنا </button></li>
+          <li className='cbl'><button className='Contact-btn'> تواصل معنا </button></li>
+          <li><a href=""> انضم الينا </a></li>
           <li><a href=""> متاجرنا </a></li>
           <li><a href=""> خدماتنا </a></li>
           <li><a href="">من نحن</a></li>
           <li><a href="">الرئيسية</a></li>
         </ul>
+        <div className='Cont'><button className='Contact-btn'> تواصل معنا </button></div>   
         <div className='lang'>
           <a href='#' className='en'>English</a>
           <div className="lang-dropdown">
             <a href=''>العربية</a>
           </div>
         </div>
+        
         <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} onClick={toggleMenu}>
           <div></div>
           <div></div>

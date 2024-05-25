@@ -27,7 +27,7 @@ nav.scrolled {
 }
 
 .nav-menu {
-  order: 2;
+  order: 3;
   display: flex;
   list-style: none;
   padding: 20px;
@@ -38,7 +38,7 @@ nav.scrolled {
 }
 
 .nav-menu li {
-  padding: 5px 20px;
+  padding: 5px 25px;
   flex: 0 0 auto;
   position: relative;
   transition: 0.8s ease;
@@ -47,7 +47,7 @@ nav.scrolled {
 .nav-menu li a {
   font-size: 19px;
   color: white;
-  font-weight: 400;
+
 }
 
 .nav-menu li::after {
@@ -80,20 +80,30 @@ nav.scrolled .nav-menu li a{
 
 nav.scrolled .Contact-btn {
   background-color: var(--main-color);
-  color: white;
+}
+
+.cbl{
+  display: none;
+}
+
+.Cont{
+  order: 2;
+  padding-left: 20px;
+  
 }
 
 .Contact-btn{
   background-color: white;
-  color: var(--main-color);
+  color: white;
 }
 
 .logo {
-  order: 3;
+  order:4;
   text-align: center;
   transition: ease-in-out 0.3s;
   padding-top: 10px;
   width: 150px;
+  margin-left: 50px;
 }
 
 .logo:hover {
@@ -145,19 +155,19 @@ nav.scrolled .Contact-btn {
   max-height: 0;
   transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: hidden;
-  border-radius: 0 0 20px  20px ;
+  border-radius: 0 0 10px  10px ;
 }
 
 .lang:hover .lang-dropdown {
-  max-height: 200px; /* Adjust based on the content */
+  max-height: 40px; /* Adjust based on the content */
   visibility: visible;
 }
 
 .lang .lang-dropdown a {
   display: block;
-  padding: 0.5rem 1rem;
   color: black;
   text-decoration: none;
+  text-align: center;
 }
 
 .lang .lang-dropdown:hover {
@@ -166,6 +176,13 @@ nav.scrolled .Contact-btn {
 
 /* Responsive styles */
 
+
+@media (max-width: 1062px) {
+  .Contact-btn{
+    font-size: 14px;
+    padding-right: 20px;
+  }
+}
 
 @media (max-width: 920px) {
   .nav-content {
@@ -198,7 +215,14 @@ nav.scrolled .Contact-btn {
 
   .Contact-btn{
     font-size: 14px;
-    padding: 8px;
+  }
+
+  .Cont{
+    display: none;
+  }
+
+  .cbl{
+    display: block;
   }
 
   .nav-menu.show {
@@ -253,6 +277,7 @@ nav.scrolled .Contact-btn {
   .logo {
     order: 2;
     transform: scale(0.8);
+    margin: 0;
   }
 
   .logo img {

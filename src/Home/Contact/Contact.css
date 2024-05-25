@@ -1,10 +1,35 @@
-.Contact-Body{
-  height: 60vh;
-  width: 100%;
-  background: var(--background-gradient);
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
-h1{
-  margin: 0;
-  color: white;
+.Contact-Body {
+  width: 100%;
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--main-gradient);
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background:white;
+  color: var(--main-color);
+  border: none;
+}
+
+.contact-heading {
+  padding: 10px;
+  color: #fff;
 }

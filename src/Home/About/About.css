@@ -77,11 +77,10 @@
 }
 
 .right-section button {
-  padding: 15px 40px; 
   font-size: 20px;
-  background-color: white;
+  background: white;
   color: var(--main-color);
-  font-weight: 600;
+
   margin-top: 35px;
 }
 
@@ -153,7 +152,7 @@
 
   .right-section button {
     font-size: 12px;
-    padding: 11px 25px;
+
   }
   .right-section{
     max-width: 500px;
@@ -174,7 +173,6 @@
 
   .right-section button {
     font-size: 12px;
-    padding: 11px 25px;
   }
 
   .right-section{
@@ -221,7 +219,6 @@
 
   .right-section button {
     font-size: 12px;
-    padding: 11px 25px;
   }
 }
 
@@ -260,20 +257,11 @@
 
   .right-section button {
     font-size: 12px;
-    padding: 11px 25px;
   }
 }
 
-.wave1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  
-  z-index: 0; /* Ensure the wave is behind the content */
-}
-.wave2 {
+
+.wave {
   position: absolute;
   bottom: 0;
   left: 0;
