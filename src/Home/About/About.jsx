@@ -48,7 +48,7 @@ function About() {
   }, []);
 
   return (
-    <div className="About" id="Footer">
+    <div className="About" id="About">
       <body className='About-Body'>
         <div className='About-img-Wrapper' ref={logoRef}>
           <img src={require('../../Assets/Logo/LOGO.png')} alt="Logo" />

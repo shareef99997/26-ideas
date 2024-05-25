@@ -51,7 +51,7 @@ function NavBar() {
           <li><a href=""> متاجرنا </a></li>
           <li><a href=""> خدماتنا </a></li>
           <li><a href="">من نحن</a></li>
-          <li><a href="">الرئيسية</a></li>
+          <li className='home-nav-'><a href="">الرئيسية</a></li>
         </ul>
         <div className='Cont'><button className='Contact-btn'> تواصل معنا </button></div>   
         <div className='lang'>
