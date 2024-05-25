@@ -83,7 +83,7 @@ function Services() {
             <i className="fas fa-lightbulb Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h2>منتجات التقنية مبتكرة</h2>
+            <h2>منتجات تقنية مبتكرة</h2>
             <p>نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل والمهام اليومية.</p>
           </div>
         </div>

@@ -25,8 +25,8 @@
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
-  height: 4px; /* Adjust the height of the line */
-  background: var(--main-color); /* Adjust the color of the line */
+  height: 4px; 
+  background: var(--main-color); 
 }
 
 .Market-Description {
