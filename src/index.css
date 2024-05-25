@@ -22,10 +22,9 @@ code {
 
 :root{
   --main-color:#168ca5;
-  --second-color:rgba(14, 105, 117, 1);
   --main-gradient:linear-gradient(90deg, rgb(10, 106, 118) 0%, rgb(22, 87, 91) 50%, rgb(10, 106, 118) 100%);
   --background-gradient:linear-gradient(90deg, rgb(5, 44, 49) 0%, rgb(10, 77, 80) 50%, rgb(5, 44, 49) 100%);
-
+  --background-color:rgb(231, 231, 231);
 
 }
 
@@ -54,9 +53,9 @@ a{
 
 button{
   font-family: 'Bein Normal';
-  padding:4px 18px;
-  border-radius: 8px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
   color: #fff;
   background:var(--main-gradient);
   border: 0;

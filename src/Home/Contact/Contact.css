@@ -5,6 +5,7 @@
   height: 50vh;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   overflow-x: hidden; /* Prevent horizontal overflow */
+  background: var(--background-color);
 }
 
 .Contact-Body {

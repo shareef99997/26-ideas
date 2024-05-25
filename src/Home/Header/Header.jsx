@@ -1,63 +1,44 @@
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import NavBar from './NavBar';
+import Typed from 'react-typed';
 
 function Header() {
+
+  const [showDescription, setShowDescription] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowDescription(true);
+    }, 5000); // 5000 milliseconds delay before showing the description
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <header className="Home-Header">
+      <video autoPlay muted loop className="header-video">
+        <source src={require('../../Assets/Videos/IT-Background (online-video-cutter.com).mp4')} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="overlay"></div>
       <NavBar />
-      <div className='Header-Body'>
+      <div className="Header-Body">
         <div className="home-content">
-        {/* <section>
-            <h1> خطوتك الأولى نحو مستقبلك التقني </h1>
-            <p> نساعدك لتحقيق أهدافك التقنية سواء كانت تطوير البرمجيات، التجارة الإلكترونية، التسويق الرقمي، أو الاستشارات التقنية، بإستخدام تقنيات الذكاء الاصطناعي لتحليل البيانات وتوجيه القرارات </p>
-            <div className="button-container">
-              <a href="#Services">
-                <button alt='#Services'> ابدأ الآن </button>
-              </a>
-              
-            </div>
-          </section> */}
-          {/* <section className="left-section">
-            <div className="img-wrapper">
-              <div>
-                <Swiper
-                  spaceBetween={50}
-                  slidesPerView={1}
-                  navigation
-                  autoplay={{
-                    delay: 2500, // 3 seconds delay between slides
-                    disableOnInteraction: false,
-                  }}
-                  modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
-                >
-                  <SwiperSlide>
-                    <img className='home-pic' src={require('../../Assets/Images/web.png')} alt="AI Illustration 1" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img className='home-pic' src={require('../../Assets/Images/AI.png')} alt="AI Illustration 2" />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <img className='home-pic' src={require('../../Assets/Images/market.png')} alt="AI Illustration 3" />
-                  </SwiperSlide>
-                </Swiper>
-              </div>
-            </div>
-          </section>
-
-          <section className="right-section">
-            <h1> خطوتك الأولى نحو مستقبلك التقني </h1>
-            <p> نساعدك لتحقيق أهدافك التقنية سواء كانت تطوير البرمجيات، التجارة الإلكترونية، التسويق الرقمي، أو الاستشارات التقنية، بإستخدام تقنيات الذكاء الاصطناعي لتحليل البيانات وتوجيه القرارات </p>
-            <div className="button-container">
-              <a href="#Services">
-                <button alt='#Services'> ابدأ الآن </button>
-                </a>
-              
-            </div>
-          </section> */}
+         <Typed
+            strings={['خطوتك الأولى لمستقبلك الرقمي']}
+            typeSpeed={50}
+            onComplete={() => setShowDescription(true)}
+          />
+          {showDescription && (
+            <Typed
+              strings={[
+                'نحن هنا لنقدم لك أفضل الحلول التقنية الحديثة. سواء كنت تبحث عن تطوير البرمجيات، التجارة الإلكترونية أو استشارات تقنية فإننا هنا لخدمتك',
+              ]}
+              typeSpeed={50}
+            />
+          )}
+          <button>إتخذ خطوتك الآن</button>
         </div>
-        {/* <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#ffffff" fillOpacity="0.1" d="M0,256L48,229.3C96,203,192,149,288,138.7C384,128,480,160,576,165.3C672,171,768,149,864,144C960,139,1056,149,1152,165.3C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-        </svg> */}
       </div>
     </header>
   );
