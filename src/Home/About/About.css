@@ -5,7 +5,7 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  background: var(--background-gradient);
+  
   position: relative; /* Add relative positioning */
   overflow: hidden; /* Ensure no overflow issues */
 }
@@ -13,22 +13,12 @@
   padding-top: 20px;
   max-width: 200px;
   align-self: center;
-  animation: bounce 2s infinite ease;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
 }
 
 .About-img-Wrapper img {
   width: 100%;
   border-radius: 15px;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.815));
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.248));
   animation: bounce 2s infinite;
 }
 
@@ -66,7 +56,7 @@
 
 
 .right-section p{
-  color: #eeeeeeba;
+  color: #000000ba;
   font-size: 16px;
 }
 
@@ -74,14 +64,14 @@
   display: flex;
   justify-content: end;
   margin-top: 20px; 
+
 }
 
 .right-section button {
   font-size: 20px;
-  background: white;
-  color: var(--main-color);
-
+  color: white;
   margin-top: 35px;
+  padding: 5px 30px;
 }
 
 
