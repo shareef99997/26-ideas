@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Header.css';
 import NavBar from './NavBar';
 import { ReactTyped } from 'react-typed';
 
 function Header() {
   const [showDescription, setShowDescription] = useState(false);
+
 
   return (
     <header className="Home-Header" id="Header">
