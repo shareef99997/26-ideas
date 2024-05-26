@@ -61,19 +61,19 @@ function About() {
                 slidesPerView={1}
                 navigation
                 autoplay={{
-                  delay: 2500, // 3 seconds delay between slides
+                  delay: 3500, // 3 seconds delay between slides
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
               >
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/web.png')} alt="AI Illustration 1" />
+                  <img className='About-pic' src={require('../../Assets/Images/Ai.jpg')} alt="AI Illustration 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/AI.png')} alt="AI Illustration 2" />
+                  <img className='About-pic' src={require('../../Assets/Images/development.jpg')} alt="AI Illustration 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/market.png')} alt="AI Illustration 3" />
+                  <img className='About-pic' src={require('../../Assets/Images/project-management-about.jpg')} alt="AI Illustration 3" />
                 </SwiperSlide>
               </Swiper>
             </div>
