@@ -1,0 +1,34 @@
+.Page-Header{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; 
+  background: url('../../Assets/Images/project-management.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:  0.5s ease;
+}
+
+.Page-Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.808); /* Semi-transparent black overlay */
+  z-index: 0; /* Ensure the overlay is on top of the background image */
+}
+
+.Page-Title{
+  background-color: rgba(255, 255, 255, 0.138);
+  padding: 10px 80px;
+  border-radius: 15px;
+  color: var(--main-color);
+  font-size: 50px;
+  z-index: 1;
+}
+

@@ -37,11 +37,12 @@ function Footer() {
             <h2>روابط سريعة</h2>
             <ul>
               <li><a href="#services"> الرئيسية </a></li>
-              <li><a href="#services"> من نحن </a></li>
+              <li><a href="#about-us"> من نحن </a></li>
               <li><a href="#services"> خدماتنا </a></li>
-              <li><a href="#services"> متجرنا </a></li>
+              <li><a href="#store"> متجرنا </a></li>
               <li><a href="#about"> إنضم إلينا  </a></li>
-              <li><a href="#contact">اتصل بنا</a></li>
+              <li><a href="#contact"> مدونة </a></li>
+              <li><a href="#contact">  اتصل بنا  </a></li>
             </ul>
           </div>
           <div className="Footer-Section about-footer">

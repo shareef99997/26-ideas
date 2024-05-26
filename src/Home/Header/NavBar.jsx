@@ -1,66 +1,75 @@
-import './NavBar.css';
 import React, { useState, useEffect } from 'react';
-
-
+import { Link } from 'react-router-dom';
+import './NavBar.css';
 
 function NavBar() {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-
-  ///burger menu ///
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  ///burger menu ///
-  ///Scroll Sensor///
-  
+
   const handleScroll = () => {
     const offset = window.scrollY;
-    setScrolled(offset > 100); // You can adjust the scroll offset value as needed
+    setScrolled(offset > 100);
   };
-  
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  ///Scroll Sensor///
-
-  
 
   return (
-    <nav className={scrolled ? 'scrolled' : ''} >
-
+    <nav className={`main-nav ${ scrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
-
         <div className={`logo ${scrolled ? 'scrolled-logo' : ''}`}>
-          <a href="/ar">
-            <img
-              src={require('../../Assets/Logo/LOGO.png')}
-              alt="Main Logo"
-              
-            />
-          </a>
+          <Link to="/">
+            <img src={require('../../Assets/Logo/LOGO.png')} alt="Main Logo" />
+          </Link>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-          <li className='cbl'><button className='Contact-btn'> تواصل معنا </button></li>
-          <li><a href=""lang="ar"> انضم الينا </a></li>
-          <li><a href=""lang="ar"> متاجرنا </a></li>
-          <li><a href=""lang="ar"> خدماتنا </a></li>
-          <li><a href=""lang="ar">من نحن</a></li>
-          <li className='home-nav-'><a href="" lang="ar">الرئيسية</a></li>
+          <li className="cbl">
+            <Link to="/contact-us">
+              <button className="Contact-btn" lang="ar">تواصل معنا</button>
+            </Link>
+          </li>
+          <li>
+            <Link to="/blog" lang="ar">المدونة</Link>
+          </li>
+          <li>
+            <Link to="/join-us" lang="ar">انضم الينا</Link>
+          </li>
+          <li>
+            <Link to="/store" lang="ar">متجرنا</Link>
+          </li>
+          <li>
+            <Link to="/services" lang="ar">خدماتنا</Link>
+          </li>
+          <li>
+            <Link to="/about-us" lang="ar">من نحن</Link>
+          </li>
+          <li>
+            <Link to="/" lang="ar">الرئيسية</Link>
+          </li>
         </ul>
-        <div className='Cont'><button className='Contact-btn'> تواصل معنا </button></div>   
-        <div className='lang'>
-          <a href='#' className='en'>English</a>
+        <div className="Cont">
+          <Link to="/contact-us">
+            <button className="Contact-btn">تواصل معنا</button>
+          </Link>
+        </div>
+        <div className="lang">
+          <a href="#" className="en">
+            English
+          </a>
           <div className="lang-dropdown">
-            <a href='' lang="ar">العربية</a>
+            <a href="" lang="ar">
+              العربية
+            </a>
           </div>
         </div>
-        
         <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} onClick={toggleMenu}>
           <div></div>
           <div></div>
