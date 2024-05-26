@@ -34,7 +34,7 @@ function Header() {
             
             
           )}</p>
-          <a href="#About"><button>إتخذ خطوتك الآن</button></a>
+          <a href="#About"><button lang="ar">إتخذ خطوتك الآن</button></a>
         </div>
       </div>
     </header>

@@ -32,7 +32,7 @@ function NavBar() {
   
 
   return (
-    <nav className={scrolled ? 'scrolled' : ''}>
+    <nav className={scrolled ? 'scrolled' : ''} >
 
       <div className="nav-content">
 
@@ -47,17 +47,17 @@ function NavBar() {
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
           <li className='cbl'><button className='Contact-btn'> تواصل معنا </button></li>
-          <li><a href=""> انضم الينا </a></li>
-          <li><a href=""> متاجرنا </a></li>
-          <li><a href=""> خدماتنا </a></li>
-          <li><a href="">من نحن</a></li>
-          <li className='home-nav-'><a href="">الرئيسية</a></li>
+          <li><a href=""lang="ar"> انضم الينا </a></li>
+          <li><a href=""lang="ar"> متاجرنا </a></li>
+          <li><a href=""lang="ar"> خدماتنا </a></li>
+          <li><a href=""lang="ar">من نحن</a></li>
+          <li className='home-nav-'><a href="" lang="ar">الرئيسية</a></li>
         </ul>
         <div className='Cont'><button className='Contact-btn'> تواصل معنا </button></div>   
         <div className='lang'>
           <a href='#' className='en'>English</a>
           <div className="lang-dropdown">
-            <a href=''>العربية</a>
+            <a href='' lang="ar">العربية</a>
           </div>
         </div>
         

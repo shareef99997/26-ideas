@@ -13,14 +13,14 @@ function Footer() {
       <div className="Footer-Body">
         <div className="Footer-Content">
 
-          <div className="Footer-Section news-section">
+          <div className="Footer-Section news-section" >
             <h2>متابعة نشرتنا الإخبارية</h2>
             <div className="newsletter-input">
               <button type="submit"> اشترك </button>
-              <input type="email" placeholder="البريد الإلكتروني" />
+              <input  type="email" placeholder="البريد الإلكتروني" />
             </div>
           </div>
-          <div className="Footer-Section services-footer">
+          <div className="Footer-Section services-footer" lang="ar">
             <h2> خدماتنا </h2>
             <div className="Services-Links">
               <ul>
@@ -33,7 +33,7 @@ function Footer() {
               
             </div>
           </div>
-          <div className="Footer-Section links-footer">
+          <div className="Footer-Section links-footer" lang="ar">
             <h2>روابط سريعة</h2>
             <ul>
               <li><a href="#services"> الرئيسية </a></li>
@@ -49,10 +49,10 @@ function Footer() {
               <img src={require('../../Assets/Logo/LOGO.png')} alt="Logo" />
             </div>
             <ul>          
-            <li className="question">    في خدمتكم للجواب على جميع استفسراتكم  </li>
+            <li className="question" lang="ar">    في خدمتكم للجواب على جميع استفسراتكم  </li>
             <li className="email">it@26ideas.sa</li>
-              <li className="phone">00966566664530</li>
-              <li className="location">المملكة العربية السعودية - الرياض</li>
+              <li className="phone" lang="ar">00966566664530</li>
+              <li className="location" lang="ar">المملكة العربية السعودية - الرياض</li>
 
             </ul>
           </div>
