@@ -62,6 +62,42 @@
   color: black;
 }
 
+
+.up-arrow {
+  position: fixed;
+  bottom: 20px; /* Adjust the value to your preference */
+  left: 20px; /* Adjust the value to your preference */
+  z-index: 1000;
+}
+
+.arrow-button{
+  
+   /* Ensure it is above other elements */
+  background-color: var(--main-color);
+  border-radius: 50%; /* Optional, makes the button circular */
+  padding: 10px; /* Adjust the value to your preference */
+  transition: 0.3s ease; /* Smooth transition for hover effect */
+  display: flex; /* Add Flexbox */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: white;
+}
+
+.arrow-button img {
+  width: 20px; /* Adjust the value to your preference */
+  filter: invert(1);
+}
+
+
+.arrow-button:hover img {
+  filter: none; 
+}
+
+
 @media screen and (max-width: 1024px) {
   .whatsapp-button {
     height: 60px;
@@ -69,5 +105,8 @@
   }
   .whatsapp-button img {
     width: 30px;
+  }
+  .arrow-button img {
+    width: 18px; /* Adjust the value to your preference */
   }
 }

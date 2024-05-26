@@ -7,7 +7,7 @@ function Header() {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <header className="Home-Header">
+    <header className="Home-Header" id="Header">
       <video autoPlay muted loop className="header-video">
         <source src={require('../../Assets/Videos/IT-Background (online-video-cutter.com).mp4')} />
         Your browser does not support the video tag.
