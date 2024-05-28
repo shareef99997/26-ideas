@@ -137,7 +137,40 @@ function Services() {
                   <p>نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجيات وأدوات حديثة</p>
                 </div>
               </div>
+              <div className="Service-Box fade-in-element hidden">
+                <div className="Service-Upper">
+                  <i className="fas fa-handshake Service-Icon"></i>
+                </div>
+                <div className="Service-Lower">
+                  <h2> (ERP) تخطيط موارد المؤسسات   </h2>
+                  <p>  تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً.  </p>
+                </div>
+              </div>
+              <div className="Service-Box fade-in-element hidden">
+                <div className="Service-Upper">
+                  <i className="fas fa-handshake Service-Icon"></i>
+                </div>
+                <div className="Service-Lower">
+                  <h2>  برمجيات إدارة المخزون </h2>
+                  <p>  تساعد هذه البرمجيات الشركات على تنظيم المخازن بكفاءة، من خلال تسهيل عمليات الاستلام، التسليم، التخزين، والجرد، مما يساهم في تحسين دقة البيانات واتخاذ قرارات أفضل  </p>
+                </div>
+              </div>
+              <div className="Service-Box fade-in-element hidden">
+                <div className="Service-Upper">
+                  <i className="fas fa-handshake Service-Icon"></i>
+                </div>
+                <div className="Service-Lower">
+                  <h2> برمجيات إدارة المبيعات و نقاط البيع  </h2>
+                  <p>  تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً.  </p>
+                </div>
+              </div>
+
+
+
+
             </div>
+              
+              
 
             <div className="Button-Container fade-in-element hidden">
               <button className="Learn-More-Button">تعرف على خدماتنا</button>

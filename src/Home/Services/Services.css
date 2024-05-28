@@ -92,7 +92,7 @@
 .Service-Lower h2 {
   font-size: 1.5em;
   margin: 10px 0;
-  font-weight: 400;
+  font-weight: 500;
   background: var(--main-gradient);
   color: transparent; 
   -webkit-background-clip: text; 

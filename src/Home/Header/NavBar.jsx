@@ -43,7 +43,7 @@ function NavBar({ currentPage }) {
             <Link to="/join-us" lang="ar">انضم الينا</Link>
           </li>
           <li className={`${currentPage === 'store' ? 'active' : ''}`}>
-            <Link to="/store" lang="ar">متجرنا</Link>
+            <a href="" target="_blank" lang="ar">متجرنا</a>
           </li>
           <li className={`${currentPage === 'services' ? 'active' : ''}`}>
             <Link to="/services" lang="ar">خدماتنا</Link>

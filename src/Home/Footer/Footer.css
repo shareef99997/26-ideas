@@ -79,8 +79,20 @@
   padding: 0;
 }
 
+
+/* Update the pseudo-element styles */
+.news-section::after,
+.services-footer::after,
+.links-footer::after {
+  content: '←'; /* Unicode left arrow character */
+  margin-right: 5px; /* Space between arrow and text */
+  transition: margin-right 0.3s ease;
+  font-size: 18px;
+}
+
+
 .news-footer ul li a::before ,
-.services-footer ul li a::before ,
+.services-footer ul li .link::before ,
 .links-footer ul li .link::before {
   content: '←'; /* Unicode left arrow character */
   margin-right: 5px; /* Space between arrow and text */

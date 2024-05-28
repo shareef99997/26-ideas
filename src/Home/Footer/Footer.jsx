@@ -25,11 +25,11 @@ function Footer() {
             <h2> خدماتنا </h2>
             <div className="Services-Links">
               <ul>
-                <li><a href="" > تطوير البرمجيات </a></li>
-                <li><a href="">   التسويق  </a></li>
-                <li><a href="" >  الإستشارات  </a></li>
-                <li><a href="" >  حلول الذكاء الاصطناعي  </a></li>
-                <li><a href="" >  ...المزيد  </a></li>
+                <li><a href="" > <Link className='link' to="/services" lang="ar">تطوير البرمجيات </Link></a></li>
+                <li><a href="">    <Link className='link' to="/services" lang="ar">التسويق</Link> </a></li>
+                <li><a href="" >   <Link className='link' to="/services" lang="ar">الإستشارات</Link> </a></li>
+                <li><a href="" >  <Link className='link' to="/services" lang="ar"> حلول الذكاء الاصطناعي </Link></a></li>
+                <li><a href="" >   <Link className='link' to="/services" lang="ar">...المزيد </Link></a> </li>
               </ul>
               
             </div>
@@ -40,7 +40,7 @@ function Footer() {
               <li><a > <Link className='link' to="/" lang="ar">الرئيسية</Link> </a></li>
               <li><a > <Link className='link' to="/about-us" lang="ar">من نحن</Link></a></li>
               <li><a > <Link className='link' to="/services" lang="ar">خدماتنا</Link> </a></li>
-              <li><a > <Link className='link' to="/store" lang="ar">متجرنا</Link> </a></li>
+              <li><a href="" target="_blank" rel="noopener noreferrer" className='link' lang="ar">متجرنا</a></li>
               <li><a > <Link className='link' to="/join-us" lang="ar">انضم الينا</Link> </a></li>
               <li><a > <Link className='link' to="/blog" lang="ar">المدونة</Link> </a></li>
               <li><a > <Link className='link' to="/contact-us" lang="ar"> تواصل معنا </Link> </a></li>
