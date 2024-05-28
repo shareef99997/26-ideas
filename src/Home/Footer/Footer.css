@@ -81,7 +81,7 @@
 
 .news-footer ul li a::before ,
 .services-footer ul li a::before ,
-.links-footer ul li a::before {
+.links-footer ul li .link::before {
   content: '←'; /* Unicode left arrow character */
   margin-right: 5px; /* Space between arrow and text */
   transition: margin-right 0.3s ease;

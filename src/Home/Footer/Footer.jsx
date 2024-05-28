@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faPhone, faMapMarkerAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookF, faLinkedinIn,faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 library.add(faEnvelope, faPhone, faMapMarkerAlt, faQuestionCircle, faInstagram, faFacebookF, faLinkedinIn,faXTwitter);
 
@@ -36,13 +37,14 @@ function Footer() {
           <div className="Footer-Section links-footer" lang="ar">
             <h2>روابط سريعة</h2>
             <ul>
-              <li><a href="#services"> الرئيسية </a></li>
-              <li><a href="#about-us"> من نحن </a></li>
-              <li><a href="#services"> خدماتنا </a></li>
-              <li><a href="#store"> متجرنا </a></li>
-              <li><a href="#about"> إنضم إلينا  </a></li>
-              <li><a href="#contact"> مدونة </a></li>
-              <li><a href="#contact">  اتصل بنا  </a></li>
+              <li><a > <Link className='link' to="/" lang="ar">الرئيسية</Link> </a></li>
+              <li><a > <Link className='link' to="/about-us" lang="ar">من نحن</Link></a></li>
+              <li><a > <Link className='link' to="/services" lang="ar">خدماتنا</Link> </a></li>
+              <li><a > <Link className='link' to="/store" lang="ar">متجرنا</Link> </a></li>
+              <li><a > <Link className='link' to="/join-us" lang="ar">انضم الينا</Link> </a></li>
+              <li><a > <Link className='link' to="/blog" lang="ar">المدونة</Link> </a></li>
+              <li><a > <Link className='link' to="/contact-us" lang="ar"> تواصل معنا </Link> </a></li>
+            
             </ul>
           </div>
           <div className="Footer-Section about-footer">

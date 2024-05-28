@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Home/Home';
@@ -10,6 +9,7 @@ import Store from './Pages/Store/Store';
 import JoinUs from './Pages/Join-us/Join-us';
 import Blog from './Pages/Blog/Blog';
 import ContactUs from './Pages/Contact-us/Contact-us';
+import ScrollToTop from './Pages/ScrollToTop.jsx'; 
 import React, { useState, useEffect } from 'react';
 
 function App() {
@@ -17,10 +17,10 @@ function App() {
   const [scrolled, setScrolled] = useState(false);
 
   const scrollToHeader = () => {
-  const header = document.getElementById('Header');
-  if (header) {
-    header.scrollIntoView({ behavior: 'smooth' });
-  }
+    const header = document.getElementById('Header');
+    if (header) {
+      header.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const handleScroll = () => {
@@ -35,12 +35,12 @@ function App() {
     };
   }, []);
 
-
   return (
     <Router>
+      <ScrollToTop /> {/* Ensure this component is placed inside the Router */}
       <div className="Home">
         <Routes>
-          <Route path="/" element={<Home />} /> 
+          <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/store" element={<Store />} />
@@ -49,18 +49,18 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <a className="whatsappa" href="https://api.whatsapp.com/send?phone=966566664530" target="_blank" rel="noopener noreferrer">
-        <nav className="whatsapp-button">
+          <nav className="whatsapp-button">
             <div>
-            <img src={require('./Assets/Icons/whatsapp.png')} alt="WhatsApp" />
+              <img src={require('./Assets/Icons/whatsapp.png')} alt="WhatsApp" />
             </div>
-          <h3>تواصل معنا</h3>
-        </nav>
+            <h3>تواصل معنا</h3>
+          </nav>
         </a>
         <a className={`up-arrow ${scrolled ? 'scrolled-arrow' : ''}`} onClick={scrollToHeader}>
           <div className="arrow-button">
-            <img src={require('./Assets/Icons/up-arrow.png')}/>
+            <img src={require('./Assets/Icons/up-arrow.png')} alt="Up Arrow" />
           </div>
-        </a> 
+        </a>
         <Contact />
         <Footer />
       </div>

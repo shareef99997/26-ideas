@@ -1,34 +1,230 @@
-.Page-Header{
-  position: relative;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-  overflow: hidden; 
-  background: url('../../Assets/Images/project-management.jpg');
-  background-size: cover;
+
+
+.About-us-Body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.About-us-content {
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition:  0.5s ease;
-}
-
-.Page-Header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.808); /* Semi-transparent black overlay */
-  z-index: 0; /* Ensure the overlay is on top of the background image */
+  max-width: 1200px;
+  margin: 50px 0;
+  gap: 50px;
 }
 
-.Page-Title{
-  background-color: rgba(255, 255, 255, 0.138);
-  padding: 10px 80px;
+.left-section-ab,
+.right-section-ab {
+  width: 45%;
+}
+
+.left-section-ab img,
+.right-section-ab img {
+  width: 100%;
   border-radius: 15px;
-  color: var(--main-color);
-  font-size: 50px;
-  z-index: 1;
+  /* max-height: 80%; */
 }
 
+.A-one img{
+  width: 100%;
+  border-radius: 15px;
+  max-height: 80%;
+}
+
+.right-section-ab h1,
+.right-section-ab p,
+.left-section-ab h1,
+.left-section-ab p {
+  text-align: right;
+}
+
+
+.right-section-ab p {
+  color: #000000ba;
+  
+}
+
+.right-section-ab h1{
+  font-size: 40px;
+  margin: 0;
+}
+
+.right-section-ab p ,
+.right-section-ab h1{
+  text-align: right;
+  direction: rtl;
+
+}
+
+
+.description-wrapper {
+  direction: rtl; /* Set the text direction to RTL */
+  margin-bottom: 20px;
+}
+
+.description-wrapper p {
+  display: inline;
+  font-size: 17px;
+}
+
+.description-wrapper .col {
+  direction: ltr; /* Ensure the number stays in LTR direction */
+  unicode-bidi: isolate; /* Prevent number from being reordered */
+  margin-left: 8px; /* Add spacing if needed */
+}
+
+/* Dropdown Styles */
+.About-us-description {
+  margin-top: 5px;
+}
+
+.dropdown-title {
+  position: relative;
+  
+}
+
+.dropdown-title h3 {
+  cursor: pointer;
+  margin: 0;
+  text-align: end;
+  font-weight:400px ;
+}
+
+.dropdown-title h3::after {
+  content: '⚫'; /* Unicode character for a downward arrow */
+  font-size: 10px;
+  margin-left: 2px;
+  transition:  0.3s ease-in-out;
+}
+
+.dropdown-title h3::before {
+  content: '▼'; /* Unicode character for a downward arrow */
+  font-size: 12px;
+  margin-right: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* .dropdown-title:hover .dropdown-title-h3::before {
+  transform: rotate(180deg); 
+} */
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
+  border-radius: 5px;
+  opacity: 0;
+  font-size: 15px;
+}
+
+.dropdown-title:hover .dropdown-content {
+  max-height: 100px; /* Adjust as needed */
+  opacity: 1;
+  
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 800px) {
+
+  .Page-Title{
+    font-size: 1.5rem;
+  }
+  
+  .About-us-section{
+    padding-right: 25px;
+  }
+
+  .About-us-content {
+    flex-direction: column;
+    align-items: end;
+    
+  }
+
+  .left-section-ab img,
+  .right-section-ab img {
+  width: 100%;
+  border-radius: 15px;
+  /* max-height: 80%; */
+}
+
+  .left-section-ab h1,
+  .right-section-ab h1{
+    font-size: 25px;
+  }
+
+  .description-wrapper p {
+    display: inline;
+    font-size: 12px;
+  }
+
+  .dropdown-content {
+    font-size: 11px;
+  }
+
+  .dropdown-title h3 {
+    font-size: 13px;
+  }
+
+
+  .left-section-ab h1,
+  .right-section-ab h1,
+  .About-us-description {
+    width: 100%;
+    text-align: start;
+  }
+
+  .left-section-ab,
+  .right-section-ab {
+    width: 90%;
+  }
+  
+  .A-two .right-section-ab{
+    order: 1;
+    
+  }
+  
+  .A-two .left-section-ab{
+    order: 2;
+  }
+}
+
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes fadeInFromLeft {
+  from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    @keyframes fadeInFromRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    
+    .fade-in-left {
+      animation: fadeInFromLeft 1s forwards;
+    }
+    
+    .fade-in-right {
+      animation: fadeInFromRight 1s forwards;
+    }

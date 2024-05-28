@@ -3,16 +3,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   position: relative; /* Add relative positioning */
   overflow: hidden; /* Ensure no overflow issues */
+  
 }
 
 .About-img-Wrapper {
   padding-top: 20px;
   max-width: 200px;
   align-self: center;
+  display: none;
 }
 
 .About-img-Wrapper img {
@@ -26,24 +28,22 @@
   justify-content: space-between; 
   flex-direction: row;
   padding: 0 50px; 
-  gap: 200px;
+  gap: 100px;
 }
 
 .left-section,
 .right-section {
-  width: 100%;
   z-index: 1;
 }
 
 .right-section{
-  max-width: 650px;
-  
-
+  max-width: 700px;
 }
 
 .right-section h1 ,
 .right-section p {
-  text-align: end;
+  text-align: right;
+  direction: rtl;
 }
 
 .right-section h1 {
@@ -55,7 +55,7 @@
 
 .right-section p{
   color: #000000ba;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .button-container {
@@ -174,7 +174,7 @@
 
   .About-content {
     flex-direction: column-reverse;
-    padding: 0 80px;
+    padding: 0 20px;
     align-items: center; 
     gap: 50px;
   }
@@ -185,21 +185,22 @@
 
   .left-section{
     max-width:250px ;
+    order: 1;
   }
-
 
   .right-section{
     padding:  30px;
+    order: 2;
   }
 
   .right-section h1 {
     font-size: 25px;
-    text-align: center;
+ 
   }
 
   .right-section p {
     font-size: 10px;
-    text-align: center;
+    
   }
 
   .button-container {
@@ -216,12 +217,12 @@
     
   }
   .About-content {
-    padding: 0 50px;
+    padding: 0 20px;
     gap: 0;
   }
 
   .left-section{
-    max-width:200px ;
+    max-width:250px ;
     padding-top: 50px;
   }
 
@@ -231,13 +232,13 @@
   }
 
   .right-section h1 {
-    font-size: 23px;
-    text-align: center;
+    font-size: 22px;
+    
   }
 
   .right-section p {
-    font-size:9px;
-    text-align: center;
+    font-size:11px;
+    
   }
 
   .button-container {
