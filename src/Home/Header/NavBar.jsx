@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar() {
+function NavBar({ currentPage }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -23,7 +23,7 @@ function NavBar() {
   }, []);
 
   return (
-    <nav className={`main-nav ${ scrolled ? 'scrolled' : ''}`}>
+    <nav className={`main-nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-content">
         <div className={`logo ${scrolled ? 'scrolled-logo' : ''}`}>
           <Link to="/">
@@ -31,27 +31,27 @@ function NavBar() {
           </Link>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-          <li className="cbl">
+          <li className={`cbl ${currentPage === 'contact-us' ? 'active' : ''}`}>
             <Link to="/contact-us">
               <button className="Contact-btn" lang="ar">تواصل معنا</button>
             </Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'blog' ? 'active' : ''}`}>
             <Link to="/blog" lang="ar">المدونة</Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'join-us' ? 'active' : ''}`}>
             <Link to="/join-us" lang="ar">انضم الينا</Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'store' ? 'active' : ''}`}>
             <Link to="/store" lang="ar">متجرنا</Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'services' ? 'active' : ''}`}>
             <Link to="/services" lang="ar">خدماتنا</Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'about-us' ? 'active' : ''}`}>
             <Link to="/about-us" lang="ar">من نحن</Link>
           </li>
-          <li>
+          <li className={`${currentPage === 'home' ? 'active' : ''}`}>
             <Link to="/" lang="ar">الرئيسية</Link>
           </li>
         </ul>

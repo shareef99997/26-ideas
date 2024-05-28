@@ -5,7 +5,7 @@ function Services() {
     <div className="Services " id="Header">
 
         <div className="Services-Header Page-Header">
-          <NavBar/>
+        <NavBar currentPage="services"/>
           <h2 className="Page-Title"> خدماتنا </h2>
         </div>
       

@@ -5,7 +5,7 @@ function Store() {
     <div className="Store " id="Header">
 
         <div className="Store-Header Page-Header">
-          <NavBar/>
+        <NavBar currentPage="store"/>
           <h2 className="Page-Title"> متاجرنا </h2>
         </div>
       

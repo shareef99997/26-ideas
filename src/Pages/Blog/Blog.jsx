@@ -5,13 +5,13 @@ function Blog() {
     <div className="Blog " id="Header">
 
         <div className="Blog-Header Page-Header">
-          <NavBar/>
+        <NavBar currentPage="blog"/>
           <h2 className="Page-Title"> المدونة </h2>
         </div>
       
         {/* Page Body */}
         <div>
-          <h1>hey</h1>
+          
         </div>
     </div>
   );

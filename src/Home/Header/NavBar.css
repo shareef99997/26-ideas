@@ -74,6 +74,16 @@ nav.scrolled {
   transition: ease 0.3s;
 }
 
+.nav-menu li.active::after {
+  width: 70%;
+  opacity: 1;
+}
+
+.nav-menu li.active a {
+  opacity: 0.58;
+  transition: ease 0.3s;
+}
+
 nav.scrolled .lang a,
 nav.scrolled .nav-menu li a{
   color: var(--main-color); /* Color when scrolled */

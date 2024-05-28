@@ -5,7 +5,7 @@ function Join_us() {
     <div className="Join-us " id="Header">
 
         <div className="Join-us-Header Page-Header">
-          <NavBar/>
+        <NavBar currentPage="join-us"/>
           <h2 className="Page-Title">  إنضم إلينا </h2>
         </div>
       

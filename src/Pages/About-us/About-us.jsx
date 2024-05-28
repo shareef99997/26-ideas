@@ -56,7 +56,7 @@ function About_us() {
   return (
     <div className="About-us" id="Header">
       <div className="About-us-Header Page-Header">
-        <NavBar />
+        <NavBar currentPage="about-us"/>
         <h3 className="Page-Title">  من نحن  </h3>
       </div>
 

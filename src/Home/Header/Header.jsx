@@ -14,7 +14,7 @@ function Header() {
         Your browser does not support the video tag.
       </video>
       <div className="overlay"></div>
-      <NavBar />
+      <NavBar currentPage="home"/>
       <div className="Header-Body">
         <div className="home-content">
           <h1><ReactTyped

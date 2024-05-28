@@ -5,7 +5,7 @@ function Contact_us() {
     <div className="Contact-us " id="Header">
 
         <div className="Contact-us-Header Page-Header">
-          <NavBar/>
+        <NavBar currentPage="contact-us"/>
           <h2 className="Page-Title"> تواصل معنا </h2>
         </div>
       
