@@ -25,11 +25,11 @@ function Footer() {
             <h2> خدماتنا </h2>
             <div className="Services-Links">
               <ul>
-                <li><a href="" > <Link className='link' to="/services" lang="ar">تطوير البرمجيات </Link></a></li>
-                <li><a href="">    <Link className='link' to="/services" lang="ar">التسويق</Link> </a></li>
-                <li><a href="" >   <Link className='link' to="/services" lang="ar">الإستشارات</Link> </a></li>
-                <li><a href="" >  <Link className='link' to="/services" lang="ar"> حلول الذكاء الاصطناعي </Link></a></li>
-                <li><a href="" >   <Link className='link' to="/services" lang="ar">...المزيد </Link></a> </li>
+                <li> <Link className='link' to="/services" lang="ar">تطوير البرمجيات </Link></li>
+                <li>    <Link className='link' to="/services" lang="ar">التسويق</Link> </li>
+                <li>   <Link className='link' to="/services" lang="ar">الإستشارات</Link> </li>
+                <li>  <Link className='link' to="/services" lang="ar"> حلول الذكاء الاصطناعي </Link></li>
+                <li>   <Link className='link' to="/services" lang="ar">...المزيد </Link> </li>
               </ul>
               
             </div>
@@ -37,13 +37,13 @@ function Footer() {
           <div className="Footer-Section links-footer" lang="ar">
             <h2>روابط سريعة</h2>
             <ul>
-              <li><a > <Link className='link' to="/" lang="ar">الرئيسية</Link> </a></li>
-              <li><a > <Link className='link' to="/about-us" lang="ar">من نحن</Link></a></li>
-              <li><a > <Link className='link' to="/services" lang="ar">خدماتنا</Link> </a></li>
+              <li><Link className='link' to="/" lang="ar">الرئيسية</Link> </li>
+              <li> <Link className='link' to="/about-us" lang="ar">من نحن</Link></li>
+              <li> <Link className='link' to="/services" lang="ar">خدماتنا</Link> </li>
               <li><a href="" target="_blank" rel="noopener noreferrer" className='link' lang="ar">متجرنا</a></li>
-              <li><a > <Link className='link' to="/join-us" lang="ar">انضم الينا</Link> </a></li>
-              <li><a > <Link className='link' to="/blog" lang="ar">المدونة</Link> </a></li>
-              <li><a > <Link className='link' to="/contact-us" lang="ar"> تواصل معنا </Link> </a></li>
+              <li> <Link className='link' to="/join-us" lang="ar">انضم الينا</Link> </li>
+              <li> <Link className='link' to="/blog" lang="ar">المدونة</Link> </li>
+              <li> <Link className='link' to="/contact-us" lang="ar"> تواصل معنا </Link> </li>
             
             </ul>
           </div>

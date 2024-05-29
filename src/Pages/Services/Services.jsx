@@ -139,31 +139,32 @@ function Services() {
               </div>
               <div className="Service-Box fade-in-element hidden">
                 <div className="Service-Upper">
-                  <i className="fas fa-handshake Service-Icon"></i>
+                  <i className="fas fa-cogs Service-Icon"></i> {/* ERP Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2> (ERP) تخطيط موارد المؤسسات   </h2>
-                  <p>  تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً.  </p>
+                  <h2> (ERP) تخطيط موارد المؤسسات </h2>
+                  <p> تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً. </p>
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
                 <div className="Service-Upper">
-                  <i className="fas fa-handshake Service-Icon"></i>
+                  <i className="fas fa-warehouse Service-Icon"></i> {/* Inventory Management Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2>  برمجيات إدارة المخزون </h2>
-                  <p>  تساعد هذه البرمجيات الشركات على تنظيم المخازن بكفاءة، من خلال تسهيل عمليات الاستلام، التسليم، التخزين، والجرد، مما يساهم في تحسين دقة البيانات واتخاذ قرارات أفضل  </p>
+                  <h2> برمجيات إدارة المخزون </h2>
+                  <p> تساعد هذه البرمجيات الشركات على تنظيم المخازن بكفاءة، من خلال تسهيل عمليات الاستلام، التسليم، التخزين، والجرد، مما يساهم في تحسين دقة البيانات واتخاذ قرارات أفضل </p>
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
                 <div className="Service-Upper">
-                  <i className="fas fa-handshake Service-Icon"></i>
+                  <i className="fas fa-cash-register Service-Icon"></i> {/* Sales and POS Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2> برمجيات إدارة المبيعات و نقاط البيع  </h2>
-                  <p>  تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً.  </p>
+                  <h2> برمجيات إدارة المبيعات و نقاط البيع </h2>
+                  <p> تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً. </p>
                 </div>
               </div>
+
 
 
 
