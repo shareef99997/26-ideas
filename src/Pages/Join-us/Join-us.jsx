@@ -38,104 +38,104 @@ function Join_us() {
       
       {/* Page Body */}
       <div className='Join-us-body Page-Body'>
-      <div className="title-container">
-        <h1 className="Services-title">إنضم لفريق 26 فكرة</h1>
-        <p className="description"> اصبح فرد من العائلة الآن </p>
-      </div>
-      <div className="flex-container">
-        {/* Image Container */}
-        <div className="image-container">
-          <img src={require("../../Assets/Images/project-management.jpg")}  />
+        <div className="Join-us-title Page-title-container">
+          <h1 className="Services-title">إنضم لفريق 26 فكرة</h1>
+          <p className="description"> اصبح فرد من العائلة الآن </p>
         </div>
-        <form className="Join-us-form" onSubmit={handleSubmit}>
-          <div className="form-row">
+        <div className="flex-container">
+          {/* Image Container */}
+          <div className="image-container">
+            <img src={require("../../Assets/Images/project-management.jpg")}  />
+          </div>
+          <form className="Join-us-form" onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-group">
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName" 
+                  value={formData.firstName} 
+                  onChange={handleChange} 
+                  required 
+                  placeholder=" " 
+                />
+                <label htmlFor="firstName">الاسم الأول</label>
+              </div>
+              <div className="form-group">
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName" 
+                  value={formData.lastName} 
+                  onChange={handleChange} 
+                  required 
+                  placeholder=" " 
+                />
+                <label htmlFor="lastName">اسم العائلة</label>
+              </div>
+            </div>
             <div className="form-group">
               <input 
-                type="text" 
-                id="firstName" 
-                name="firstName" 
-                value={formData.firstName} 
+                type="tel" 
+                id="phoneNumber" 
+                name="phoneNumber" 
+                value={formData.phoneNumber} 
                 onChange={handleChange} 
                 required 
                 placeholder=" " 
               />
-              <label htmlFor="firstName">الاسم الأول</label>
+              <label htmlFor="phoneNumber">رقم الهاتف</label>
+            </div>
+            <div className="form-group">
+              <select 
+                id="department" 
+                name="department" 
+                value={formData.department} 
+                onChange={handleChange} 
+                required
+                placeholder=" " 
+              >
+                <option value="" disabled hidden></option>
+                <option value="marketing">قسم التسويق</option>
+                <option value="it">قسم تقنية المعلومات</option>
+              </select>
+              <label htmlFor="department">القسم</label>
             </div>
             <div className="form-group">
               <input 
                 type="text" 
-                id="lastName" 
-                name="lastName" 
-                value={formData.lastName} 
+                id="subject" 
+                name="subject" 
+                value={formData.subject} 
                 onChange={handleChange} 
                 required 
                 placeholder=" " 
               />
-              <label htmlFor="lastName">اسم العائلة</label>
+              <label htmlFor="subject">الموضوع</label>
             </div>
-          </div>
-          <div className="form-group">
-            <input 
-              type="tel" 
-              id="phoneNumber" 
-              name="phoneNumber" 
-              value={formData.phoneNumber} 
-              onChange={handleChange} 
-              required 
-              placeholder=" " 
-            />
-            <label htmlFor="phoneNumber">رقم الهاتف</label>
-          </div>
-          <div className="form-group">
-            <select 
-              id="department" 
-              name="department" 
-              value={formData.department} 
-              onChange={handleChange} 
-              required
-              placeholder=" " 
-            >
-              <option value="" disabled hidden></option>
-              <option value="marketing">قسم التسويق</option>
-              <option value="it">قسم تقنية المعلومات</option>
-            </select>
-            <label htmlFor="department">القسم</label>
-          </div>
-          <div className="form-group">
-            <input 
-              type="text" 
-              id="subject" 
-              name="subject" 
-              value={formData.subject} 
-              onChange={handleChange} 
-              required 
-              placeholder=" " 
-            />
-            <label htmlFor="subject">الموضوع</label>
-          </div>
-          <div className="form-group">
-            <textarea 
-              id="message" 
-              name="message" 
-              value={formData.message} 
-              onChange={handleChange} 
-              rows="4" 
-              required 
-              placeholder=" " 
-            ></textarea>
-            <label htmlFor="message">الرسالة</label>
-          </div>
-          <div className="form-group">
-            <input 
-              type="file" 
-              id="attachment" 
-              name="attachment" 
-              onChange={handleChange} 
-            />
-            <label htmlFor="attachment"> السيرة الذاتية (CV) </label>
-          </div>
-          <button type="submit" className="submit-button">إرسال</button>
-        </form>
+            <div className="form-group">
+              <textarea 
+                id="message" 
+                name="message" 
+                value={formData.message} 
+                onChange={handleChange} 
+                rows="4" 
+                required 
+                placeholder=" " 
+              ></textarea>
+              <label htmlFor="message">الرسالة</label>
+            </div>
+            <div className="form-group">
+              <input 
+                type="file" 
+                id="attachment" 
+                name="attachment" 
+                onChange={handleChange} 
+              />
+              <label htmlFor="attachment"> السيرة الذاتية (CV) </label>
+            </div>
+            <button type="submit" className="submit-button">إرسال</button>
+          </form>
         </div>
       </div>
     </div>
