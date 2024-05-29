@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import NavBar from '../../Home/Header/NavBar';
 import './Services.css'
+import { Link } from 'react-router-dom';
 function Services() {  
   
   const servicesRef = useRef(null);
@@ -170,11 +171,10 @@ function Services() {
 
 
             </div>
-              
-              
 
             <div className="Button-Container fade-in-element hidden">
-              <button className="Learn-More-Button">تعرف على خدماتنا</button>
+              <Link to="/contact-us" lang="ar"> <button className="Learn-More-Button"> إطلب خدمتك الآن </button> </Link>
+              
             </div>
           </section>
           <section className="Market" id="Market" ref={MarketRef}>

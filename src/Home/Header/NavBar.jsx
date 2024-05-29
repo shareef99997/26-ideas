@@ -33,7 +33,7 @@ function NavBar({ currentPage }) {
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
           <li className={`cbl ${currentPage === 'contact-us' ? 'active' : ''}`}>
             <Link to="/contact-us">
-              <button className="Contact-btn" lang="ar">تواصل معنا</button>
+              <button className="Contact-btn" lang="ar"> اطلب عرض سعر </button>
             </Link>
           </li>
           <li className={`${currentPage === 'blog' ? 'active' : ''}`}>
@@ -52,12 +52,12 @@ function NavBar({ currentPage }) {
             <Link to="/about-us" lang="ar">من نحن</Link>
           </li>
           <li className={`${currentPage === 'home' ? 'active' : ''}`}>
-            <Link to="/" lang="ar">الرئيسية</Link>
+            <Link to="/" lang="ar"> الرئيسية </Link>
           </li>
         </ul>
         <div className="Cont">
           <Link to="/contact-us">
-            <button className="Contact-btn">تواصل معنا</button>
+            <button className="Contact-btn"> اطلب عرض سعر  </button>
           </Link>
         </div>
         <div className="lang">
