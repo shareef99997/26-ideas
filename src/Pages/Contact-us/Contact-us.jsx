@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt, faMapMarkerAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebookF, faLinkedinIn,faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import Footer from '../../Home/Footer/Footer';
+import Contact from '../../Home/Contact/Contact';
 
   library.add(faEnvelope, faMapMarkerAlt, faQuestionCircle, faInstagram, faFacebookF, faLinkedinIn,faXTwitter);
 
@@ -34,7 +36,7 @@ function Contact_us() {
   };
 
   return (
-    <div className="Contact-us" id="Header">
+    <div className="Contact-us" id="Contact-us" lang="ar">
       <div className="Contact-us-Header Page-Header">
         <NavBar currentPage="contact-us" />
         <h2 className="Page-Title">تواصل معنا</h2>
@@ -59,16 +61,16 @@ function Contact_us() {
                 <a href="https://X.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a>
               </div>
               <ul className="contact-details">
-                <li className="question" lang="ar">
+                <li className="question" >
                   <FontAwesomeIcon icon={faQuestionCircle} /><span> في خدمتكم للجواب على جميع استفسراتكم </span> 
                 </li>
                 <li className="email">
                   <FontAwesomeIcon icon={faEnvelope} /><span> it@26ideas.sa</span>
                 </li>
-                <li className="phone" lang="ar">
+                <li className="phone" >
                   <FontAwesomeIcon icon={faPhoneAlt} /><span> 966566664530+</span>
                 </li>
-                <li className="location" lang="ar">
+                <li className="location" >
                   <FontAwesomeIcon icon={faMapMarkerAlt} /><span> المملكة العربية السعودية - الرياض
                   </span></li>
               </ul>
@@ -152,6 +154,8 @@ function Contact_us() {
           
         </div>
       </div>
+      <Contact />
+      <Footer />
     </div>
   );
 }

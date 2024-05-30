@@ -2,7 +2,7 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <div className="Contact" id="Footer">
+    <div className="Contact" id="Contact" >
       <div className='Contact-Body'>
         <div className="content-wrapper">
           <button className="contact-button">

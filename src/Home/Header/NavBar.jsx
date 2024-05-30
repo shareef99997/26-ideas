@@ -31,28 +31,29 @@ function NavBar({ currentPage }) {
           </Link>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-          <li className={`cbl ${currentPage === 'contact-us' ? 'active' : ''}`}>
-            <Link to="/contact-us">
-              <button className="Contact-btn" lang="ar"> اطلب عرض سعر </button>
-            </Link>
-          </li>
-          <li className={`${currentPage === 'blog' ? 'active' : ''}`}>
-            <Link to="/blog" lang="ar">المدونة</Link>
-          </li>
-          <li className={`${currentPage === 'join-us' ? 'active' : ''}`}>
-            <Link to="/join-us" lang="ar">انضم الينا</Link>
-          </li>
-          <li className={`${currentPage === 'store' ? 'active' : ''}`}>
-            <a href="" target="_blank" lang="ar">متجرنا</a>
-          </li>
-          <li className={`${currentPage === 'services' ? 'active' : ''}`}>
-            <Link to="/services" lang="ar">خدماتنا</Link>
+          
+          <li className={`${currentPage === 'home' ? 'active' : ''}`}>
+            <Link to="/" > الرئيسية </Link>
           </li>
           <li className={`${currentPage === 'about-us' ? 'active' : ''}`}>
-            <Link to="/about-us" lang="ar">من نحن</Link>
+            <Link to="/about-us" >من نحن</Link>
           </li>
-          <li className={`${currentPage === 'home' ? 'active' : ''}`}>
-            <Link to="/" lang="ar"> الرئيسية </Link>
+          <li className={`${currentPage === 'services' ? 'active' : ''}`}>
+            <Link to="/services" >خدماتنا</Link>
+          </li>
+          <li className={`${currentPage === 'store' ? 'active' : ''}`}>
+            <a href="" target="_blank" >متجرنا</a>
+          </li>
+          <li className={`${currentPage === 'join-us' ? 'active' : ''}`}>
+            <Link to="/join-us" >انضم الينا</Link>
+          </li>
+          <li className={`${currentPage === 'blog' ? 'active' : ''}`}>
+            <Link to="/blog" >المدونة</Link>
+          </li>
+          <li className={`cbl ${currentPage === 'contact-us' ? 'active' : ''}`}>
+            <Link to="/contact-us">
+              <button className="Contact-btn" > اطلب عرض سعر </button>
+            </Link>
           </li>
         </ul>
         <div className="Cont">
@@ -65,7 +66,7 @@ function NavBar({ currentPage }) {
             English
           </a>
           <div className="lang-dropdown">
-            <a href="" lang="ar">
+            <a href="" >
               العربية
             </a>
           </div>

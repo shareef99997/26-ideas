@@ -28,7 +28,6 @@ nav.scrolled {
 }
 
 .nav-menu {
-  order: 3;
   display: flex;
   list-style: none;
   padding: 20px;
@@ -98,7 +97,7 @@ nav.scrolled .Contact-btn {
 }
 
 .Cont{
-  order: 2;
+
   padding-left: 20px;
   
 }
@@ -110,7 +109,7 @@ nav.scrolled .Contact-btn {
 }
 
 .logo {
-  order:4;
+
   text-align: center;
   transition: ease-in-out 0.3s;
   padding-top: 10px;
@@ -131,7 +130,6 @@ nav.scrolled .Contact-btn {
 }
 
 .lang {
-  order: 1;
   position: relative;
   cursor: pointer;
 }
@@ -144,7 +142,7 @@ nav.scrolled .Contact-btn {
   align-items: center;
 }
 
-.en::after {
+.en::before{
   content: '▼'; /* Unicode character for a downward arrow */
   font-size: 12px;
   margin-left: 8px;
@@ -191,7 +189,7 @@ nav.scrolled .Contact-btn {
 
 @media (max-width: 1062px) {
   .Contact-btn{
-    font-size: 14px;
+    font-size: 10px;
     padding-right: 20px;
   }
 }
@@ -203,7 +201,7 @@ nav.scrolled .Contact-btn {
 
   .nav-menu {
     
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
@@ -235,6 +233,7 @@ nav.scrolled .Contact-btn {
 
   .cbl{
     display: block;
+    font-size: 10px;
   }
 
   .nav-menu.show {
@@ -245,8 +244,8 @@ nav.scrolled .Contact-btn {
   .burger-menu {
     display: block;
     cursor: pointer;
-    order: 2;
-    margin-left:25px;
+    order: 1;
+    margin-left:20px;
     z-index: 1001; /* Ensure burger menu is on top */
   }
 
@@ -297,7 +296,7 @@ nav.scrolled .Contact-btn {
   }
 
   .lang {
-    order: 1;
+    order: 3;
     
   }
   .lang a{

@@ -8,7 +8,7 @@ function Header() {
 
 
   return (
-    <header className="Home-Header" id="Header">
+    <header className="Home-Header" id="Header" >
       <video autoPlay muted loop className="header-video">
         <source src={require('../../Assets/Videos/IT-Background (online-video-cutter.com).mp4')} />
         Your browser does not support the video tag.
@@ -35,7 +35,7 @@ function Header() {
             
             
           )}</p>
-          <a href="#About"><button lang="ar">إتخذ خطوتك الآن</button></a>
+          <a href="#About"><button >إتخذ خطوتك الآن</button></a>
         </div>
       </div>
     </header>

@@ -35,6 +35,8 @@ function App() {
     };
   }, []);
 
+
+
   return (
     <Router>
       <ScrollToTop /> {/* Ensure this component is placed inside the Router */}
@@ -61,8 +63,7 @@ function App() {
             <img src={require('./Assets/Icons/up-arrow.png')} alt="Up Arrow" />
           </div>
         </a>
-        <Contact />
-        <Footer />
+        
       </div>
     </Router>
   );

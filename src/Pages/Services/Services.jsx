@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import NavBar from '../../Home/Header/NavBar';
 import './Services.css'
 import { Link } from 'react-router-dom';
+import Footer from '../../Home/Footer/Footer';
+import Contact from '../../Home/Contact/Contact';
+
 function Services() {  
   
   const servicesRef = useRef(null);
@@ -65,7 +68,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="Services-page " id="Header">
+    <div className="Services-page " id="Services-page" lang="ar">
 
         <div className="Services-Header Page-Header">
         <NavBar currentPage="services"/>
@@ -173,7 +176,7 @@ function Services() {
             </div>
 
             <div className="Button-Container fade-in-element hidden">
-              <Link to="/contact-us" lang="ar"> <button className="Learn-More-Button"> إطلب خدمتك الآن </button> </Link>
+              <Link to="/contact-us" > <button className="Learn-More-Button"> إطلب خدمتك الآن </button> </Link>
               
             </div>
           </section>
@@ -245,7 +248,8 @@ function Services() {
           </section>
         </div>
         
-
+        <Contact />
+        <Footer />
     </div>
   );
 }

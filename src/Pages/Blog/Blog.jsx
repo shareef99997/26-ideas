@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import NavBar from '../../Home/Header/NavBar';
 import './Blog.css';
+import Footer from '../../Home/Footer/Footer';
+import Contact from '../../Home/Contact/Contact';
 
 const BlogCard = ({ imageSrc, title, date, description }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -55,9 +57,9 @@ function Blog() {
   ];
 
   return (
-    <div className="Blog" id="Header">
+    <div className="Blog" id="Blog" lang="ar">
       <div className="Blog-Header Page-Header">
-        <NavBar />
+        <NavBar currentPage={'blog'} />
         <h2 className="Page-Title"> المدونة </h2>
       </div>
       
@@ -75,6 +77,9 @@ function Blog() {
           ))}
         </div>
       </div>
+
+      <Contact />
+      <Footer />
     </div>
   );
 }

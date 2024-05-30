@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import NavBar from "../../Home/Header/NavBar";
 import './About-us.css';
 import '../Pages.css';
+import Footer from '../../Home/Footer/Footer';
+import Contact from '../../Home/Contact/Contact';
 
 function About_us() {
 
@@ -54,7 +56,7 @@ function About_us() {
   }, []);
 
   return (
-    <div className="About-us" id="Header">
+    <div className="About-us" id="About-us" lang="ar">
       <div className="About-us-Header Page-Header">
         <NavBar currentPage="about-us"/>
         <h3 className="Page-Title">  من نحن  </h3>
@@ -174,6 +176,9 @@ function About_us() {
         </div>
         
       </div>
+      
+      <Contact />
+      <Footer />
     </div>
   );
 }

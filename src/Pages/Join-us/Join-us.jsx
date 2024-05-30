@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import NavBar from '../../Home/Header/NavBar';
 import './Join-us.css';
+import Footer from '../../Home/Footer/Footer';
+import Contact from '../../Home/Contact/Contact';
 
 function Join_us() {
   const [formData, setFormData] = useState({
@@ -29,7 +31,7 @@ function Join_us() {
   };
 
   return (
-    <div className="Join-us" id="Header">
+    <div className="Join-us" id="Join-us" lang="ar">
       <div className="Join-us-Header Page-Header">
         <NavBar currentPage="join-us" />
         <h2 className="Page-Title">إنضم إلينا</h2>
@@ -138,6 +140,8 @@ function Join_us() {
           </form>
         </div>
       </div>
+      <Contact />
+      <Footer />
     </div>
   );
 }
