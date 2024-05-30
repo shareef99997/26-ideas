@@ -72,7 +72,7 @@ function Services() {
 
         <div className="Services-Header Page-Header">
         <NavBar currentPage="services"/>
-          <h2 className="Page-Title"> خدماتنا </h2>
+          <h3 className="Page-Title"> خدماتنا </h3>
         </div>
       
         {/* Page Body */}
@@ -92,7 +92,7 @@ function Services() {
                   <i className="fas fa-robot Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>حلول الذكاء الاصطناعي</h2>
+                  <h3>حلول الذكاء الاصطناعي</h3>
                   <p>نقدم تطبيقات مخصصة تستفيد من تقنيات الذكاء الاصطناعي مثل التعلم العميق وتحليل البيانات وتصميم وتطوير روبوتات ذكية للقطاعات المختلفة</p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ function Services() {
                   <i className="fas fa-laptop-code Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>تطوير المواقع الإلكترونية</h2>
+                  <h3>تطوير المواقع الإلكترونية</h3>
                   <p>نقدم تصميمًا مبتكرًا وتطويرًا للمواقع الإلكترونية وتطوير تطبيقات الهاتف المحمول</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ function Services() {
                   <i className="fas fa-mobile-alt Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>تطوير تطبيقات الجوال</h2>
+                  <h3>تطوير تطبيقات الجوال</h3>
                   <p>نقدم تصميمًا مبتكرًا لتطوير تطبيقات الهاتف المحمول</p>
                 </div>
               </div>
@@ -119,7 +119,7 @@ function Services() {
                   <i className="fas fa-bullhorn Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>التسويق الإلكتروني</h2>
+                  <h3>التسويق الإلكتروني</h3>
                   <p>ترويج لمنتجاتك أو خدماتك عبر وسائل التواصل الاجتماعي, الإعلانات عبر الإنترنت والتسويق عبر البريد الإلكتروني</p>
                 </div>
               </div>
@@ -128,7 +128,7 @@ function Services() {
                   <i className="fas fa-lightbulb Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>منتجات تقنية مبتكرة</h2>
+                  <h3>منتجات تقنية مبتكرة</h3>
                   <p>نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل والمهام اليومية.</p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ function Services() {
                   <i className="fas fa-handshake Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
-                  <h2>الاستشارات</h2>
+                  <h3>الاستشارات</h3>
                   <p>نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجيات وأدوات حديثة</p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ function Services() {
                   <i className="fas fa-cogs Service-Icon"></i> {/* ERP Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2> (ERP) تخطيط موارد المؤسسات </h2>
+                  <h3> (ERP) تخطيط موارد المؤسسات </h3>
                   <p> تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً. </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ function Services() {
                   <i className="fas fa-warehouse Service-Icon"></i> {/* Inventory Management Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2> برمجيات إدارة المخزون </h2>
+                  <h3> برمجيات إدارة المخزون </h3>
                   <p> تساعد هذه البرمجيات الشركات على تنظيم المخازن بكفاءة، من خلال تسهيل عمليات الاستلام، التسليم، التخزين، والجرد، مما يساهم في تحسين دقة البيانات واتخاذ قرارات أفضل </p>
                 </div>
               </div>
@@ -164,7 +164,7 @@ function Services() {
                   <i className="fas fa-cash-register Service-Icon"></i> {/* Sales and POS Icon */}
                 </div>
                 <div className="Service-Lower">
-                  <h2> برمجيات إدارة المبيعات و نقاط البيع </h2>
+                  <h3> برمجيات إدارة المبيعات و نقاط البيع </h3>
                   <p> تساعد هذه البرمجيات الشركات على تحسين عمليات البيع وتقديم تجربة سلسة للعملاء. تتضمن ميزات مثل تتبع المبيعات، إدارة المخزون، وتحليلات البيانات لاتخاذ قرارات أكثر ذكاءً. </p>
                 </div>
               </div>
@@ -192,7 +192,7 @@ function Services() {
               <div className="Markets-Grid fade-in-element hidden">
                   <div className="Market-Box fade-in-element hidden">
                     <div className='Title-div market-pic'lang="en">
-                      <h2> التسويق الإلكتروني </h2>
+                      <h3> التسويق الإلكتروني </h3>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
                     <div className="List-Div">
@@ -205,7 +205,7 @@ function Services() {
                   </div>
                   <div className="Market-Box fade-in-element hidden">
                     <div className='Title-div data-pic'lang="en">
-                      <h2> تحليل البيانات </h2>
+                      <h3> تحليل البيانات </h3>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
                     <div className="List-Div">
@@ -218,7 +218,7 @@ function Services() {
                   </div>
                   <div className="Market-Box fade-in-element hidden">
                     <div className='Title-div manage-pic'lang="en">
-                      <h2> إدارة المشاريع </h2>
+                      <h3> إدارة المشاريع </h3>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
                     <div className="List-Div">
@@ -231,7 +231,7 @@ function Services() {
                   </div>
                   <div className="Market-Box fade-in-element hidden">
                     <div className='Title-div ad-pic'lang="en">
-                      <h2> دعاية و إعلان </h2>
+                      <h3> دعاية و إعلان </h3>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
                     <div className="List-Div">
