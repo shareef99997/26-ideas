@@ -10,7 +10,7 @@ function Offers() {
   return (
     <div className="Offers" id="Offers">
       {/* Title Section */}
-        <h1 className='Offers-Title'>  عروضنا  </h1>
+        <h2 className='Offers-Title'>  عروضنا  </h2>
         <p className="Offers-Description">
           اكتشف عروضنا
         </p>

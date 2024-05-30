@@ -50,12 +50,14 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
+
+        
         <a className="whatsappa" href="https://api.whatsapp.com/send?phone=966566664530" target="_blank" rel="noopener noreferrer">
           <nav className="whatsapp-button">
             <div>
               <img src={require('./Assets/Icons/whatsapp.png')} alt="WhatsApp" />
             </div>
-            <h3>تواصل معنا</h3>
+            <h3> Whatsapp </h3>
           </nav>
         </a>
         <a className={`up-arrow ${scrolled ? 'scrolled-arrow' : ''}`} onClick={scrollToHeader}>

@@ -11,7 +11,7 @@
 }
 
 .Offers-Title {
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin-bottom: 10px;
   position: relative;
   font-weight: 500;
@@ -31,7 +31,7 @@
 }
 
 .Offers-Description {
-  font-size: 1.2em;
+  font-size: 1.0em;
   color: #666;
   margin-bottom: 40px;
   max-width: 800px;
@@ -68,5 +68,8 @@
 @media (max-width: 375px) {
   .Offers-Title::after {
     width: 50px;
+  }
+  .Offers-Description {
+    font-size: 0.7em;
   }
 }

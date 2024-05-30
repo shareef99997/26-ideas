@@ -1,15 +1,17 @@
 /* Services.css */
+
 .Services {
   text-align: center;
   padding: 0 0;
   padding-bottom: 50px;
   background: var(--background-color);
+  
 }
 
 
 
 .Services-Title {
-  font-size: 2.2em;
+  font-size: 2.0em;
   margin-bottom: 10px;
   position: relative;
   display: flex;
@@ -29,13 +31,13 @@
   left: 50%;
   transform: translateX(-50%);
   width: 400px;
-  height: 4px; /* Adjust the height of the line */
+  height: 2px; /* Adjust the height of the line */
   background: var(--main-color); /* Adjust the color of the line */
   
 }
 
 .Services-Description {
-  font-size: 1.2em;
+  font-size: 1.0em;
   color: #666;
   margin-bottom: 30px;
   max-width: 800px;
@@ -68,14 +70,13 @@
 
 }
 
-.Service-Box:hover p,.Service-Box:hover h2,.Service-Box:hover .Service-Icon {
+.Service-Box:hover p,.Service-Box:hover h3,.Service-Box:hover .Service-Icon {
   color: white ;
 }
 
 .Service-Upper {
   padding:0 20px;
   padding-top:10px ;
-
 }
 
 .Service-Lower {
@@ -87,12 +88,12 @@
   font-size: 50px; 
   color: var(--main-color); 
   margin-bottom: 10px; 
+  
 }
 
-.Service-Lower h2 {
-  font-size: 1.5em;
+.Service-Lower h3 {
+  font-size: 1.2em;
   margin: 10px 0;
-  font-weight: 500;
   background: var(--main-gradient);
   color: transparent; 
   -webkit-background-clip: text; 
@@ -146,12 +147,12 @@
     font-size: 40px;
   }
 
-  .Service-Box h2 {
+  .Service-Box h3 {
     font-size: 1.2em;
   }
 
   .Service-Box p {
-    font-size: 0.9em;
+    font-size: 0.7em;
     padding: 0 10px 10px;
   }
   .Services-Description {

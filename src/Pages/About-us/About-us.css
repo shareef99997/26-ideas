@@ -45,12 +45,12 @@
 
 .right-section-ab p {
   color: #000000ba;
-  
+  font-size: 15px;
 }
 
 .right-section-ab h1{
-  font-size: 40px;
-  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .right-section-ab p ,
@@ -62,17 +62,15 @@
 
 
 .description-wrapper {
-  direction: rtl; /* Set the text direction to RTL */
   margin-bottom: 20px;
 }
 
 .description-wrapper p {
   display: inline;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .description-wrapper .col {
-  direction: ltr; /* Ensure the number stays in LTR direction */
   unicode-bidi: isolate; /* Prevent number from being reordered */
   margin-left: 8px; /* Add spacing if needed */
 }
@@ -90,18 +88,18 @@
 .dropdown-title h3 {
   cursor: pointer;
   margin: 0;
-  text-align: end;
   font-weight:400px ;
+  font-size: 15px;
 }
 
-.dropdown-title h3::after {
+.dropdown-title h3::before {
   content: '⚫'; /* Unicode character for a downward arrow */
   font-size: 10px;
   margin-left: 2px;
   transition:  0.3s ease-in-out;
 }
 
-.dropdown-title h3::before {
+.dropdown-title h3::after {
   content: '▼'; /* Unicode character for a downward arrow */
   font-size: 12px;
   margin-right: 2px;
@@ -137,20 +135,19 @@
   }
   
   .About-us-section{
-    padding-right: 25px;
+
   }
 
   .About-us-content {
-    flex-direction: column;
-    align-items: end;
+    flex-direction: column-reverse;
     
+    align-items: center;
   }
 
   .left-section-ab img,
   .right-section-ab img {
-  width: 100%;
+  width: 70%;
   border-radius: 15px;
-  /* max-height: 80%; */
 }
 
   .left-section-ab h1,
@@ -185,12 +182,12 @@
   }
   
   .A-two .right-section-ab{
-    order: 1;
+    order: 2;
     
   }
   
   .A-two .left-section-ab{
-    order: 2;
+    order: 1;
   }
 }
 

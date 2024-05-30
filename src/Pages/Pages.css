@@ -35,12 +35,12 @@
   position: relative;
 }
 
-.Page-Title::before{
+.Page-Title::after{
   margin-left: 500px;
   margin-right: 20px;
 }
 
-.Page-Title::after{
+.Page-Title::before{
   margin-left: 20px;
   margin-right: 500px;
 }

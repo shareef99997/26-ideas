@@ -88,7 +88,7 @@ function Services() {
 
             <div className="Services-Grid fade-in-element hidden">
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-robot Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -97,7 +97,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-laptop-code Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -106,7 +106,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-mobile-alt Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -115,7 +115,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-bullhorn Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -124,7 +124,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-lightbulb Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -133,7 +133,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-handshake Service-Icon"></i>
                 </div>
                 <div className="Service-Lower">
@@ -142,7 +142,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-cogs Service-Icon"></i> {/* ERP Icon */}
                 </div>
                 <div className="Service-Lower">
@@ -151,7 +151,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-warehouse Service-Icon"></i> {/* Inventory Management Icon */}
                 </div>
                 <div className="Service-Lower">
@@ -160,7 +160,7 @@ function Services() {
                 </div>
               </div>
               <div className="Service-Box fade-in-element hidden">
-                <div className="Service-Upper">
+                <div className="Service-Upper"lang="en">
                   <i className="fas fa-cash-register Service-Icon"></i> {/* Sales and POS Icon */}
                 </div>
                 <div className="Service-Lower">
@@ -191,7 +191,7 @@ function Services() {
             {/* Grid Section */}
               <div className="Markets-Grid fade-in-element hidden">
                   <div className="Market-Box fade-in-element hidden">
-                    <div className='Title-div market-pic'>
+                    <div className='Title-div market-pic'lang="en">
                       <h2> التسويق الإلكتروني </h2>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
@@ -204,7 +204,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="Market-Box fade-in-element hidden">
-                    <div className='Title-div data-pic'>
+                    <div className='Title-div data-pic'lang="en">
                       <h2> تحليل البيانات </h2>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
@@ -217,7 +217,7 @@ function Services() {
                     </div>         
                   </div>
                   <div className="Market-Box fade-in-element hidden">
-                    <div className='Title-div manage-pic'>
+                    <div className='Title-div manage-pic'lang="en">
                       <h2> إدارة المشاريع </h2>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>
@@ -230,7 +230,7 @@ function Services() {
                     </div>
                   </div>
                   <div className="Market-Box fade-in-element hidden">
-                    <div className='Title-div ad-pic'>
+                    <div className='Title-div ad-pic'lang="en">
                       <h2> دعاية و إعلان </h2>
                       <i className="hover-icon fas fa-mouse-pointer"></i>
                     </div>

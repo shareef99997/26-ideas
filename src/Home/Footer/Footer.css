@@ -37,7 +37,7 @@
   display: flex;
   flex-direction: column;
   text-align: right; /* Align text to the right */
-  align-items: flex-end; /* Align items to the right */
+  
 }
 
 .services-footer{
@@ -91,18 +91,18 @@
 }
 
 
-.news-footer ul li a::before ,
-.services-footer ul li .link::before ,
-.links-footer ul li .link::before {
+.news-footer ul li a::after ,
+.services-footer ul li .link::after ,
+.links-footer ul li .link::after {
   content: '←'; /* Unicode left arrow character */
   margin-right: 5px; /* Space between arrow and text */
   transition: margin-right 0.3s ease;
   font-size: 18px;
 }
 
-.news-footer ul li a:hover::before,
-.services-footer ul li a:hover::before,
-.links-footer ul li a:hover::before {
+.news-footer ul li a:hover::after,
+.services-footer ul li a:hover::after,
+.links-footer ul li a:hover::after {
   margin-right: 15px; /* Move the arrow slightly on hover */
 }
 
@@ -169,11 +169,10 @@
 
 .Footer-Section .newsletter-input input {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   outline: none;
-  text-align: end;
 }
 
 .Footer-Section .newsletter-input button {
@@ -254,9 +253,14 @@
     margin-left: 10px;
   }
 
+  .about-footer li{
+   text-align: start;
+  }
+
   .services-footer{
     align-items: center;
   }
+
   .links-footer{
     align-items: center;
   }
@@ -303,5 +307,12 @@
     padding: 10px 0;
   }
 
+  .Footer-Section .newsletter-input input {
+    padding: 7px;
+  }
+  
+  .Footer-Section .newsletter-input button {
+    padding: 6px 22px;
+  }
   
 }
