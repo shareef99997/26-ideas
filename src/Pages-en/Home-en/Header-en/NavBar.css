@@ -1,0 +1,45 @@
+.lang .lang-dropdown {
+  padding: 5px;
+}
+
+.Cont{
+  padding-right: 20px;
+}
+
+.en::before{
+  display: none;
+}
+
+.en::after{
+  content: '▼'; /* Unicode character for a downward arrow */
+  font-size: 12px;
+  margin-left: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 920px) {
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    order: 3;
+    margin-left:20px;
+
+  }
+
+.logo {
+    order: 2;
+  }
+
+.lang {
+    order: 1;
+    
+  }
+
+  .cbl{
+    display: block;
+    font-size: 9px;
+  }
+  
+}
+
+

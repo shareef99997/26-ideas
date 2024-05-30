@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-function About() {
+function About_en() {
   const leftSectionRef = useRef(null);
   const rightSectionRef = useRef(null);
   const logoRef = useRef(null);
@@ -51,7 +51,7 @@ function About() {
     <div className="About" id="About" >
       <div className='About-Body'>
         <div className='About-img-Wrapper' ref={logoRef}>
-          <img src={require('../../Assets/Logo/LOGO.png')} alt="Logo" />
+          <img src={require('../../../Assets/Logo/LOGO.png')} alt="Logo" />
         </div>
         <div className="About-content">
 
@@ -68,13 +68,13 @@ function About() {
                 modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
               >
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/Ai.jpg')} alt="AI Illustration 1" />
+                  <img className='About-pic' src={require('../../../Assets/Images/Ai.jpg')} alt="AI Illustration 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/development.jpg')} alt="AI Illustration 2" />
+                  <img className='About-pic' src={require('../../../Assets/Images/development.jpg')} alt="AI Illustration 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='About-pic' src={require('../../Assets/Images/project-management-about.jpg')} alt="AI Illustration 3" />
+                  <img className='About-pic' src={require('../../../Assets/Images/project-management-about.jpg')} alt="AI Illustration 3" />
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -99,4 +99,4 @@ function About() {
   );
 }
 
-export default About;
+export default About_en;

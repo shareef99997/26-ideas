@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-function NavBar({ currentPage }) {
+function NavBar_en({ currentPage }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -27,50 +27,51 @@ function NavBar({ currentPage }) {
       <div className="nav-content">
         <div className={`logo ${scrolled ? 'scrolled-logo' : ''}`}>
           <Link to="/">
-            <img src={require('../../Assets/Logo/LOGO.png')} alt="Main Logo" />
+            <img src={require('../../../Assets/Logo/LOGO.png')} alt="Main Logo" />
           </Link>
         </div>
         <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
-          
           <li className={`${currentPage === 'home' ? 'active' : ''}`}>
-            <Link to="/" > الرئيسية </Link>
+            <Link to="/en/">Home</Link>
           </li>
           <li className={`${currentPage === 'about-us' ? 'active' : ''}`}>
-            <Link to="/about-us" >من نحن</Link>
+            <Link to="/en/about-us">About Us</Link>
           </li>
           <li className={`${currentPage === 'services' ? 'active' : ''}`}>
-            <Link to="/services" >خدماتنا</Link>
+            <Link to="/en/services">Services</Link>
           </li>
           <li className={`${currentPage === 'store' ? 'active' : ''}`}>
-            <a href="" target="_blank" >متجرنا</a>
+            <a href="" target="_blank">Store</a>
           </li>
           <li className={`${currentPage === 'join-us' ? 'active' : ''}`}>
-            <Link to="/join-us" >انضم الينا</Link>
+            <Link to="/en/join-us">Join Us</Link>
           </li>
           <li className={`${currentPage === 'blog' ? 'active' : ''}`}>
-            <Link to="/blog" >المدونة</Link>
+            <Link to="/en/blog">Blog</Link>
           </li>
           <li className={`cbl ${currentPage === 'contact-us' ? 'active' : ''}`}>
-            <Link to="/contact-us">
-              <button className="Contact-btn" > اطلب عرض سعر </button>
+            <Link to="/en/contact-us">
+              <button className="Contact-btn">Request a Quote</button>
             </Link>
           </li>
         </ul>
         <div className="Cont">
-          <Link to="/contact-us">
-            <button className="Contact-btn"> اطلب عرض سعر  </button>
+          <Link to="/en/contact-us">
+            <button className="Contact-btn">Request a Quote</button>
           </Link>
         </div>
         <div className="lang">
-          <a className="en">
-            العربية
+        
+          <a  className="en">
+            English
           </a>
+        
           <div className="lang-dropdown">
-            <Link to="/en/" > 
-              <a>
-                English
-              </a>
-            </Link> 
+          <Link to="/" > 
+            <a>
+              العربية
+            </a>
+          </Link> 
           </div>
         </div>
         <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} onClick={toggleMenu}>
@@ -83,4 +84,4 @@ function NavBar({ currentPage }) {
   );
 }
 
-export default NavBar;
+export default NavBar_en;

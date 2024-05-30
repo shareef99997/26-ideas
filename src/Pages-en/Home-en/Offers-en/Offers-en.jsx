@@ -7,7 +7,7 @@ import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
 
-function Offers() {
+function Offers_en() {
   const servicesRef = useRef(null);
 
   useEffect(() => {
@@ -62,16 +62,16 @@ function Offers() {
                 modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
               >
                 <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../Assets/Images/project-management.jpg')} alt="AI Illustration 1" />
+                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../Assets/Images/project-management.jpg')}alt="AI Illustration 2" />
+                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')}alt="AI Illustration 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
+                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
+                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
                 </SwiperSlide>
               </Swiper>
             </Link>
@@ -80,8 +80,10 @@ function Offers() {
       </section>
       {/* Slider Section */}
 
+      
+
       <div className="Button-Container fade-in-element hidden">
-        <Link className='link' to="//contact-us" >
+        <Link className='link' to="/en/contact-us" >
             <button className="Learn-More-Button"> اطلب خدمتك الآن </button>
           </Link>
       </div>
@@ -89,4 +91,4 @@ function Offers() {
   );
 }
 
-export default Offers;
+export default Offers_en;

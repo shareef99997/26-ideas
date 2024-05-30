@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Services.css';
 import { Link } from 'react-router-dom';
 
-function Services() {
+function Services_en() {
   const servicesRef = useRef(null);
 
   useEffect(() => {
@@ -102,10 +102,10 @@ function Services() {
       <div className="Button-Container fade-in-element hidden">
         <Link className='link' to="/en/Services" >
             <button className="Learn-More-Button">تعرف على خدماتنا</button>
-        </Link>
+          </Link>
       </div>
     </div>
   );
 }
 
-export default Services;
+export default Services_en;
