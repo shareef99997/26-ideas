@@ -40,36 +40,32 @@
   max-width: 700px;
 }
 
-.right-section h1 ,
+.right-section h2 ,
 .right-section p {
   text-align: right;
-  direction: rtl;
 }
 
-.right-section h1 {
-  font-size: 42px;
-  font-weight: 500;
+.right-section h2 {
+  font-size: 35px;
   color: var(--main-color);
 }
 
 
 .right-section p{
   color: #000000ba;
-  font-size: 18px;
+  font-size: 16px;
+  max-width: 600px;
 }
 
 .button-container {
   display: flex;
-  justify-content: end;
-  margin-top: 20px; 
-
+  justify-content: start;
+  margin-top:50px;
 }
 
 .right-section button {
-  font-size: 20px;
   color: white;
-  margin-top: 35px;
-  padding: 5px 30px;
+  padding: 10px 30px;
 }
 
 
@@ -121,7 +117,7 @@
     max-width: 550px;
   }
 
-  .right-section h1{
+  .right-section h2{
     font-size: 40px;
   }
   .right-section p {
@@ -133,7 +129,7 @@
   .left-section{
     max-width: 300px;
   }
-  .right-section h1{
+  .right-section h2{
     font-size: 36px;
   }
   .right-section p {
@@ -154,7 +150,7 @@
   .left-section{
     max-width: 270px;
   }
-  .right-section h1{
+  .right-section h2{
     font-size: 30px;
   }
   .right-section p {
@@ -193,7 +189,7 @@
     order: 2;
   }
 
-  .right-section h1 {
+  .right-section h2 {
     font-size: 25px;
  
   }
@@ -231,13 +227,13 @@
     padding: 20px;
   }
 
-  .right-section h1 {
+  .right-section h2 {
     font-size: 22px;
     
   }
 
   .right-section p {
-    font-size:11px;
+    font-size:10px;
     
   }
 

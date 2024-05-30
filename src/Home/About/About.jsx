@@ -54,16 +54,7 @@ function About() {
           <img src={require('../../Assets/Logo/LOGO.png')} alt="Logo" />
         </div>
         <div className="About-content">
-          
-          <section className="right-section" ref={rightSectionRef}>
-            <h1> هنا لنقدم لك أفضل الحلول للتقنية الحديثة </h1>
-            <p> نحن فريق متخصص في تقنية المعلومات نقدم حلولًا مبتكرة باستخدام الذكاء الاصطناعي لتحسين أداء الأعمال وزيادة الإنتاجية .<br/><br/> تشمل خدماتنا أتمتة العمليات، مراقبة المهام اليومية، وحلول التجارة الإلكترونية، ونعمل في مجالات مثل الطب، الإدارة، المصارف، والتعليم. نستخدم أنظمة متطورة لجمع وتحليل البيانات وإنتاج تقارير تدعم التطوير المستمر. </p>
-            <div className="button-container">
-              <a href="#Services">
-                <button alt='#Services'> تعرف علينا </button>
-              </a>
-            </div>
-          </section>
+
           <section className="left-section" ref={leftSectionRef}>
             <div className="img-wrapper">
               <Swiper
@@ -88,6 +79,16 @@ function About() {
               </Swiper>
             </div>
           </section>
+          <section className="right-section" ref={rightSectionRef}>
+            <h2> هنا لنقدم لك أفضل الحلول للتقنية الحديثة </h2>
+            <p> نحن فريق متخصص في تقنية المعلومات نقدم حلولًا مبتكرة باستخدام الذكاء الاصطناعي لتحسين أداء الأعمال وزيادة الإنتاجية .<br/><br/> تشمل خدماتنا أتمتة العمليات، مراقبة المهام اليومية، وحلول التجارة الإلكترونية، ونعمل في مجالات مثل الطب، الإدارة، المصارف، والتعليم. نستخدم أنظمة متطورة لجمع وتحليل البيانات وإنتاج تقارير تدعم التطوير المستمر. </p>
+            <div className="button-container">
+              <a href="#Services">
+                <button alt='#Services'> تعرف علينا </button>
+              </a>
+            </div>
+          </section>
+          
           
         </div>
         <svg className="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
