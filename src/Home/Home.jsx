@@ -2,7 +2,7 @@
 import './Home.css';
 import Header from './Header/Header';
 import Services from './Services/Services';
-import Market from './Market/Market';
+import Offers from './Offers/Offers';
 import About from './About/About';
 
 
@@ -14,7 +14,7 @@ function Home() {
       <Header />
       <About />
       <Services />
-      <Market />
+      <Offers />
     </div>
   );
 }
