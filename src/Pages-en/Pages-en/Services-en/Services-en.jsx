@@ -70,9 +70,9 @@ function Services_en() {
   return (
     <div className="Services-page " id="Services-page" lang="en">
 
-        <div className="Services-Header Page-Header">
+        <div className="Services-Header Page-Header-en">
         <NavBar currentPage="services"/>
-          <h3 className="Page-Title"> خدماتنا </h3>
+          <h3 className="Page-Title-en"> خدماتنا </h3>
         </div>
       
         {/* Page Body */}

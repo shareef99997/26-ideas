@@ -8,9 +8,9 @@ function Store_en() {
   return (
     <div className="Store " id="Store" lang="en">
 
-        <div className="Store-Header Page-Header">
+        <div className="Store-Header Page-Header-en">
         <NavBar currentPage="store"/>
-          <h2 className="Page-Title"> متاجرنا </h2>
+          <h2 className="Page-Title-en"> متاجرنا </h2>
         </div>
       
         {/* Page Body */}

@@ -79,29 +79,30 @@
   margin-top: 5px;
 }
 
-.dropdown-title {
+.dropdown-title-en {
   position: relative;
   
 }
 
-.dropdown-title h3 {
+.dropdown-title-en h3 {
   cursor: pointer;
   margin: 0;
   font-weight:400px ;
   font-size: 15px;
+  margin-bottom: 5px;
 }
 
-.dropdown-title h3::after {
+.dropdown-title-en h3::before {
   content: '⚫'; /* Unicode character for a downward arrow */
   font-size: 10px;
-  margin-left: 2px;
+  margin-right: 2px;
   transition:  0.3s ease-in-out;
 }
 
-.dropdown-title h3::before {
+.dropdown-title-en h3::after {
   content: '▼'; /* Unicode character for a downward arrow */
   font-size: 12px;
-  margin-right: 2px;
+  margin-left: 2px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -118,7 +119,7 @@
   font-size: 15px;
 }
 
-.dropdown-title:hover .dropdown-content {
+.dropdown-title-en:hover .dropdown-content {
   max-height: 100px; /* Adjust as needed */
   opacity: 1;
   
@@ -143,14 +144,14 @@
     align-items: center;
   }
 
-  .left-section-ab img,
-  .right-section-ab img {
+  .left-section-en img,
+  .right-section-en img {
   width: 70%;
   border-radius: 15px;
 }
 
-  .left-section-ab h1,
-  .right-section-ab h1{
+  .left-section-en h1,
+  .right-section-en h1{
     font-size: 25px;
   }
 
@@ -163,29 +164,29 @@
     font-size: 11px;
   }
 
-  .dropdown-title h3 {
+  .dropdown-title-en h3 {
     font-size: 13px;
   }
 
 
-  .left-section-ab h1,
-  .right-section-ab h1,
+  .left-section-en h1,
+  .right-section-en h1,
   .About-us-description {
     width: 100%;
     text-align: start;
   }
 
-  .left-section-ab,
-  .right-section-ab {
+  .left-section-en,
+  .right-section-en {
     width: 90%;
   }
   
-  .A-two .right-section-ab{
+  .A-two .right-section-en{
     order: 2;
     
   }
   
-  .A-two .left-section-ab{
+  .A-two .left-section-en{
     order: 1;
   }
 }

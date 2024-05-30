@@ -32,9 +32,9 @@ function Join_us_en() {
 
   return (
     <div className="Join-us" id="Join-us" lang="en">
-      <div className="Join-us-Header Page-Header">
+      <div className="Join-us-Header Page-Header-en">
         <NavBar currentPage="join-us" />
-        <h2 className="Page-Title">إنضم إلينا</h2>
+        <h2 className="Page-Title-en">إنضم إلينا</h2>
       </div>
 
       

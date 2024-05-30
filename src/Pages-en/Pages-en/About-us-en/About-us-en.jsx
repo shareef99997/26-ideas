@@ -4,8 +4,8 @@ import Footer from '../../Home-en/Footer-en/Footer-en';
 import Contact from '../../Home-en/Contact-en/Contact-en';
 import './About-us.css';
 import '../Pages.css';
-function About_us_en() {
 
+function About_us_en() {
   const leftSectionRef1 = useRef(null);
   const rightSectionRef1 = useRef(null);
   const leftSectionRef2 = useRef(null);
@@ -56,128 +56,124 @@ function About_us_en() {
 
   return (
     <div className="About-us" id="About-us" lang="en">
-      <div className="About-us-Header Page-Header">
+      <div className="About-us-Header Page-Header-en ">
         <NavBar currentPage="about-us"/>
-        <h3 className="Page-Title">  من نحن  </h3>
+        <h3 className="Page-Title-en">About Us</h3>
       </div>
 
-      <div className="About-us-Body Page-Body">
-
-        <div className="About-us-section" >
-          
-        <section className="About-us-content A-one">
-          <div className="left-section-en" ref={leftSectionRef1}>
-            <img src={require('../../../Assets/Images/project-management-about.jpg')} alt="About 1" />
-          </div>
-          <div className="right-section-en" ref={rightSectionRef1}>
-            <h1> 26 فكرة لتقنية المعلومات </h1>
-          <div className="About-us-description">
-            <div className="description-wrapper">
-              <p>             
-                نحن فريق متخصص في تقنية المعلومات، نقدم حلولًا مبتكرة تعزز الإنتاجية وتسهم في نمو الأعمال. <br />
-                نستخدم تقنيات الذكاء الاصطناعي المتقدمة لتحسين الأداء التجاري وأتمتة العمليات، مما يساعد في حل التحديات التقليدية وتعزيز النجاح المستدام.<br />
-                  خدماتنا تشمل معالجة المعلومات، إدارة قواعد البيانات، وتحليل البيانات لاستخراج تقارير تفصيلية تدعم اتخاذ القرارات الاستراتيجية. <br />كما نوفر حلول التجارة الإلكترونية 
-                لتقليل التكاليف وحماية البيانات و من التخصصات التي نهتم بها في مجال تقنية المعلومات والتكنولوجيا الحديثة الآتي
-                <span className="col">:</span>
-            </p>
+      <div className="About-us-Body Page-Body-en">
+        <div className="About-us-section">
+          <section className="About-us-content A-one">
+            <div className="left-section-en" ref={leftSectionRef1}>
+              <img src={require('../../../Assets/Images/project-management-about.jpg')} alt="About 1" />
             </div>
-              <div className="dropdown-title">
-                <h3 className="dropdown-title-h3"> تقنية المعلومات </h3>
-                <div className="dropdown-content">
-                  <p>  نعتمد علي أحدث تقنيات و الأدوات من عالم تقنية المعلومات والذكاء الاصطناعي لخدمتك و التي تساعدك في التطوير و أتمتة العمليات وتحسين أداء الشركات و المؤسسات لتوزيع  </p>
+            <div className="right-section-en" ref={rightSectionRef1}>
+              <h1>26 Ideas for Information Technology</h1>
+              <div className="About-us-description">
+                <div className="description-wrapper">
+                  <p>
+                    We are a team specialized in information technology, providing innovative solutions that enhance productivity and contribute to business growth. <br />
+                    We use advanced artificial intelligence techniques to improve business performance and automate processes, helping solve traditional challenges and promote sustainable success. <br />
+                    Our services include information processing, database management, and data analysis to extract detailed reports that support strategic decision-making. <br />
+                    We also provide e-commerce solutions to reduce costs and protect data. Our areas of expertise in the field of information technology and modern technology include:
+                  </p>
                 </div>
-              </div>
-              <div className="dropdown-title">
-                <h3 className="dropdown-title-h3"> التسويق </h3>
-                <div className="dropdown-content">
-                  <p>  يشمل استخدام الوسائط الرقمية للترويج لمنتجاتك أو خدماتك. يمكن أن يكون ذلك من خلال الإعلانات عبر الإنترنت، والتسويق عبر وسائل التواصل الاجتماعي، والتسويق عبر البريد الإلكتروني.  </p>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Information Technology</h3>
+                  <div className="dropdown-content">
+                    <p>We use the latest techniques and tools from the world of information technology and artificial intelligence to serve you, which help in developing and automating processes and improving the performance of companies and institutions.</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-        </section>
-
-        <section className="About-us-content A-two">
-          <div className="right-section-ab" ref={rightSectionRef2}>
-          <h1> تقنية المعلومات </h1>
-          <div className="About-us-description">
-            <p> تخصصنا في مجال تقنية المعلومات يلعب دورًا حيويًا في تطوير الأعمال وتحسين الإنتاجية و مواكبة التطور الحديث و تقنيات الذكاء الاصطناعي التي تساعد في سرعة تحقيق النجاح المستدام لأعمالك . <br /><br />
-            و نعتمد علي أحدث تقنيات و الأدوات من عالم تقنية المعلومات والذكاء الاصطناعي لخدمتك و التي تساعدك في التطوير و أتمتة العمليات وتحسين أداء الشركات و المؤسسات لتوزيع و رقابة مهام الأفراد والموظفين اليومية و تفاصيل العمليات اليومية للأعمال.<br /><br />
-              و تساعد هذه البرمجيات في خدمة وتطوير معظم المجالات المختلفة مثل ( الطب ، الإدارة ، المصارف ، والتعليم و الخدمات المنزلية..ألخ ) .  </p>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3">  منتجات التقنية مبتكرة </h3>
-              <div className="dropdown-content">
-                <p>  نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل و المهام اليومية , إضافة لذلك تطبيقات وبرمجيات مبتكرة لحل المشكلات المعقدة . </p>
-              </div>
-            </div>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3"> 	تطوير المواقع الإلكترونية وتطبيقات الجوال </h3>
-              <div className="dropdown-content">
-                <p> نقدم تصميمًا مبتكرًا وتطويرًا للمواقع الإلكترونية  و تطوير تطبيقات الهاتف المحمول (Android و iOS و Windows Phone). </p>
-              </div>
-            </div>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3"> 	حلول الذكاء الاصطناعي   </h3>
-              <div className="dropdown-content">
-                <p> نقدم تطبيقات مخصصة تستفيد من تقنيات الذكاء الاصطناعي مثل التعلم العميق وتحليل البيانات و تصميم وتطوير روبوتات ذكية للقطاعات المختلفة </p>
-              </div>
-            </div>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3"> 	الاستشارات   </h3>
-              <div className="dropdown-content">
-                <p>  نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجات و أدوات حديثة.</p>
-              </div>
-            </div>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3"> 	حلول الأمان والشبكات  </h3>
-              <div className="dropdown-content">
-                <p>  تأمين البيانات والشبكات ضد التهديدات الرقمية بمعدات وأجهزة حديثة ومتطورة . </p>
-              </div>
-            </div>
-            <div className="dropdown-title">
-              <h3 className="dropdown-title-h3"> 	الإستضافة و المخدمات   </h3>
-              <div className="dropdown-content">
-                <p>  توفير خدمات الاستضافة على خوادم عالية المواصفات وتقنيات حديثة. </p>
-              </div>
-            </div>
-          </div>
-          </div>
-
-          <div className="left-section-ab" ref={leftSectionRef2}>
-            <img src={require('../../../Assets/Images/development.jpg')} alt="About 2" />
-          </div>
-        
-        </section>
-
-        <section className="About-us-content A-three">
-          <div className="left-section-ab" ref={leftSectionRef3}>
-            <img src={require('../../../Assets/Images/phone.jpg')} alt="About 3" />
-          </div>
-          <div className="right-section-ab" ref={rightSectionRef3}>
-            <h1> التسويق </h1>
-            <div className="About-us-description">
-              <p>   يشمل استخدام الوسائط الرقمية للترويج لمنتجاتك أو خدماتك. يمكن أن يكون ذلك من خلال الإعلانات عبر الإنترنت، والتسويق عبر وسائل التواصل الاجتماعي، والتسويق عبر البريد الإلكتروني. تسويق حول نطاق واسع يمكنك الوصول إلى جمهور عالمي من خلال موقعك الإلكتروني. </p>
-              <div className="dropdown-title">
-                <h3 className="dropdown-title-h3"> التجارة الإلكترونية </h3>
-                <div className="dropdown-content">
-                  <p> تجهيز منصات إلكترونية لعمليات الشراء و البيع للمنتجات أو الخدمات عبر الإنترنت. تشمل جميع الأنشطة التجارية التي يمكن أن تتم عبر شبكة الويب ، مثل البيع بالجملة والتجزئة والمزادات. </p>
-                </div>
-              </div>
-              <div className="dropdown-title">
-                <h3 className="dropdown-title-h3"> 	التسويق الإلكتروني </h3>
-                <div className="dropdown-content">
-                  <p> يشمل استخدام الوسائط الرقمية للترويج لمنتجاتك أو خدماتك. يمكن أن يكون ذلك من خلال الإعلانات عبر الإنترنت، والتسويق عبر وسائل التواصل الاجتماعي، والتسويق عبر البريد الإلكتروني. </p>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Marketing</h3>
+                  <div className="dropdown-content">
+                    <p>Includes the use of digital media to promote your products or services. This can be through online advertising, social media marketing, and email marketing.</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        
-        </section>
+          </section>
+
+          <section className="About-us-content A-two">
+            <div className="right-section-en" ref={rightSectionRef2}>
+              <h1>Information Technology</h1>
+              <div className="About-us-description">
+                <p>
+                  Our specialization in information technology plays a vital role in business development and productivity improvement. By keeping up with modern development and artificial intelligence techniques, we help achieve sustainable success for your business quickly. <br /><br />
+                  We use the latest technologies and tools from the world of information technology and artificial intelligence to serve you, which help in development, process automation, and improving the performance of companies and institutions. These softwares serve and develop various fields such as (medicine, administration, banking, education, and home services, etc.). <br /><br />
+                </p>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Innovative Tech Products</h3>
+                  <div className="dropdown-content">
+                    <p>We offer smart devices that are compatible with AI software to serve daily tasks, in addition to innovative applications and software to solve complex problems.</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Website and Mobile App Development</h3>
+                  <div className="dropdown-content">
+                    <p>We offer innovative design and development of websites and mobile applications (Android, iOS, and Windows Phone).</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">AI Solutions</h3>
+                  <div className="dropdown-content">
+                    <p>We provide custom applications leveraging AI techniques like deep learning and data analysis, and design and develop smart robots for various sectors.</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Consulting</h3>
+                  <div className="dropdown-content">
+                    <p>We help companies and individuals achieve their technical goals with modern software and tools.</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Security and Networking Solutions</h3>
+                  <div className="dropdown-content">
+                    <p>Secure data and networks against digital threats with modern and advanced equipment.</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Hosting and Servers</h3>
+                  <div className="dropdown-content">
+                    <p>Provide hosting services on high-spec servers with modern technologies.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="left-section-en" ref={leftSectionRef2}>
+              <img src={require('../../../Assets/Images/development.jpg')} alt="About 2" />
+            </div>
+          </section>
+
+          <section className="About-us-content A-three">
+            <div className="left-section-en" ref={leftSectionRef3}>
+              <img src={require('../../../Assets/Images/phone.jpg')} alt="About 3" />
+            </div>
+            <div className="right-section-en" ref={rightSectionRef3}>
+              <h1>Marketing</h1>
+              <div className="About-us-description">
+                <p>
+                  Includes the use of digital media to promote your products or services. This can be through online advertising, social media marketing, and email marketing. Marketing across a wide range allows you to reach a global audience through your website.
+                </p>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">E-commerce</h3>
+                  <div className="dropdown-content">
+                    <p>Setting up electronic platforms for buying and selling products or services online. Includes all commercial activities that can take place on the web, such as wholesale, retail, and auctions.</p>
+                  </div>
+                </div>
+                <div className="dropdown-title-en">
+                  <h3 className="dropdown-title-en-h3">Digital Marketing</h3>
+                  <div className="dropdown-content">
+                    <p>Includes the use of digital media to promote your products or services. This can be through online advertising, social media marketing, and email marketing.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        
       </div>
-      
+
       <Contact />
       <Footer />
     </div>

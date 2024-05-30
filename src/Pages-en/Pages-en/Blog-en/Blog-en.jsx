@@ -58,9 +58,9 @@ function Blog_en() {
 
   return (
     <div className="Blog" id="Blog" lang="en">
-      <div className="Blog-Header Page-Header">
+      <div className="Blog-Header Page-Header-en">
         <NavBar currentPage={'blog'} />
-        <h2 className="Page-Title"> المدونة </h2>
+        <h2 className="Page-Title-en"> المدونة </h2>
       </div>
       
       {/* Page Body */}

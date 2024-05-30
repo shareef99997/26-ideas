@@ -37,9 +37,9 @@ function Contact_us_en() {
 
   return (
     <div className="Contact-us" id="Contact-us" lang="en">
-      <div className="Contact-us-Header Page-Header">
+      <div className="Contact-us-Header Page-Header-en">
         <NavBar currentPage="contact-us" />
-        <h2 className="Page-Title">تواصل معنا</h2>
+        <h2 className="Page-Title-en">تواصل معنا</h2>
       </div>
       
       {/* Page Body */}
