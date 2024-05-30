@@ -230,8 +230,9 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .Footer-Content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
   }
 
   .services-footer{
@@ -274,7 +275,7 @@
   }
 
   .links-footer-en{
-    order: 1;
+    order: 4;
   }
 
   .services-footer{
@@ -282,7 +283,7 @@
   }
 
   .news-section{
-    order: 4;
+    order: 1;
   }
 
   .Social-Media-Buttons a {

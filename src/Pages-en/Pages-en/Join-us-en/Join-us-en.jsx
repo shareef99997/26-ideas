@@ -34,24 +34,18 @@ function Join_us_en() {
     <div className="Join-us" id="Join-us" lang="en">
       <div className="Join-us-Header Page-Header-en">
         <NavBar currentPage="join-us" />
-        <h2 className="Page-Title-en">إنضم إلينا</h2>
+        <h2 className="Page-Title-en">Join Us</h2>
       </div>
 
-      
       {/* Page Body */}
       <div className='Join-us-body Page-Body'>
         <div className="Join-us-title Page-title-container">
-          <h1 className="Services-title">إنضم لفريق 26 فكرة</h1>
-          <p className="description"> اصبح فرد من العائلة الآن </p>
+          <h1 className="Services-title">Join 26 Ideas Team</h1>
+          <p className="description"> Become a member of the family now </p>
         </div>
-        <div className="flex-container">
-          {/* Image Container */}
-          <div className="image-container">
-            <img src={require("../../../Assets/Images/project-management.jpg")}  />
-          </div>
-          <form className="Join-us-form" onSubmit={handleSubmit}>
+        <div className="flex-container-en"><form className="Join-us-form" onSubmit={handleSubmit}>
             <div className="form-row">
-              <div className="form-group">
+              <div className="form-group-en">
                 <input 
                   type="text" 
                   id="firstName" 
@@ -61,9 +55,9 @@ function Join_us_en() {
                   required 
                   placeholder=" " 
                 />
-                <label htmlFor="firstName">الاسم الأول</label>
+                <label htmlFor="firstName">First Name</label>
               </div>
-              <div className="form-group">
+              <div className="form-group-en">
                 <input 
                   type="text" 
                   id="lastName" 
@@ -73,10 +67,10 @@ function Join_us_en() {
                   required 
                   placeholder=" " 
                 />
-                <label htmlFor="lastName">اسم العائلة</label>
+                <label htmlFor="lastName">Last Name</label>
               </div>
             </div>
-            <div className="form-group">
+            <div className="form-group-en">
               <input 
                 type="tel" 
                 id="phoneNumber" 
@@ -86,9 +80,9 @@ function Join_us_en() {
                 required 
                 placeholder=" " 
               />
-              <label htmlFor="phoneNumber">رقم الهاتف</label>
+              <label htmlFor="phoneNumber">Phone Number</label>
             </div>
-            <div className="form-group">
+            <div className="form-group-en">
               <select 
                 id="department" 
                 name="department" 
@@ -98,12 +92,12 @@ function Join_us_en() {
                 placeholder=" " 
               >
                 <option value="" disabled hidden></option>
-                <option value="marketing">قسم التسويق</option>
-                <option value="it">قسم تقنية المعلومات</option>
+                <option value="marketing">Marketing Department</option>
+                <option value="it">IT Department</option>
               </select>
-              <label htmlFor="department">القسم</label>
+              <label htmlFor="department">Department</label>
             </div>
-            <div className="form-group">
+            <div className="form-group-en">
               <input 
                 type="text" 
                 id="subject" 
@@ -113,9 +107,9 @@ function Join_us_en() {
                 required 
                 placeholder=" " 
               />
-              <label htmlFor="subject">الموضوع</label>
+              <label htmlFor="subject">Subject</label>
             </div>
-            <div className="form-group">
+            <div className="form-group-en">
               <textarea 
                 id="message" 
                 name="message" 
@@ -125,19 +119,24 @@ function Join_us_en() {
                 required 
                 placeholder=" " 
               ></textarea>
-              <label htmlFor="message">الرسالة</label>
+              <label htmlFor="message">Message</label>
             </div>
-            <div className="form-group">
+            <div className="form-group-en">
               <input 
                 type="file" 
                 id="attachment" 
                 name="attachment" 
                 onChange={handleChange} 
               />
-              <label htmlFor="attachment"> السيرة الذاتية (CV) </label>
+              <label htmlFor="attachment">CV Attachment</label>
             </div>
-            <button type="submit" className="submit-button">إرسال</button>
+            <button type="submit" className="submit-button">Submit</button>
           </form>
+          {/* Image Container */}
+          <div className="image-container">
+            <img src={require("../../../Assets/Images/project-management.jpg")} alt="Project Management" />
+          </div>
+          
         </div>
       </div>
       <Contact />
@@ -147,3 +146,4 @@ function Join_us_en() {
 }
 
 export default Join_us_en;
+

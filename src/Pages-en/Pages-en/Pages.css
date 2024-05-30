@@ -58,11 +58,11 @@
 }
 
 @media (max-width: 800px) {
-  .Page-Title {
+  .Page-Title-en {
     font-size: 1.5rem;
   }
-  .Page-Title::before,
-  .Page-Title::after {
+  .Page-Title-en::before,
+  .Page-Title-en::after {
     margin: 0 10px;
   }
 }

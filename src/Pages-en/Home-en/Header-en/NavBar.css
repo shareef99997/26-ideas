@@ -1,45 +1,72 @@
-.lang .lang-dropdown {
-  padding: 5px;
+#lang {
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-.Cont{
-  padding-right: 20px;
+#lang a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
 }
 
-.en::before{
+#lang .en::before{
   display: none;
 }
 
-.en::after{
+#lang .en::after{
   content: '▼'; /* Unicode character for a downward arrow */
   font-size: 12px;
   margin-left: 8px;
   transition: transform 0.3s ease-in-out;
 }
 
-@media (max-width: 920px) {
-  .burger-menu {
-    display: block;
-    cursor: pointer;
-    order: 3;
-    margin-left:20px;
-
-  }
-
-.logo {
-    order: 2;
-  }
-
-.lang {
-    order: 1;
-    
-  }
-
-  .cbl{
-    display: block;
-    font-size: 9px;
-  }
-  
+#lang:hover a::after {
+  transform: rotate(180deg); /* Rotate the arrow when hovered */
 }
 
+#lang .lang-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 100%;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+  border-radius: 0 0 10px  10px ;
+  padding: 5px;
+}
 
+#lang:hover .lang-dropdown {
+  max-height: 40px; /* Adjust based on the content */
+  visibility: visible;
+}
+
+#lang .lang-dropdown a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+#lang .lang-dropdown:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 920px) {
+  #lang {
+    margin-left: 0;
+  }
+  #burger-menu {
+
+    margin-left:20px;
+    margin-right:20px;
+
+  }
+}

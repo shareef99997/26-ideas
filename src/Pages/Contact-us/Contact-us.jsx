@@ -122,7 +122,7 @@ function Contact_us() {
                 required 
                 placeholder=" " 
               />
-              <label htmlFor="email">  البريد الإليكتروني   </label>
+              <label htmlFor="email">  البريد الإلكتروني   </label>
             </div>
             <div className="form-group">
               <input 

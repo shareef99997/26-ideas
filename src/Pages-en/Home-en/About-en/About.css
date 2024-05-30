@@ -109,59 +109,59 @@
   .About-content {
     gap: 110px;
   }
-  .left-section{
-    max-width: 380px;
+  .left-section-en{
+    max-width: 400px;
   }
 
-  .right-section{
+  .right-section-en{
     max-width: 550px;
   }
 
-  .right-section h2{
+  .right-section-en h2{
     font-size: 40px;
   }
-  .right-section p {
+  .right-section-en p {
     
   }
 }
 
 @media (max-width: 1100px) {
-  .left-section{
+  .left-section-en{
     max-width: 300px;
   }
-  .right-section h2{
+  .right-section-en h2{
     font-size: 36px;
   }
-  .right-section p {
+  .right-section-en p {
     font-size: 15px;
   }
 
-  .right-section button {
+  .right-section-en button {
     font-size: 12px;
 
   }
-  .right-section{
+  .right-section-en{
     max-width: 500px;
   }
 
 }
 
 @media (max-width: 920px) {
-  .left-section{
+  .left-section-en{
     max-width: 270px;
   }
-  .right-section h2{
+  .right-section-en h2{
     font-size: 30px;
   }
-  .right-section p {
+  .right-section-en p {
     font-size: 13px;
   }
 
-  .right-section button {
+  .right-section-en button {
     font-size: 12px;
   }
 
-  .right-section{
+  .right-section-en{
     max-width: 380px;
   }
 }
@@ -179,22 +179,22 @@
     max-width: 150px;
   }
 
-  .left-section{
-    max-width:250px ;
+  .left-section-en{
+    max-width:280px ;
     order: 1;
   }
 
-  .right-section{
+  .right-section-en{
     padding:  30px;
     order: 2;
   }
 
-  .right-section h2 {
+  .right-section-en h2 {
     font-size: 25px;
  
   }
 
-  .right-section p {
+  .right-section-en p {
     font-size: 10px;
     
   }
@@ -203,7 +203,7 @@
     justify-content: center;
   }
 
-  .right-section button {
+  .right-section-en button {
     font-size: 12px;
   }
 }
@@ -217,22 +217,23 @@
     gap: 0;
   }
 
-  .left-section{
-    max-width:250px ;
+  .left-section-en{
+    max-width:280px ;
     padding-top: 50px;
+    text-align: center;
   }
 
 
-  .right-section{
+  .right-section-en{
     padding: 20px;
   }
 
-  .right-section h2 {
+  .right-section-en h2 {
     font-size: 22px;
     
   }
 
-  .right-section p {
+  .right-section-en p {
     font-size:10px;
     
   }
@@ -241,7 +242,7 @@
     justify-content: center;
   }
 
-  .right-section button {
+  .right-section-en button {
     font-size: 12px;
   }
 }

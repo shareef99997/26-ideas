@@ -12,16 +12,16 @@ const BlogCard = ({ imageSrc, title, date, description }) => {
   };
 
   return (
-    <div className="Blog-Card">
+    <div className="Blog-Card-en">
       <img src={imageSrc} alt={title} className="Blog-Image" />
-      <div className="Blog-Content">
-        <h3 className="Blog-Title">{title}</h3>
-        <p className="Blog-Time">{date}</p>
-        <p className={`Blog-Description ${isExpanded ? 'expanded' : ''}`}>
+      <div className="Blog-Content-en">
+        <h3 className="Blog-Title-en">{title}</h3>
+        <p className="Blog-Time-en">{date}</p>
+        <p className={`Blog-Description-en ${isExpanded ? 'expanded' : ''}`}>
           {description}
         </p>
-        <button className="Read-More" onClick={toggleExpand}>
-          {isExpanded ? 'قراءة أقل' : 'قراءة المزيد'}
+        <button className="Read-More-en" onClick={toggleExpand}>
+          {isExpanded ? 'Read Less' : 'Read More'}
         </button>
       </div>
     </div>
@@ -32,27 +32,27 @@ function Blog_en() {
   const blogPosts = [
     {
       imageSrc: require('../../../Assets/Images/project-management-about.jpg'),
-      title: 'العنوان الأول',
+      title: 'First Title',
       date: 'May 28, 2024',
-      description: 'هذا وصف بسيط لموضوع المدونة. هنا يمكن أن يكون النص أطول بكثير لتمديد حجم البطاقة واستيعاب المحتوى الإضافي. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر. هذا وصف بسيط لموضوع المدونة. هنا يمكن أن يكون النص أطول بكثير لتمديد حجم البطاقة واستيعاب المحتوى الإضافي. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.هذا وصف بسيط لموضوع المدونة. هنا يمكن أن يكون النص أطول بكثير لتمديد حجم البطاقة واستيعاب المحتوى الإضافي. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.هذا وصف بسيط لموضوع المدونة. هنا يمكن أن يكون النص أطول بكثير لتمديد حجم البطاقة واستيعاب المحتوى الإضافي. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.',
+      description: 'This is a simple description of the blog topic. Here, the text can be much longer to extend the size of the card and accommodate additional content. This shows how to expand the content to include more text. This is a simple description of the blog topic. Here, the text can be much longer to extend the size of the card and accommodate additional content. This shows how to expand the content to include more text. This is a simple description of the blog topic. Here, the text can be much longer to extend the size of the card and accommodate additional content. This shows how to expand the content to include more text. This is a simple description of the blog topic. Here, the text can be much longer to extend the size of the card and accommodate additional content. This shows how to expand the content to include more text.',
     },
     {
       imageSrc: require('../../../Assets/Images/project-management-about.jpg'),
-      title: 'العنوان الثاني',
+      title: 'Second Title',
       date: 'May 29, 2024',
-      description: 'هذا وصف بسيط لموضوع المدونة. يمكن للنص أن يطول هنا أيضًا لجعل البطاقة تنمو مع المحتوى. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.',
+      description: 'This is a simple description of the blog topic. The text can also be extended here to make the card grow with the content. This shows how to expand the content to include more text.',
     },
     {
       imageSrc: require('../../../Assets/Images/project-management-about.jpg'),
-      title: 'العنوان الثالث',
+      title: 'Third Title',
       date: 'May 30, 2024',
-      description: 'هذا وصف بسيط لموضوع المدونة. هنا يمكن أن يكون النص أطول بكثير لتمديد حجم البطاقة واستيعاب المحتوى الإضافي. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.',
+      description: 'This is a simple description of the blog topic. Here, the text can be much longer to extend the size of the card and accommodate additional content. This shows how to expand the content to include more text.',
     },
     {
       imageSrc: require('../../../Assets/Images/project-management-about.jpg'),
-      title: 'العنوان الرابع',
+      title: 'Fourth Title',
       date: 'May 31, 2024',
-      description: 'هذا وصف بسيط لموضوع المدونة. يمكن للنص أن يطول هنا أيضًا لجعل البطاقة تنمو مع المحتوى. وهذا يوضح كيفية توسيع المحتوى ليشمل نصاً أكثر.',
+      description: 'This is a simple description of the blog topic. The text can also be extended here to make the card grow with the content. This shows how to expand the content to include more text.',
     },
   ];
 
@@ -60,12 +60,12 @@ function Blog_en() {
     <div className="Blog" id="Blog" lang="en">
       <div className="Blog-Header Page-Header-en">
         <NavBar currentPage={'blog'} />
-        <h2 className="Page-Title-en"> المدونة </h2>
+        <h2 className="Page-Title-en">Blog</h2>
       </div>
       
       {/* Page Body */}
-      <div className="Blog-Body">
-        <div className="Blog-Grid">
+      <div className="Blog-Body-en">
+        <div className="Blog-Grid-en">
           {blogPosts.map((post, index) => (
             <BlogCard
               key={index}

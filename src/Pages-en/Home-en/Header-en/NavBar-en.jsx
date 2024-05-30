@@ -60,7 +60,7 @@ function NavBar_en({ currentPage }) {
             <button className="Contact-btn">Request a Quote</button>
           </Link>
         </div>
-        <div className="lang">
+        <div className="lang" id='lang'>
         
           <a  className="en">
             English
@@ -74,7 +74,7 @@ function NavBar_en({ currentPage }) {
           </Link> 
           </div>
         </div>
-        <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} onClick={toggleMenu}>
+        <div className={`burger-menu ${menuOpen ? 'toggle' : ''} ${scrolled ? 'scrolled' : ''}`} id='burger-menu' onClick={toggleMenu}>
           <div></div>
           <div></div>
           <div></div>

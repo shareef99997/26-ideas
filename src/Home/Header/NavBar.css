@@ -314,7 +314,6 @@ nav.scrolled .Contact-btn {
   .burger-menu {
     display: block;
     cursor: pointer;
-    order: 2;
     
   }
   .lang a{
