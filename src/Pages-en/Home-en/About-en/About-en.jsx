@@ -55,7 +55,7 @@ function About_en() {
         </div>
         <div className="About-content">
 
-          <section className="left-section" ref={leftSectionRef}>
+          <section className="left-section-en" ref={leftSectionRef}>
             <div className="img-wrapper">
               <Swiper
                 spaceBetween={50}
@@ -79,12 +79,12 @@ function About_en() {
               </Swiper>
             </div>
           </section>
-          <section className="right-section" ref={rightSectionRef}>
-            <h2> هنا لنقدم لك أفضل الحلول للتقنية الحديثة </h2>
-            <p> نحن فريق متخصص في تقنية المعلومات نقدم حلولًا مبتكرة باستخدام الذكاء الاصطناعي لتحسين أداء الأعمال وزيادة الإنتاجية .<br/><br/> تشمل خدماتنا أتمتة العمليات، مراقبة المهام اليومية، وحلول التجارة الإلكترونية، ونعمل في مجالات مثل الطب، الإدارة، المصارف، والتعليم. نستخدم أنظمة متطورة لجمع وتحليل البيانات وإنتاج تقارير تدعم التطوير المستمر. </p>
+          <section className="right-section-en" ref={rightSectionRef}>
+            <h2> We are here to offer you the best modern technical solutions </h2>
+            <p> We are a specialized IT team offering innovative solutions using artificial intelligence to improve business performance and increase productivity. <br/><br/> Our services include process automation, daily task monitoring, and e-commerce solutions. We work in fields such as medicine, management, banking, and education. We use advanced systems to collect and analyze data and produce reports that support continuous development. </p>
             <div className="button-container">
               <a href="#Services">
-                <button alt='#Services'> تعرف علينا </button>
+                <button alt='#Services'> Learn About Us </button>
               </a>
             </div>
           </section>

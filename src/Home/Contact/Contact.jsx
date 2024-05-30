@@ -9,7 +9,7 @@ function Contact() {
           <h2 className="contact-heading"> لبدأ مشروعك الآن او للإستفسارات </h2>
           <Link className='link' to="/contact-us" >
             <button className="contact-button">
-              <i className="fas fa-phone"></i>  إتصل بنا
+              <i className="fas fa-phone" lang='en'></i>  إتصل بنا
             </button>
           </Link>
         </div>

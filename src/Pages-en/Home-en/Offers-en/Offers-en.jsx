@@ -6,7 +6,6 @@ import 'swiper/swiper-bundle.css';
 import { Autoplay, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 
-
 function Offers_en() {
   const servicesRef = useRef(null);
 
@@ -37,55 +36,53 @@ function Offers_en() {
       });
     };
   }, []);
+
   return (
-    <div className="Offers" id="Offers"   ref={servicesRef}>
+    <div className="Offers" id="Offers" ref={servicesRef}>
       {/* Title Section */}
-        <h2 className='Offers-Title fade-in-element hidden'>  عروضنا  </h2>
-        <p className="Offers-Description fade-in-element hidden">
-          اكتشف عروضنا
-        </p>
+      <h2 className='Offers-Title fade-in-element hidden'>Our Offers</h2>
+      <p className="Offers-Description fade-in-element hidden">
+        Discover our offers
+      </p>
       {/* Title Section */}
 
       {/* Slider Section */}
       <section className="Offers-Slider-section fade-in-element hidden">
-            <div className="img-wrapper">
-            <Link to="/contact-us">
+        <div className="img-wrapper">
+          <Link to="/en/contact-us">
             <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation
-                loop={true}
-                autoplay={{
-                  delay: 2500, // 3 seconds delay between slides
-                  disableOnInteraction: false,
-                }}
-                modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
-              >
-                <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 1" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')}alt="AI Illustration 2" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
-                </SwiperSlide>
-              </Swiper>
-            </Link>
-              
-            </div>
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              loop={true}
+              autoplay={{
+                delay: 2500, // 2.5 seconds delay between slides
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, Navigation, Pagination, Scrollbar]} // Include required modules
+            >
+              <SwiperSlide>
+                <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 1" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 2" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 3" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className='Offers-pic' src={require('../../../Assets/Images/project-management.jpg')} alt="AI Illustration 4" />
+              </SwiperSlide>
+            </Swiper>
+          </Link>
+        </div>
       </section>
       {/* Slider Section */}
 
-      
-
       <div className="Button-Container fade-in-element hidden">
-        <Link className='link' to="/en/contact-us" >
-            <button className="Learn-More-Button"> اطلب خدمتك الآن </button>
-          </Link>
+        <Link className='link' to="/en/contact-us">
+          <button className="Learn-More-Button">Request Your Service Now</button>
+        </Link>
       </div>
     </div>
   );

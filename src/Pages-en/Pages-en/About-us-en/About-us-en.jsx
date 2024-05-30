@@ -66,10 +66,10 @@ function About_us_en() {
         <div className="About-us-section" >
           
         <section className="About-us-content A-one">
-          <div className="left-section-ab" ref={leftSectionRef1}>
+          <div className="left-section-en" ref={leftSectionRef1}>
             <img src={require('../../../Assets/Images/project-management-about.jpg')} alt="About 1" />
           </div>
-          <div className="right-section-ab" ref={rightSectionRef1}>
+          <div className="right-section-en" ref={rightSectionRef1}>
             <h1> 26 فكرة لتقنية المعلومات </h1>
           <div className="About-us-description">
             <div className="description-wrapper">

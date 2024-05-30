@@ -17,13 +17,13 @@
   gap: 50px;
 }
 
-.left-section-ab,
-.right-section-ab {
+.left-section-en,
+.right-section-en {
   width: 45%;
 }
 
-.left-section-ab img,
-.right-section-ab img {
+.left-section-en img,
+.right-section-en img {
   width: 100%;
   border-radius: 15px;
   /* max-height: 80%; */
@@ -35,27 +35,27 @@
   max-height: 80%;
 }
 
-.right-section-ab h1,
-.right-section-ab p,
-.left-section-ab h1,
-.left-section-ab p {
-  text-align: right;
+.right-section-en h1,
+.right-section-en p,
+.left-section-en h1,
+.left-section-en p {
+  text-align: left;
 }
 
 
-.right-section-ab p {
+.right-section-en p {
   color: #000000ba;
   font-size: 15px;
 }
 
-.right-section-ab h1{
+.right-section-en h1{
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.right-section-ab p ,
-.right-section-ab h1{
-  text-align: right;
+.right-section-en p ,
+.right-section-en h1{
+  text-align: left;
 
 }
 
@@ -91,14 +91,14 @@
   font-size: 15px;
 }
 
-.dropdown-title h3::before {
+.dropdown-title h3::after {
   content: '⚫'; /* Unicode character for a downward arrow */
   font-size: 10px;
   margin-left: 2px;
   transition:  0.3s ease-in-out;
 }
 
-.dropdown-title h3::after {
+.dropdown-title h3::before {
   content: '▼'; /* Unicode character for a downward arrow */
   font-size: 12px;
   margin-right: 2px;

@@ -31,27 +31,27 @@
   gap: 100px;
 }
 
-.left-section,
-.right-section {
+.left-section-en,
+.right-section-en {
   z-index: 1;
 }
 
-.right-section{
+.right-section-en{
   max-width: 700px;
 }
 
-.right-section h2 ,
-.right-section p {
-  text-align: right;
+.right-section-en h2 ,
+.right-section-en p {
+  text-align: left;
 }
 
-.right-section h2 {
+.right-section-en h2 {
   font-size: 35px;
   color: var(--main-color);
 }
 
 
-.right-section p{
+.right-section-en p{
   color: #000000ba;
   font-size: 16px;
   max-width: 600px;
@@ -63,13 +63,13 @@
   margin-top:50px;
 }
 
-.right-section button {
+.right-section-en button {
   color: white;
   padding: 10px 30px;
 }
 
 
-.left-section{
+.left-section-en{
   max-width: 450px;
   
 }

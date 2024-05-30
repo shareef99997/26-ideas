@@ -31,16 +31,16 @@
   z-index: 1;
 }
 
-.Footer-Section {
+.Footer-Section-en {
   flex: 1 1 200px;
   margin: 10px;
   display: flex;
   flex-direction: column;
-  text-align: right; /* Align text to the right */
+  text-align: left; 
   
 }
 
-.services-footer{
+.services-footer-en{
   margin-left: 20px;
 }
 
@@ -60,7 +60,7 @@
 }
 
 
-.Footer-Section h2 {
+.Footer-Section-en h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   font-weight: 500;
@@ -68,59 +68,48 @@
   overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
 }
 
-.Footer-Section p,
-.Footer-Section ul {
+.Footer-Section-en p,
+.Footer-Section-en ul {
   margin: 0;
   font-size: 1em;
 }
 
-.Footer-Section ul {
+.Footer-Section-en ul {
   list-style: none;
   padding: 0;
 }
 
 
-/* Update the pseudo-element styles */
-.news-section::after,
-.services-footer::after,
-.links-footer::after {
+.news-footer-en ul li a::after ,
+.services-footer-en ul li .link::after ,
+.links-footer-en ul li .link::after {
   content: '←'; /* Unicode left arrow character */
   margin-right: 5px; /* Space between arrow and text */
-  transition: margin-right 0.3s ease;
+  transition: 0.3s ease;
   font-size: 18px;
 }
 
-
-.news-footer ul li a::after ,
-.services-footer ul li .link::after ,
-.links-footer ul li .link::after {
-  content: '←'; /* Unicode left arrow character */
-  margin-right: 5px; /* Space between arrow and text */
-  transition: margin-right 0.3s ease;
-  font-size: 18px;
+.news-footer-en ul li a:hover::after,
+.services-footer-en ul li a:hover::after,
+.links-footer-en ul li a:hover::after {
+  margin-left: 15px; /* Move the arrow slightly on hover */
 }
 
-.news-footer ul li a:hover::after,
-.services-footer ul li a:hover::after,
-.links-footer ul li a:hover::after {
-  margin-right: 15px; /* Move the arrow slightly on hover */
-}
-
-.about-footer ul li {
+.about-footer-en ul li {
   position: relative;
-  padding-right: 30px; /* Adjust the padding to make space for the icon */
+  padding-left: 30px; /* Adjust the padding to make space for the icon */
   margin-bottom: 5px;
   color: rgba(255, 255, 255, 0.634);
 }
 
-.about-footer{
-  margin-left: 55px;
+.about-footer-en{
+  
 }
 
-.about-footer ul li::after {
+.about-footer-en ul li::before {
   content: '';
   position: absolute;
-  right: 0;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   font-family: 'Font Awesome 5 Free';
@@ -128,30 +117,30 @@
   color: var(--main-color);
 }
 
-.Footer-Section ul li.email::after {
+.Footer-Section-en ul li.email::before {
   content: '\f0e0'; /* Font Awesome envelope icon */
 }
 
-.Footer-Section ul li.phone::after {
+.Footer-Section-en ul li.phone::before {
   content: '\f095'; /* Font Awesome phone icon */
 }
 
-.Footer-Section ul li.location::after {
+.Footer-Section-en ul li.location::before {
   content: '\f3c5'; /* Font Awesome map-marker-alt icon */
 }
 
-.Footer-Section ul li.question::after {
+.Footer-Section-en ul li.question::before {
   content: '\f128'; /* Font Awesome map-marker-alt icon */
 }
 
 
-.Footer-Section ul li a {
+.Footer-Section-en ul li a {
   color: rgba(255, 255, 255, 0.634);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.Footer-Section ul li a:hover {
+.Footer-Section-en ul li a:hover {
   color: #00bcd4;
 }
 
@@ -159,7 +148,7 @@
   margin-bottom: 20px;
 }
 
-.Footer-Section .newsletter-input {
+.Footer-Section-en .newsletter-input {
   display: flex;
   align-items: center;
   position: relative;
@@ -167,7 +156,7 @@
   max-width: 300px; /* Adjust width as needed */
 }
 
-.Footer-Section .newsletter-input input {
+.Footer-Section-en .newsletter-input input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -175,10 +164,10 @@
   outline: none;
 }
 
-.Footer-Section .newsletter-input button {
+.Footer-Section-en .newsletter-input button {
   color: white;
   border: none;
-  padding: 9px 22px;
+  padding: 4px 22px;
   border-radius: 4px 0 0 4px;
   cursor: pointer;
   position: absolute;
@@ -261,7 +250,7 @@
     align-items: center;
   }
 
-  .links-footer{
+  .links-footer-en{
     align-items: center;
   }
 
@@ -284,7 +273,7 @@
     order: 3;
   }
 
-  .links-footer{
+  .links-footer-en{
     order: 1;
   }
 

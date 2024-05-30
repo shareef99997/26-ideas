@@ -34,12 +34,12 @@ function Services_en() {
   }, []);
 
   return (
-    <div className="Services" id="Services" ref={servicesRef} >
+    <div className="Services" id="Services" ref={servicesRef}>
       <div className='title-wrapper'>
-        <h2 className='Services-Title fade-in-element hidden'>خدماتنا</h2>
+        <h2 className='Services-Title fade-in-element hidden'>Our Services</h2>
       </div>
       <p className="Services-Description fade-in-element hidden">
-        الخدمات التي نقدمها مصممة خصيصًا لتلبية احتياجاتك
+        The services we offer are specially designed to meet your needs.
       </p>
 
       <div className="Services-Grid fade-in-element hidden">
@@ -48,8 +48,8 @@ function Services_en() {
             <i className="fas fa-robot Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>حلول الذكاء الاصطناعي</h3>
-            <p>نقدم تطبيقات مخصصة تستفيد من تقنيات الذكاء الاصطناعي مثل التعلم العميق وتحليل البيانات وتصميم وتطوير روبوتات ذكية للقطاعات المختلفة</p>
+            <h3>AI Solutions</h3>
+            <p>We offer custom applications utilizing AI technologies such as deep learning and data analysis, and we design and develop intelligent robots for various sectors.</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
@@ -57,8 +57,8 @@ function Services_en() {
             <i className="fas fa-laptop-code Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>تطوير المواقع الإلكترونية</h3>
-            <p>نقدم تصميمًا مبتكرًا وتطويرًا للمواقع الإلكترونية وتطوير تطبيقات الهاتف المحمول</p>
+            <h3>Web Development</h3>
+            <p>We provide innovative web design and development, as well as mobile application development.</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
@@ -66,8 +66,8 @@ function Services_en() {
             <i className="fas fa-mobile-alt Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>تطوير تطبيقات الجوال</h3>
-            <p>نقدم تصميمًا مبتكرًا لتطوير تطبيقات الهاتف المحمول</p>
+            <h3>Mobile App Development</h3>
+            <p>We offer innovative design for mobile application development.</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
@@ -75,8 +75,8 @@ function Services_en() {
             <i className="fas fa-bullhorn Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>التسويق الإلكتروني</h3>
-            <p>ترويج لمنتجاتك أو خدماتك عبر وسائل التواصل الاجتماعي, الإعلانات عبر الإنترنت والتسويق عبر البريد الإلكتروني</p>
+            <h3>Digital Marketing</h3>
+            <p>Promote your products or services through social media, online advertising, and email marketing.</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
@@ -84,8 +84,8 @@ function Services_en() {
             <i className="fas fa-lightbulb Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>منتجات تقنية مبتكرة</h3>
-            <p>نقدم أجهزة ذكية تتوافق مع برمجيات الذكاء الاصطناعي لخدمة العمل والمهام اليومية.</p>
+            <h3>Innovative Tech Products</h3>
+            <p>We offer smart devices that integrate with AI software to assist with work and daily tasks.</p>
           </div>
         </div>
         <div className="Service-Box fade-in-element hidden">
@@ -93,16 +93,16 @@ function Services_en() {
             <i className="fas fa-handshake Service-Icon"></i>
           </div>
           <div className="Service-Lower">
-            <h3>الاستشارات</h3>
-            <p>نساعد الشركات والأفراد على تحقيق أهدافهم التقنية ببرمجيات وأدوات حديثة</p>
+            <h3>Consulting</h3>
+            <p>We help businesses and individuals achieve their tech goals with modern software and tools.</p>
           </div>
         </div>
       </div>
 
       <div className="Button-Container fade-in-element hidden">
-        <Link className='link' to="/en/Services" >
-            <button className="Learn-More-Button">تعرف على خدماتنا</button>
-          </Link>
+        <Link className='link' to="/en/Services">
+          <button className="Learn-More-Button">Learn About Our Services</button>
+        </Link>
       </div>
     </div>
   );

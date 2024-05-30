@@ -1,4 +1,4 @@
-.Contact {
+.Contact-en {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,15 +6,16 @@
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   overflow-x: hidden; /* Prevent horizontal overflow */
   background: var(--background-color);
+  
 }
 
-.Contact-Body {
+.Contact-en.Contact-Body {
   width: 100%;
   text-align: center;
 }
 
 
-.content-wrapper {
+.Contact-en.content-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +28,7 @@
   position: relative; /* Position relative for the pseudo-element */
 }
 
-.content-wrapper::before {
+.Contact-en.content-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -38,12 +39,12 @@
   z-index: 1; /* Ensure the overlay is on top of the background image */
 }
 
-.contact-button, .contact-heading {
+.Contact-en.contact-button, .contact-heading {
   position: relative; /* Ensure these elements are above the overlay */
   z-index: 2;
 }
 
-.contact-button {
+.Contact-en.contact-button {
   background: white;
   color: var(--main-color);
   border: none;
@@ -51,24 +52,25 @@
   padding: 10px 50px;
 }
 
-.contact-heading {
+.Contact-en.contact-heading {
   color: #fff;
   font-size: 38px;
   word-spacing: 2px;
   font-weight: 400;
 }
 
-.fa-phone{
+.Contact-en .fa-phone{
   padding-right: 5px;
   color:rgb(89, 89, 89) ;
   font-size: 15px;
+  font-family: 'Font Awesome 5 Free';
 }
 
 @media (max-width: 1097px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 30px; 
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 18px;
 
   }
@@ -76,13 +78,13 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 937px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 32px; 
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 15px;
   }
-  .content-wrapper {
+  .Contact-en.content-wrapper {
     padding: 20px 100px;
   }
   
@@ -90,64 +92,64 @@
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 25px; 
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 13px;
 
   }
-  .content-wrapper {
+  .Contact-en.content-wrapper {
     padding: 20px 70px;
   }
 }
 
 @media (max-width: 618px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 20px; 
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 10px;
     padding: 10px 30px;
   }
-  .fa-phone{
+  .Contact-en.fa-phone{
     font-size: 8px;
   }
-  .content-wrapper {
+  .Contact-en.content-wrapper {
     padding: 20px 50px;
   }
 }
 
 @media (max-width: 450px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 18px; 
     margin-left: 10px;
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 10px;
     padding: 5px 20px;
   }
-  .fa-phone{
+  .Contact-en.fa-phone{
     font-size: 8px;
   }
-  .content-wrapper {
+  .Contact-en.content-wrapper {
     padding: 20px 20px;
   }
 }
 
 @media (max-width: 354px) {
-  .contact-heading {
+  .Contact-en.contact-heading {
     font-size: 15px; 
     margin-left: 10px;
   }
-  .contact-button {
+  .Contact-en.contact-button {
     font-size: 8px;
     padding: 5px 20px;
   }
-  .fa-phone{
+  .Contact-en.fa-phone{
     font-size: 6px;
   }
-  .content-wrapper {
+  .Contact-en.content-wrapper {
     padding: 20px 25px;
   }
 }
