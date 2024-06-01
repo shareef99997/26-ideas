@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shareef99997/26-ideas/static/css/main.b7c8aab9.css",
-    "main.js": "/shareef99997/26-ideas/static/js/main.514353c0.js",
+    "main.css": "/shareef99997/26-ideas/static/css/main.68710226.css",
+    "main.js": "/shareef99997/26-ideas/static/js/main.99c1aec6.js",
     "static/media/IT-Background (online-video-cutter.com).mp4": "/shareef99997/26-ideas/static/media/IT-Background (online-video-cutter.com).01d3e2921d38c6e8bca0.mp4",
     "static/media/commerce.jpg": "/shareef99997/26-ideas/static/media/commerce.61adfd619c08a6feb849.jpg",
     "static/media/development.jpg": "/shareef99997/26-ideas/static/media/development.3b15f59835bdecadaac6.jpg",
@@ -30,11 +30,11 @@
     "static/media/fa-v4compatibility.ttf": "/shareef99997/26-ideas/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/shareef99997/26-ideas/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/shareef99997/26-ideas/index.html",
-    "main.b7c8aab9.css.map": "/shareef99997/26-ideas/static/css/main.b7c8aab9.css.map",
-    "main.514353c0.js.map": "/shareef99997/26-ideas/static/js/main.514353c0.js.map"
+    "main.68710226.css.map": "/shareef99997/26-ideas/static/css/main.68710226.css.map",
+    "main.99c1aec6.js.map": "/shareef99997/26-ideas/static/js/main.99c1aec6.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7c8aab9.css",
-    "static/js/main.514353c0.js"
+    "static/css/main.68710226.css",
+    "static/js/main.99c1aec6.js"
   ]
 }
