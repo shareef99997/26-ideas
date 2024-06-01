@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3b450de7.css",
-    "main.js": "/static/js/main.8361ad99.js",
+    "main.js": "/static/js/main.eb61a33a.js",
     "static/media/IT-Background (online-video-cutter.com).mp4": "/static/media/IT-Background (online-video-cutter.com).01d3e2921d38c6e8bca0.mp4",
     "static/media/commerce.jpg": "/static/media/commerce.61adfd619c08a6feb849.jpg",
     "static/media/development.jpg": "/static/media/development.3b15f59835bdecadaac6.jpg",
@@ -31,10 +31,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/index.html",
     "main.3b450de7.css.map": "/static/css/main.3b450de7.css.map",
-    "main.8361ad99.js.map": "/static/js/main.8361ad99.js.map"
+    "main.eb61a33a.js.map": "/static/js/main.eb61a33a.js.map"
   },
   "entrypoints": [
     "static/css/main.3b450de7.css",
-    "static/js/main.8361ad99.js"
+    "static/js/main.eb61a33a.js"
   ]
 }
