@@ -42,7 +42,7 @@ function NavBar({ currentPage }) {
             <Link to="/services" >خدماتنا</Link>
           </li>
           <li className={`${currentPage === 'store' ? 'active' : ''}`}>
-            <a href="" target="_blank" >متجرنا</a>
+            <a href="http://www.nextech-sa.com" target="_blank" >متجرنا</a>
           </li>
           <li className={`${currentPage === 'join-us' ? 'active' : ''}`}>
             <Link to="/join-us" >انضم الينا</Link>

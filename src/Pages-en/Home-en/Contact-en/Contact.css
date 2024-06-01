@@ -106,7 +106,7 @@
 
 @media (max-width: 618px) {
   .Contact-en.contact-heading {
-    font-size: 20px; 
+    font-size: 18px; 
   }
   .Contact-en.contact-button {
     font-size: 10px;
@@ -121,18 +121,19 @@
 }
 
 @media (max-width: 450px) {
-  .Contact-en.contact-heading {
-    font-size: 18px; 
-    margin-left: 10px;
+
+  .Contact-en .contact-heading {
+    font-size: 14px; 
+    margin-left: 0px;
   }
-  .Contact-en.contact-button {
-    font-size: 10px;
-    padding: 5px 20px;
+  .Contact-en .contact-button {
+    font-size: 9px;
+    padding: 7px 20px;
   }
-  .Contact-en.fa-phone{
+  .Contact-en .fa-phone{
     font-size: 8px;
   }
-  .Contact-en.content-wrapper {
+  .Contact-en .content-wrapper {
     padding: 20px 20px;
   }
 }

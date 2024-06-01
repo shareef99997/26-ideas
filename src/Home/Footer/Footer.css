@@ -254,7 +254,7 @@
   }
 
   .about-footer li{
-   text-align: start;
+   align-items: center;
   }
 
   .services-footer{
@@ -281,19 +281,19 @@
   }
 
   .about-footer{
-    order: 3;
-  }
-
-  .links-footer{
-    order: 1;
-  }
-
-  .services-footer{
     order: 2;
   }
 
-  .news-section{
+  .links-footer{
     order: 4;
+  }
+
+  .services-footer{
+    order: 3;
+  }
+
+  .news-section{
+    order: 1;
   }
 
   .Social-Media-Buttons a {

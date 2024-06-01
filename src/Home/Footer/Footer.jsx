@@ -32,7 +32,7 @@ function Footer() {
               <li><Link className='link' to="/" >الرئيسية</Link> </li>
               <li> <Link className='link' to="/about-us" >من نحن</Link></li>
               <li> <Link className='link' to="/services" >خدماتنا</Link> </li>
-              <li><a href="" target="_blank" rel="noopener noreferrer" className='link' >متجرنا</a></li>
+              <li><a href="http://www.nextech-sa.com" target="_blank" rel="noopener noreferrer" className='link' >متجرنا</a></li>
               <li> <Link className='link' to="/join-us" >انضم الينا</Link> </li>
               <li> <Link className='link' to="/blog" >المدونة</Link> </li>
               <li> <Link className='link' to="/contact-us" > تواصل معنا </Link> </li>

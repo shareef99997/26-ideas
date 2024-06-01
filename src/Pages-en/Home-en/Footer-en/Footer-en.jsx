@@ -2,11 +2,11 @@ import './Footer.css';
 import React from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faPhone, faMapMarkerAlt, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
-import { faInstagram, faFacebookF, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebookF, faLinkedinIn, faXTwitter,faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
-library.add(faEnvelope, faPhone, faMapMarkerAlt, faQuestionCircle, faInstagram, faFacebookF, faLinkedinIn, faXTwitter);
+library.add(faEnvelope, faPhone, faMapMarkerAlt, faQuestionCircle, faInstagram, faFacebookF, faLinkedinIn, faXTwitter,faTiktok);
 
 function Footer_en() {
   return (
@@ -32,7 +32,7 @@ function Footer_en() {
               <li><Link className='link' to="/en/">Home</Link></li>
               <li><Link className='link' to="/en/about-us">About Us</Link></li>
               <li><Link className='link' to="/en/services">Our Services</Link></li>
-              <li><a href="#" target="_blank" rel="noopener noreferrer" className='link'>Our Store</a></li>
+              <li><a href="http://www.nextech-sa.com" target="_blank" rel="noopener noreferrer" className='link'>Our Store</a></li>
               <li><Link className='link' to="/en/join-us">Join Us</Link></li>
               <li><Link className='link' to="/en/blog">Blog</Link></li>
               <li><Link className='link' to="/en/contact-us">Contact Us</Link></li>
@@ -47,7 +47,7 @@ function Footer_en() {
                 <li><Link className='link' to="/en/services">Marketing</Link></li>
                 <li><Link className='link' to="/en/services">Consulting</Link></li>
                 <li><Link className='link' to="/en/services">AI Solutions</Link></li>
-                <li><Link className='link' to="/en/services">...More</Link></li>
+                <li><Link className='link' to="/en/services">More...</Link></li>
               </ul>
             </div>
           </div>
@@ -70,6 +70,7 @@ function Footer_en() {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookF} /></a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedinIn} /></a>
             <a href="https://X.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faXTwitter} /></a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTiktok} /></a>
           </div>
         </div>
       </div>

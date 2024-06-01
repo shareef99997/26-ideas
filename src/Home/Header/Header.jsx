@@ -19,8 +19,9 @@ function Header() {
         <div className="home-content">
           <h1><ReactTyped
             strings={['خطوتك الأولى نحو مستقبلك الرقمي']}
-            typeSpeed={30}
+            typeSpeed={10}
             onComplete={() => setShowDescription(true)}
+            startDelay={100}
           /></h1>
           <p>
           {showDescription && (
@@ -29,8 +30,8 @@ function Header() {
               strings={[
                 'نحن هنا لنقدم لك أفضل الحلول التقنية الحديثة. سواء كنت تبحث عن تطوير البرمجيات، التجارة الإلكترونية أو استشارات تقنية فإننا هنا لخدمتك',
               ]}
-              typeSpeed={10}
-              startDelay={500} // Small delay before starting the paragraph typing
+              typeSpeed={5}
+              startDelay={400} // Small delay before starting the paragraph typing
               />
             
             

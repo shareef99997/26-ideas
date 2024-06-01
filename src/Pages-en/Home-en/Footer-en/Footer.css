@@ -83,8 +83,8 @@
 .news-footer-en ul li a::after ,
 .services-footer-en ul li .link::after ,
 .links-footer-en ul li .link::after {
-  content: '←'; /* Unicode left arrow character */
-  margin-right: 5px; /* Space between arrow and text */
+  content: '>'; /* Unicode left arrow character */
+  margin-left: 5px; /* Space between arrow and text */
   transition: 0.3s ease;
   font-size: 18px;
 }
@@ -144,7 +144,7 @@
   color: #00bcd4;
 }
 
-.news-section h2{
+.news-section-en h2{
   margin-bottom: 20px;
 }
 
@@ -160,19 +160,19 @@
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   outline: none;
 }
 
 .Footer-Section-en .newsletter-input button {
   color: white;
   border: none;
-  padding: 4px 22px;
-  border-radius: 4px 0 0 4px;
+  padding: 9.3px 22px;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
 }
 
 
@@ -210,15 +210,15 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   margin-right: 10px;
   background-color: var(--main-color); 
   color: #f6f6f6; 
   text-decoration: none;
   transition: 0.3s ease, color 0.01s ease;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .Social-Media-Buttons a:hover {
@@ -235,19 +235,19 @@
     text-align: center;
   }
 
-  .services-footer{
+  .services-footer-en{
     margin: 0;
   }
 
-  .about-footer{
+  .about-footer-en{
     margin-left: 10px;
   }
 
-  .about-footer li{
-   text-align: start;
+  .about-footer-en li{
+   align-self: center;
   }
 
-  .services-footer{
+  .services-footer-en{
     align-items: center;
   }
 
@@ -260,7 +260,7 @@
     align-self: center;
   }
 
-  .Footer-Section {
+  .Footer-Section-en {
     text-align: center;
   }
 
@@ -270,19 +270,19 @@
     text-align: center;
   }
 
-  .about-footer{
-    order: 3;
+  .about-footer-en{
+    order: 2;
   }
 
   .links-footer-en{
     order: 4;
   }
 
-  .services-footer{
-    order: 2;
+  .services-footer-en{
+    order: 3;
   }
 
-  .news-section{
+  .news-section-en{
     order: 1;
   }
 

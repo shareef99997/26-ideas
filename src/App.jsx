@@ -19,8 +19,8 @@ import ScrollToTop from './Pages/ScrollToTop.jsx';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-
   const [scrolled, setScrolled] = useState(false);
+  const [animateWhatsApp, setAnimateWhatsApp] = useState(false);
 
   const scrollToHeader = () => {
     const header = document.getElementById('Header');
@@ -41,15 +41,24 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const animateTimer = setTimeout(() => {
+      setAnimateWhatsApp(true);
+      const revertTimer = setTimeout(() => {
+        setAnimateWhatsApp(false);
+      }, 2000); // Revert after 2 seconds
+      return () => clearTimeout(revertTimer);
+    }, 5000); // Animate after 3 seconds
 
+    return () => clearTimeout(animateTimer);
+  }, []);
 
   return (
     <Router>
       <ScrollToTop /> {/* Ensure this component is placed inside the Router */}
       <div className="Home">
         <Routes>
-
-           {/* Arabic pages */}
+          {/* Arabic pages */}
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
@@ -57,10 +66,7 @@ function App() {
           <Route path="/join-us" element={<JoinUs />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact-us" element={<ContactUs />} />
-           {/* Arabic pages */}
-           
-           
-
+          {/* Arabic pages */}
           {/* English pages */}
           <Route path="/en/" element={<Home_en />} />
           <Route path="/en/about-us" element={<AboutUs_en />} />
@@ -71,10 +77,9 @@ function App() {
           <Route path="/en/contact-us" element={<ContactUs_en />} />
           {/* English pages */}
         </Routes>
-
         
         <a className="whatsappa" href="https://api.whatsapp.com/send?phone=966566664530" target="_blank" rel="noopener noreferrer">
-          <nav className="whatsapp-button">
+          <nav className={`whatsapp-button ${animateWhatsApp ? 'animate' : ''}`}>
             <div>
               <img src={require('./Assets/Icons/whatsapp.png')} alt="WhatsApp" />
             </div>
@@ -86,7 +91,6 @@ function App() {
             <img src={require('./Assets/Icons/up-arrow.png')} alt="Up Arrow" />
           </div>
         </a>
-        
       </div>
     </Router>
   );

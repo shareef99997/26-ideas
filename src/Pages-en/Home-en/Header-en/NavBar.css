@@ -59,6 +59,11 @@
   opacity: 0.5;
 }
 
+nav.scrolled #lang a,
+nav.scrolled .nav-menu li a{
+  color: var(--main-color); /* Color when scrolled */
+}
+
 @media (max-width: 920px) {
   #lang {
     margin-left: 0;
