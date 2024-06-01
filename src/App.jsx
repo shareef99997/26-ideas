@@ -54,7 +54,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename='/'>
       <ScrollToTop /> {/* Ensure this component is placed inside the Router */}
       <div className="Home">
         <Routes>
