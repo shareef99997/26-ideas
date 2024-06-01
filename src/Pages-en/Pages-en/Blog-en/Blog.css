@@ -1,3 +1,17 @@
+.Blog-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../../Assets/Pages-images/blog.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
 .Blog-Body-en {
   padding: 30px 250px;
   /* direction: rtl; */

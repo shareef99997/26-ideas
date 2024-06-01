@@ -64,6 +64,12 @@ nav.scrolled .nav-menu li a{
   color: var(--main-color); /* Color when scrolled */
 }
 
+.Contact-btn{
+  background-color: white;
+  color: white;
+  padding: 12px 20px;
+}
+
 @media (max-width: 920px) {
   #lang {
     margin-left: 0;

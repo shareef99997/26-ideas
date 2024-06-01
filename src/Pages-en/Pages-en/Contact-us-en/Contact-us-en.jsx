@@ -47,7 +47,7 @@ function Contact_us_en() {
           <p className="description">Request a quote or for consultations and inquiries</p>
         </div>
 
-        <div className="flex-container">
+        <div className="flex-container-con-en">
           
           <form className="Contact-us-form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -104,7 +104,7 @@ function Contact_us_en() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                rows="8"
+                rows="2"
                 required
                 placeholder=" "
               ></textarea>

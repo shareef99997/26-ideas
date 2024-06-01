@@ -49,7 +49,7 @@ function Contact_us() {
           <p className="description">اطلب عرض السعر أو للإستشارات والإستفسارات</p>
         </div>
 
-        <div className="flex-container">
+        <div className="flex-container-con">
 
           <div className="right-column">
             
@@ -143,7 +143,7 @@ function Contact_us() {
                 name="message" 
                 value={formData.message} 
                 onChange={handleChange} 
-                rows="8" 
+                rows="2" 
                 required 
                 placeholder=" " 
               ></textarea>

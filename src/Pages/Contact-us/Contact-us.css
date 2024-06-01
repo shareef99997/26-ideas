@@ -1,3 +1,18 @@
+.Contact-us-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../Assets/Pages-images/contact.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+
 .Contact-us-body {
   padding: 80px 20px;
 }
@@ -29,7 +44,7 @@
 }
 
 /* Flex Container */
-.flex-container {
+.flex-container-con {
   display: flex;
   margin: 0 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -208,7 +223,7 @@
 
   }
 
-  .flex-container {
+  .flex-container-con {
     flex-direction: column;
     margin: 0 5px;
   }
@@ -237,7 +252,7 @@
 }
 
 @media (max-width: 338px) {
-  .flex-container {
+  .flex-container-con {
     margin: 0;
   }
 }

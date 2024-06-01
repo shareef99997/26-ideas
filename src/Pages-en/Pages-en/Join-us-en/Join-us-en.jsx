@@ -115,7 +115,7 @@ function Join_us_en() {
                 name="message" 
                 value={formData.message} 
                 onChange={handleChange} 
-                rows="4" 
+                rows="2" 
                 required 
                 placeholder=" " 
               ></textarea>
@@ -134,7 +134,7 @@ function Join_us_en() {
           </form>
           {/* Image Container */}
           <div className="image-container">
-            <img src={require("../../../Assets/Images/project-management.jpg")} alt="Project Management" />
+            <img src={require("../../../Assets/Images/join-us.jpg")} alt="Project Management" />
           </div>
           
         </div>

@@ -1,3 +1,17 @@
+.Join-us-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../../Assets/Pages-images/join-us.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
 /* Body */
 .Join-us-body {
   padding: 80px 20px;
@@ -39,23 +53,24 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Container */
-.image-container {
+.image-container-en {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
-
-/* Image */
-.image-container img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
+/* Image */
+.image-container-en img {
+  width: 100%; /* Ensure the image fills the container width */
+  height: 100%; /* Ensure the image fills the container height */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+}
+
 /* Form */
-.Join-us-form {
+.Join-us-form-en {
   flex: 1;
   padding:30px 20px;
   border-top-left-radius: 10px;
@@ -152,7 +167,7 @@
     margin:0 5px;
   }
 
-  .image-container img {
+  .image-container-en img {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0;
@@ -183,7 +198,7 @@
 }
 
 @media (max-width: 338px) {
-  .flex-container {
+  .flex-container-en {
     
     margin:0 0px;
   }

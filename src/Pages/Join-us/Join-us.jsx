@@ -47,7 +47,7 @@ function Join_us() {
         <div className="flex-container">
           {/* Image Container */}
           <div className="image-container">
-            <img src={require("../../Assets/Images/project-management.jpg")}  />
+            <img src={require("../../Assets/Images/join-us.jpg")}  />
           </div>
           <form className="Join-us-form" onSubmit={handleSubmit}>
             <div className="form-row">
@@ -121,7 +121,7 @@ function Join_us() {
                 name="message" 
                 value={formData.message} 
                 onChange={handleChange} 
-                rows="4" 
+                rows="2" 
                 required 
                 placeholder=" " 
               ></textarea>

@@ -1,3 +1,17 @@
+.Join-us-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../Assets/Pages-images/join-us.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
 /* Body */
 .Join-us-body {
   padding: 80px 20px;
@@ -35,23 +49,24 @@
 /* Flex Container */
 .flex-container {
   display: flex;
-  margin: 0 100px;
+  margin: 0 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Image Container */
 .image-container {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Image */
 .image-container img {
-  max-width: 100%; /* Ensure image doesn't exceed container width */
-  height: auto; /* Maintain aspect ratio */
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  width: 100%; /* Ensure the image fills the container width */
+  height: 100%; /* Ensure the image fills the container height */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
 }
 
 /* Form */
@@ -61,13 +76,13 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #fff; 
+  
 }
 
 /* Form Row */
 .form-row {
   display: flex;
   gap: 20px;
- 
   margin-bottom: 15px;
 }
 
@@ -76,6 +91,7 @@
   flex: 1;
   position: relative;
   margin-bottom: 20px;
+  
 }
 
 /* Form Group: Input, Select, and Textarea */
@@ -90,6 +106,7 @@
   background: none;
   outline: none;
   transition: 0.3s ease;
+  
 }
 
 .form-group input:focus,
@@ -107,6 +124,7 @@
   top: -20px;
   font-size: 12px;
   color: var(--main-color);
+  
 }
 
 /* Form Group: Label */
@@ -118,6 +136,7 @@
   color: #aaa;
   pointer-events: none;
   transition: all 0.3s ease;
+  
 }
 
 .form-group input:not(:focus):placeholder-shown + label,
@@ -144,23 +163,23 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .flex-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin:0 5px;
   }
 
   .image-container img {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius:0 ;
   }
 
   .form-group {
     margin-top: 10px;
     border-bottom-right-radius: 10px;
-    border-bottom-left-radius:10px;
-    border-top-right-radius: 0;
-    border-top-left-radius:0 ;
+    border-bottom-left-radius:0;
+    border-top-right-radius:0 ;
+    border-top-left-radius:10px ;
   }
   .submit-button {
     padding: 5px 0;
