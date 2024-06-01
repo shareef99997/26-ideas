@@ -59,7 +59,7 @@ function App() {
       <div className="Home">
         <Routes>
           {/* Arabic pages */}
-          <Route path="/" element={<Home />} />
+          <Route path="/26-ideas" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/store" element={<Store />} />
