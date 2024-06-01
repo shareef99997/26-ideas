@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/26-ideas/static/css/main.365be247.css",
-    "main.js": "/26-ideas/static/js/main.d8e3cd2c.js",
+    "main.js": "/26-ideas/static/js/main.b1238570.js",
     "static/media/IT-Background (online-video-cutter.com).mp4": "/26-ideas/static/media/IT-Background (online-video-cutter.com).01d3e2921d38c6e8bca0.mp4",
     "static/media/commerce.jpg": "/26-ideas/static/media/commerce.61adfd619c08a6feb849.jpg",
     "static/media/development.jpg": "/26-ideas/static/media/development.3b15f59835bdecadaac6.jpg",
@@ -31,10 +31,10 @@
     "static/media/fa-v4compatibility.woff2": "/26-ideas/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/26-ideas/index.html",
     "main.365be247.css.map": "/26-ideas/static/css/main.365be247.css.map",
-    "main.d8e3cd2c.js.map": "/26-ideas/static/js/main.d8e3cd2c.js.map"
+    "main.b1238570.js.map": "/26-ideas/static/js/main.b1238570.js.map"
   },
   "entrypoints": [
     "static/css/main.365be247.css",
-    "static/js/main.d8e3cd2c.js"
+    "static/js/main.b1238570.js"
   ]
 }
