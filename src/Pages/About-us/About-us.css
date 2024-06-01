@@ -41,7 +41,7 @@
   /* max-height: 80%; */
 }
 
-.A-one img{
+.A-one img {
   width: 100%;
   border-radius: 15px;
   max-height: 80%;
@@ -54,23 +54,20 @@
   text-align: right;
 }
 
-
 .right-section-ab p {
   color: #000000ba;
   font-size: 15px;
 }
 
-.right-section-ab h1{
+.right-section-ab h1 {
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.right-section-ab p ,
-.right-section-ab h1{
+.right-section-ab p,
+.right-section-ab h1 {
   text-align: right;
-
 }
-
 
 .description-wrapper {
   margin-bottom: 20px;
@@ -93,13 +90,12 @@
 
 .dropdown-title {
   position: relative;
-  
 }
 
 .dropdown-title h3 {
   cursor: pointer;
   margin: 0;
-  font-weight:400px ;
+  font-weight: 400;
   font-size: 15px;
 }
 
@@ -107,7 +103,7 @@
   content: '⚫'; /* Unicode character for a downward arrow */
   font-size: 10px;
   margin-left: 2px;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .dropdown-title h3::after {
@@ -116,10 +112,6 @@
   margin-right: 2px;
   transition: transform 0.3s ease-in-out;
 }
-
-/* .dropdown-title:hover .dropdown-title-h3::before {
-  transform: rotate(180deg); 
-} */
 
 .dropdown-content {
   max-height: 0;
@@ -133,36 +125,29 @@
 .dropdown-title:hover .dropdown-content {
   max-height: 100px; /* Adjust as needed */
   opacity: 1;
-  
 }
-
-
 
 /* Responsive styles */
 @media (max-width: 800px) {
-
-  .Page-Title{
+  .Page-Title {
     font-size: 1.5rem;
   }
-  
-  .About-us-section{
 
-  }
+  .About-us-section {}
 
   .About-us-content {
     flex-direction: column-reverse;
-    
     align-items: center;
   }
 
   .left-section-ab img,
   .right-section-ab img {
-  width: 70%;
-  border-radius: 15px;
-}
+    width: 70%;
+    border-radius: 15px;
+  }
 
   .left-section-ab h1,
-  .right-section-ab h1{
+  .right-section-ab h1 {
     font-size: 25px;
   }
 
@@ -179,7 +164,6 @@
     font-size: 13px;
   }
 
-
   .left-section-ab h1,
   .right-section-ab h1,
   .About-us-description {
@@ -191,17 +175,15 @@
   .right-section-ab {
     width: 90%;
   }
-  
-  .A-two .right-section-ab{
+
+  .A-two .right-section-ab {
     order: 2;
-    
   }
-  
-  .A-two .left-section-ab{
+
+  .A-two .left-section-ab {
     order: 1;
   }
 }
-
 
 .hidden {
   opacity: 0;
@@ -209,30 +191,30 @@
 
 @keyframes fadeInFromLeft {
   from {
-        opacity: 0;
-        transform: translateX(-50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    @keyframes fadeInFromRight {
-      from {
-        opacity: 0;
-        transform: translateX(50px);
-      }
-      to {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    
-    .fade-in-left {
-      animation: fadeInFromLeft 1s forwards;
-    }
-    
-    .fade-in-right {
-      animation: fadeInFromRight 1s forwards;
-    }
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.fade-in-right {
+  animation: fadeInFromRight 1s forwards;
+}
