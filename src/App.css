@@ -1,0 +1,134 @@
+.whatsappa {
+  font-size: 0;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; 
+  right: -220px; 
+  width: 300px;
+  height: 80px; 
+  background-color: rgba(255, 255, 255, 0.749);
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  transition: 0.6s ease-in-out;
+  cursor: pointer;
+  z-index: 1000; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button.animate {
+  right: -80px; /* Slide into view */
+  background-color: rgba(0, 0, 0, 0.698);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button.animate div {
+  transition: background-color 1s ease-in-out, transform 0.7s ease-in-out;
+  transform: rotate(-360deg);
+  background-color: white;
+}
+
+.whatsapp-button.animate h3 {
+  color: var(--main-color);
+}
+
+
+.whatsapp-button:hover {
+  right: -80px; /* Slide into view */
+  background-color: rgba(0, 0, 0, 0.698);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover div {
+  transition: background-color 1s ease-in-out, transform 0.7s ease-in-out;
+  transform: rotate(-360deg);
+  background-color: white;
+}
+
+.whatsapp-button:hover h3 {
+  color: var(--main-color);
+}
+
+.whatsapp-button div {
+  margin-left: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.whatsapp-button img {
+  width: 50px;
+}
+
+.whatsapp-button h3 {
+  padding-left: 20px;
+  font-weight: 800;
+  font-size: 22px;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .whatsapp-button {
+    height: 60px;
+    right: -240px; /* Adjust right offset for smaller screens */
+  }
+
+  .whatsapp-button img {
+    width: 30px;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+  transition: 0.3s ease;
+}
+
+.Home {
+  transition: 0.5s ease;
+}
+
+.up-arrow {
+  display: none;
+  position: fixed;
+  bottom: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.scrolled-arrow {
+  display: block;
+}
+
+.arrow-button {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: white;
+}
+
+.arrow-button img {
+  width: 20px;
+  filter: invert(1);
+}
+
+.arrow-button:hover img {
+  filter: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrow-button img {
+    width: 18px;
+  }
+}

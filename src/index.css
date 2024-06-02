@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+
+.cairo-c {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+@font-face {
+  font-family: 'Bein Normal';
+  src: url('./Assets/Fonts/bein-normal.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body:lang(ar), 
+body :lang(ar) {
+  direction: rtl;
+  font-family: "Cairo", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body:lang(en), 
+body :lang(en) {
+  direction: ltr;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --main-color:#168ca5;
+  --main-gradient:linear-gradient(90deg, rgb(10, 106, 118) 0%, rgb(22, 87, 91) 50%, rgb(10, 106, 118) 100%);
+  --background-gradient:linear-gradient(90deg, rgb(5, 44, 49) 0%, rgb(10, 77, 80) 50%, rgb(5, 44, 49) 100%);
+  --background-color:rgb(231, 231, 231);
+
+}
+
+h1{
+  font-weight: 500;
+  background: var(--main-gradient);
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+}
+
+h2{
+  font-weight: 500;
+}
+
+h3{
+  font-weight: 500;
+  background: var(--main-gradient);
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #fff;
+  background:var(--main-gradient);
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: 0.4s ease;
+  font-weight: 400;
+}
+
+button:hover{
+  opacity: 0.8;
+  border: transparent;
+  cursor: pointer;
+}

@@ -1,0 +1,260 @@
+.Services-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../../Assets/Pages-images/Services.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.Services-Page-Body .Services {
+  background: white;
+}
+  
+
+/*/// Title Section ///*/
+
+.Market {
+  padding: 50px 20px;
+  /* background: var(--background-gradient); */
+  background: var(--background-color);
+}
+
+.Market-Title {
+  font-size: 2.0em;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 20px 0;
+  color: var(--main-color);
+}
+
+.Market-Title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 4px; 
+  background: var(--main-color); 
+}
+
+.Market-Description {
+  font-size: 1.0em;
+  color: #666;
+  margin-bottom: 70px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/*/// Title Section ///*/
+
+/*/// Grid Section ///*/
+
+.Markets-Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  padding: 0 150px;
+}
+
+.Market-Box {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.174);
+  overflow: hidden;
+  transition: 0.8s ease;
+}
+
+.Market-Box:hover {
+  box-shadow: 0 10px 18px rgba(1, 66, 80, 0.196);
+  
+}
+
+.Market-Box:hover .Title-div {
+  transform: translateX(-100%);
+}
+
+.Title-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+
+}
+
+.Title-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.737); /* Semi-transparent black overlay */
+  z-index: 0; /* Ensure the overlay is on top of the background image */
+}
+
+.market-pic {
+  background: url('../../../Assets/Images/ecommerce.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.data-pic {
+  background: url('../../../Assets/Images/data-analysis.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.manage-pic {
+  background: url('../../../Assets/Images/project-management.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.ad-pic {
+  background: url('../../../Assets/Images/commerce.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.Title-div h3 {
+  flex: 1;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 0;
+  z-index: 1;
+}
+
+.Title-div .hover-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.3em;
+  color: whitesmoke;
+  transition: transform 0.3s ease;
+}
+
+.Market-Box:hover .Title-div .hover-icon {
+  transform: scale(1.2);
+}
+
+.List-Div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.Market-Box:hover .List-Div {
+  opacity: 1;
+  transition: 1.7s ease;
+}
+
+.List-Div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.List-Div li {
+  margin-bottom: 20px;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.List-Div li:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 940px) {
+  .Markets-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .Markets-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 50px;
+  }
+
+  .Market-Box h3 {
+    font-size: 1.2em;
+  }
+
+  .Markets-Description {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 508px) {
+  .Markets-Grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 50px;
+  }
+
+  .Market-Title::after {
+    width: 100px;
+  }
+  .List-Div li {
+    font-size:13px;
+  }
+}
+
+@media (max-width: 375px) {
+  .Market-Title::after {
+    width: 50px;
+  }
+}
+
+/* Fade-in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,257 @@
+.Conract-us-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../../../Assets/Pages-images/contact.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.Contact-us-body {
+  padding: 80px 20px;
+}
+
+/* Title Container */
+.Page-title-container {
+  text-align: center; /* Horizontally center the content */
+  margin-bottom: 30px; /* Adjust as needed */
+}
+
+/* Title */
+.title {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  overflow: hidden;
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  color: #666; /* Adjust color as needed */
+}
+
+/* Flex Container */
+.flex-container-con-en {
+  display: flex;
+  margin: 0 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Form */
+.Contact-us-form {
+  flex: 1;
+  padding: 30px 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #fff; 
+}
+
+/* Form Group */
+.form-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* Form Group: Input, Select, and Textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: none;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-bottom-color: var(--main-color);
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group select:focus + label,
+.form-group select:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+  top: -20px;
+  font-size: 12px;
+  color: var(--main-color);
+}
+
+/* Form Group: Label */
+.form-group label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #aaa;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-group input:not(:focus):placeholder-shown + label,
+.form-group select:not(:focus):placeholder-shown + label,
+.form-group textarea:not(:focus):placeholder-shown + label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 5px 290px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Right Column */
+.right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--main-gradient);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+  flex: 1;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.contact-details-en {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-details-en li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  padding: 0;
+  color: #f6f6f6;
+}
+
+.contact-details-en li span {
+  margin-left: 10px;
+}
+
+
+/* Map Container */
+.map-container {
+  flex: 1;
+  height: 500px; /* Adjust height as needed */
+  margin-top: 20px;
+}
+
+.Social-Media-Buttons {
+  display: flex;
+}
+
+.social-media a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #f6f6f6; 
+  color: var(--main-color); 
+  text-decoration: none;
+  transition: 0.3s ease, color 0.01s ease;
+  font-size: 20px;
+}
+
+.social-media a:hover {
+  background-color: var(--main-color); 
+  color:#f6f6f6 ; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .right-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--main-gradient);
+    border-radius: 0;
+  }
+
+  .Contact-us-form {
+    padding: 30px 20px;
+    border-radius: 0;
+
+  }
+
+  .flex-container-con-en {
+    flex-direction: column;
+    margin: 0 5px;
+  }
+
+  .map-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .form-group {
+    margin-top: 10px;
+  }
+
+  .submit-button {
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1.55rem;
+    font-weight: 500;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 338px) {
+  .flex-container-con-en {
+    margin: 0;
+  }
+}

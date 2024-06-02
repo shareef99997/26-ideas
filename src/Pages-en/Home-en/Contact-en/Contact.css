@@ -1,0 +1,174 @@
+.Contact-en {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  background: var(--background-color);
+  
+}
+
+.Contact-en.Contact-Body {
+  width: 100%;
+  text-align: center;
+}
+
+
+.Contact-en.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+  background: url('../../../Assets/Images/contact.jpg') no-repeat center center; /* Specify the path to your image */
+  background-size: cover; /* Ensure the image covers the entire area */
+  background-attachment: fixed; /* Make the background fixed */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included in the total width */
+  position: relative; /* Position relative for the pseudo-element */
+}
+
+.Contact-en.content-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.737); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+
+.Contact-en.contact-button, .contact-heading {
+  position: relative; /* Ensure these elements are above the overlay */
+  z-index: 2;
+}
+
+.Contact-en.contact-button {
+  background: white;
+  color: var(--main-color);
+  border: none;
+  font-size: 20px;
+  padding: 10px 50px;
+}
+
+.Contact-en.contact-heading {
+  color: #fff;
+  font-size: 38px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.Contact-en .fa-phone{
+  padding-right: 5px;
+  color:rgb(89, 89, 89) ;
+  font-size: 15px;
+  font-family: 'Font Awesome 5 Free';
+}
+
+@media (max-width: 1097px) {
+  .Contact-en.contact-heading {
+    font-size: 30px; 
+  }
+  .Contact-en.contact-button {
+    font-size: 18px;
+
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 937px) {
+  .Contact-en.contact-heading {
+    font-size: 32px; 
+  }
+  .Contact-en.contact-button {
+    font-size: 15px;
+  }
+  .Contact-en.content-wrapper {
+    padding: 20px 100px;
+  }
+  
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .Contact-en.contact-heading {
+    font-size: 25px; 
+  }
+  .Contact-en.contact-button {
+    font-size: 13px;
+
+  }
+  .Contact-en.content-wrapper {
+    padding: 20px 70px;
+  }
+}
+
+@media (max-width: 618px) {
+  .Contact-en.contact-heading {
+    font-size: 18px; 
+  }
+  .Contact-en.contact-button {
+    font-size: 10px;
+    padding: 10px 30px;
+  }
+  .Contact-en.fa-phone{
+    font-size: 8px;
+  }
+  .Contact-en.content-wrapper {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .Contact-en .contact-heading {
+    font-size: 14px; 
+    margin-left: 0px;
+  }
+  .Contact-en .contact-button {
+    font-size: 9px;
+    padding: 7px 20px;
+  }
+  .Contact-en .fa-phone{
+    font-size: 8px;
+  }
+  .Contact-en .content-wrapper {
+    padding: 20px 20px;
+  }
+}
+
+@media (max-width: 354px) {
+  .Contact-en.contact-heading {
+    font-size: 15px; 
+    margin-left: 10px;
+  }
+  .Contact-en.contact-button {
+    font-size: 8px;
+    padding: 5px 20px;
+  }
+  .Contact-en.fa-phone{
+    font-size: 6px;
+  }
+  .Contact-en.content-wrapper {
+    padding: 20px 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-heading {
+    font-size: 13px; 
+    margin-left: 10px;
+  }
+  .contact-button {
+    font-size: 8px;
+    padding: 5px 20px;
+  }
+  .fa-phone{
+    font-size: 6px;
+  }
+  .content-wrapper {
+    padding: 20px 22px;
+  }
+}
+

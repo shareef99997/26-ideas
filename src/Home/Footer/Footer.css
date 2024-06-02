@@ -1,0 +1,318 @@
+
+.Footer-Body {
+  position: relative; /* Ensure proper positioning for absolute children */
+  background: url('../../Assets/Images/earth.jpg') no-repeat center center;
+  background-size: cover; 
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-Body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.726); /* Semi-transparent black overlay */
+  z-index: 0;
+}
+
+.Footer-Content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around ;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.Footer-Section {
+  flex: 1 1 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: right; /* Align text to the right */
+  
+}
+
+.services-footer{
+  margin-left: 20px;
+}
+
+.Footer-img-Wrapper{
+  max-width: 150px;
+ 
+}
+
+.Footer-img-Wrapper img{
+  width: 100%;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.815));
+  transition: 0.3s ease;
+}
+
+.Footer-img-Wrapper img:hover{
+  transform: scale(1.1);
+}
+
+
+.Footer-Section h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--main-color);
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+}
+
+.Footer-Section p,
+.Footer-Section ul {
+  margin: 0;
+  font-size: 1em;
+}
+
+.Footer-Section ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* Update the pseudo-element styles */
+.news-section::after,
+.services-footer::after,
+.links-footer::after {
+  content: '←'; /* Unicode left arrow character */
+  margin-right: 5px; /* Space between arrow and text */
+  transition: margin-right 0.3s ease;
+  font-size: 18px;
+}
+
+
+.news-footer ul li a::after ,
+.services-footer ul li .link::after ,
+.links-footer ul li .link::after {
+  content: '←'; /* Unicode left arrow character */
+  margin-right: 5px; /* Space between arrow and text */
+  transition: margin-right 0.3s ease;
+  font-size: 18px;
+}
+
+.news-footer ul li a:hover::after,
+.services-footer ul li a:hover::after,
+.links-footer ul li a:hover::after {
+  margin-right: 15px; /* Move the arrow slightly on hover */
+}
+
+.about-footer ul li {
+  position: relative;
+  padding-right: 30px; /* Adjust the padding to make space for the icon */
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.634);
+}
+
+.about-footer{
+  margin-left: 55px;
+}
+
+.about-footer ul li::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.Footer-Section ul li.email::after {
+  content: '\f0e0'; /* Font Awesome envelope icon */
+}
+
+.Footer-Section ul li.phone::after {
+  content: '\f095'; /* Font Awesome phone icon */
+}
+
+.Footer-Section ul li.location::after {
+  content: '\f3c5'; /* Font Awesome map-marker-alt icon */
+}
+
+.Footer-Section ul li.question::after {
+  content: '\f128'; /* Font Awesome map-marker-alt icon */
+}
+
+
+.Footer-Section ul li a {
+  color: rgba(255, 255, 255, 0.634);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Footer-Section ul li a:hover {
+  color: #00bcd4;
+}
+
+.news-section h2{
+  margin-bottom: 20px;
+}
+
+.Footer-Section .newsletter-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Adjust width as needed */
+}
+
+.Footer-Section .newsletter-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.Footer-Section .newsletter-input button {
+  color: white;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+.Footer-Copyright p {
+  margin: 0;
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.Footer-Copyright {
+  background-color: rgb(1, 41, 49);
+  width: 100%;
+  padding: 10px 50px;
+  box-sizing: border-box;
+}
+
+.Footer-Copyright-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.Social-Media-Buttons {
+  display: flex;
+}
+
+.Social-Media-Buttons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: var(--main-color); 
+  color: #f6f6f6; 
+  text-decoration: none;
+  transition: 0.3s ease, color 0.01s ease;
+  font-size: 18px;
+}
+
+.Social-Media-Buttons a:hover {
+  background-color: #f6f6f6; 
+  color: var(--main-color); 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Footer-Content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-footer{
+    margin: 0;
+  }
+
+  .about-footer{
+    margin-left: 10px;
+  }
+
+  .about-footer li{
+   align-items: center;
+  }
+
+  .services-footer{
+    align-items: center;
+  }
+
+  .links-footer{
+    align-items: center;
+  }
+
+  .Footer-img-Wrapper{
+    max-width: 100px;
+    align-self: center;
+  }
+
+  .Footer-Section {
+    text-align: center;
+  }
+
+  .Footer-Copyright-Content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-footer{
+    order: 2;
+  }
+
+  .links-footer{
+    order: 4;
+  }
+
+  .services-footer{
+    order: 3;
+  }
+
+  .news-section{
+    order: 1;
+  }
+
+  .Social-Media-Buttons a {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+  }
+
+  .Footer-Copyright p{
+    font-size: 0.7rem;
+    padding: 10px 0;
+  }
+
+  .Footer-Section .newsletter-input input {
+    padding: 7px;
+  }
+  
+  .Footer-Section .newsletter-input button {
+    padding: 6px 22px;
+  }
+  
+}

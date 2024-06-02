@@ -1,0 +1,311 @@
+.About-Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  position: relative; /* Add relative positioning */
+  overflow: hidden; /* Ensure no overflow issues */
+  
+}
+
+.About-img-Wrapper {
+  padding-top: 20px;
+  max-width: 200px;
+  align-self: center;
+  display: none;
+}
+
+.About-img-Wrapper img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.About-content {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between; 
+  flex-direction: row;
+  padding: 0 50px; 
+  gap: 100px;
+}
+
+.left-section-en,
+.right-section-en {
+  z-index: 1;
+}
+
+.right-section-en{
+  max-width: 700px;
+}
+
+.right-section-en h2 ,
+.right-section-en p {
+  text-align: left;
+}
+
+.right-section-en h2 {
+  font-size: 35px;
+  color: var(--main-color);
+}
+
+
+.right-section-en p{
+  color: #000000ba;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: start;
+  margin-top:50px;
+}
+
+.right-section-en button {
+  color: white;
+  padding: 10px 30px;
+}
+
+
+.left-section-en{
+  max-width: 450px;
+  
+}
+
+.swiper-slide img {
+  border-radius: 10px;
+  width: 100%; 
+  transition: 0.3s ease;
+}
+
+/* Swiper */
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  
+  border-radius: 50%; /* Rounded buttons */
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important; /* Adjust this value to change the arrow size */
+  color: #000; /* Change to your desired color */
+  width: 18px; /* Width of the buttons */
+  height: 18px; /* Height of the buttons */
+  text-align: center;
+  
+}
+
+@media (max-width: 1336px) {
+  .About-content {
+    gap: 110px;
+  }
+  .left-section-en{
+    max-width: 400px;
+  }
+
+  .right-section-en{
+    max-width: 550px;
+  }
+
+  .right-section-en h2{
+    font-size: 40px;
+  }
+  .right-section-en p {
+    
+  }
+}
+
+@media (max-width: 1100px) {
+  .left-section-en{
+    max-width: 300px;
+  }
+  .right-section-en h2{
+    font-size: 36px;
+  }
+  .right-section-en p {
+    font-size: 15px;
+  }
+
+  .right-section-en button {
+    font-size: 12px;
+
+  }
+  .right-section-en{
+    max-width: 500px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  .left-section-en{
+    max-width: 270px;
+  }
+  .right-section-en h2{
+    font-size: 30px;
+  }
+  .right-section-en p {
+    font-size: 13px;
+  }
+
+  .right-section-en button {
+    font-size: 12px;
+  }
+
+  .right-section-en{
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 800px) {
+
+  .About-content {
+    flex-direction: column-reverse;
+    padding: 0 20px;
+    align-items: center; 
+    gap: 50px;
+  }
+  .About-img-Wrapper {
+    padding-top: 20px;
+    max-width: 150px;
+  }
+
+  .left-section-en{
+    max-width:280px ;
+    order: 1;
+  }
+
+  .right-section-en{
+    padding:  30px;
+    order: 2;
+  }
+
+  .right-section-en h2 {
+    font-size: 25px;
+ 
+  }
+
+  .right-section-en p {
+    font-size: 10px;
+    
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .right-section-en button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .Header-Body {
+    
+  }
+  .About-content {
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .left-section-en{
+    max-width:280px ;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+
+  .right-section-en{
+    padding: 20px;
+  }
+
+  .right-section-en h2 {
+    font-size: 22px;
+    
+  }
+
+  .right-section-en p {
+    font-size:10px;
+    
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+
+  .right-section-en button {
+    font-size: 12px;
+  }
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: rotateX(180deg);
+  z-index: 0; /* Ensure the wave is behind the content */
+}
+
+/* Add these animations to your About.css */
+
+@keyframes fadeInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-left {
+  animation: fadeInFromLeft 1s forwards;
+}
+
+.fade-in-right {
+  animation: fadeInFromRight 1s forwards;
+}
+
+.fade-in-top {
+  animation: fadeInFromTop 1s forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+

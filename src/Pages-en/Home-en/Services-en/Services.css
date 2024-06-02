@@ -1,0 +1,244 @@
+/* Services.css */
+
+.Services {
+  text-align: center;
+  padding: 0 0;
+  padding-bottom: 50px;
+  background: var(--background-color);
+  
+}
+
+
+
+.Services-Title {
+  font-size: 2.0em;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding-bottom: 10px;
+  color: var(--main-color);
+  padding-top: 55px;
+  overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+}
+
+.Services-Title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 2px; /* Adjust the height of the line */
+  background: var(--main-color); /* Adjust the color of the line */
+  
+}
+
+.Services-Description {
+  font-size: 1.0em;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:  25px 10px;
+}
+
+.Services-Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 50px;
+  margin-top: 20px;
+  padding: 0 200px;
+}
+
+.Service-Box {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.174);
+  transition: 0.3s ease;
+  cursor: pointer;
+
+}
+
+.Service-Box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 18px rgba(1, 66, 80, 0.699);
+  background:var(--main-color);
+
+}
+
+.Service-Box:hover p,.Service-Box:hover h3,.Service-Box:hover .Service-Icon {
+  color: white ;
+}
+
+.Service-Upper {
+  padding:0 20px;
+  padding-top:10px ;
+}
+
+.Service-Lower {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.Service-Icon {
+  font-size: 50px; 
+  color: var(--main-color); 
+  margin-bottom: 10px; 
+  
+}
+
+.Service-Lower h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  background: var(--main-gradient);
+  color: transparent; 
+  -webkit-background-clip: text; 
+  background-clip: text; 
+}
+
+.Service-Lower p {
+  font-size: 0.8em;
+  color: #555;
+  margin: 0;
+  font-weight: 500;
+
+}
+
+.Button-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+
+}
+
+.Learn-More-Button {
+  
+}
+
+
+@media (max-width: 1230px) {
+  .Services-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 940px) {
+  .Services-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .Services-Grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 50px;
+  }
+
+  .Service-Box {
+    
+  }
+
+  .Service-Icon {
+    font-size: 40px;
+  }
+
+  .Service-Box h3 {
+    font-size: 1.2em;
+  }
+
+  .Service-Box p {
+    font-size: 0.7em;
+    padding: 0 10px 10px;
+  }
+  .Services-Description {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  .Learn-More-Button {
+    padding: 8px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 508px) {
+  .Services-Grid {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 50px;
+  }
+  .Service-Box p{
+    font-size: 12px;
+  }
+  .Service-Icon {
+    font-size: 35px;
+  }
+  .Services-Title::after {
+    width: 200px;
+  }
+  .Learn-More-Button {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+  
+}
+@media (max-width: 360px) {
+    .Services-Title::after {
+      width: 50px;
+    }
+  }
+
+
+
+/* Define the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Initial hidden state */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 3s forwards; /* Adjust duration as needed */
+}
+
+/* Delay for different elements */
+.fade-in-1 {
+  animation-delay: 1s;
+}
+.fade-in-2 {
+  animation-delay: 1s;
+}
+.fade-in-3 {
+  animation-delay: 1.3s;
+}
+.fade-in-4 {
+  animation-delay: 1.5s;
+}
+.fade-in-5 {
+  animation-delay: 1.8s;
+}
+.fade-in-6 {
+  animation-delay: 2s;
+}
+
+/* Define the initial hidden state */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px); /* Optional: slight upward movement */
+  transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+/* Define the visible state */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,68 @@
+.Page-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: url('../Assets/Images/project-management.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+.Page-Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.808);
+  z-index: 0;
+}
+
+.Page-Title {
+  color: var(--main-color);
+  font-size: 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.Page-Title::after{
+  margin-left: 500px;
+  margin-right: 20px;
+}
+
+.Page-Title::before{
+  margin-left: 20px;
+  margin-right: 500px;
+}
+
+.Page-Title::before,
+.Page-Title::after {
+  content: "";
+  flex: 1;
+  border-bottom: 5px solid var(--main-color);
+ 
+}
+
+.Page-Body{
+  background-color: rgb(231, 231, 231);
+}
+
+@media (max-width: 800px) {
+  .Page-Title {
+    font-size: 1.5rem;
+  }
+  .Page-Title::before,
+  .Page-Title::after {
+    margin: 0 10px;
+  }
+}

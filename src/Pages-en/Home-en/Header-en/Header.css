@@ -1,0 +1,107 @@
+.Home-Header {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden; 
+  background-color: rgba(0, 0, 0, 0.475);
+  transition: 1s ease;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire header */
+  z-index: 0; /* Place the video behind other content */
+  /* display: none; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.723); /* Semi-transparent black overlay */
+  z-index: 1; /* Ensure the overlay is on top of the video */
+}
+
+.Header-Body {
+  position: relative;
+  z-index: 2; /* Ensure Header-Body content is on top of the video and overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure Header-Body takes full height */
+  text-align: center; /* Center text within home-content */
+}
+
+.home-content {
+  padding-top: 200px;
+  color: white; /* Make text white for visibility */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Add space between the elements */
+  max-width: 80%; /* Limit width for better readability */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.home-content h1 {
+  font-size: 3rem; /* Responsive font size */
+  margin: 0;
+  color: var(--main-color);
+  transition: 1s ease-in-out;
+}
+
+.home-content p {
+  font-size: 1.1rem; /* Responsive font size */
+  margin: 0;
+  max-width: 600px; /* Limit paragraph width for better readability */
+  opacity: 0.8;
+  transition: 1s ease-in-out;
+}
+
+.home-content button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .home-content button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    padding-top: 0px;
+  }
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 0.7rem;
+  }
+
+  .home-content button {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+}
