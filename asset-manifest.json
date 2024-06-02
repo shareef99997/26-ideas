@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/26-ideas/static/css/main.c3a88132.css",
-    "main.js": "/26-ideas/static/js/main.a80d3e9d.js",
+    "main.js": "/26-ideas/static/js/main.0d1a97b5.js",
     "static/media/IT-Background (online-video-cutter.com).mp4": "/26-ideas/static/media/IT-Background (online-video-cutter.com).01d3e2921d38c6e8bca0.mp4",
     "static/media/commerce.jpg": "/26-ideas/static/media/commerce.fecc4ecb44c5cc3b4b5f.jpg",
     "static/media/fa-solid-900.ttf": "/26-ideas/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
@@ -31,10 +31,10 @@
     "static/media/fa-v4compatibility.woff2": "/26-ideas/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/26-ideas/index.html",
     "main.c3a88132.css.map": "/26-ideas/static/css/main.c3a88132.css.map",
-    "main.a80d3e9d.js.map": "/26-ideas/static/js/main.a80d3e9d.js.map"
+    "main.0d1a97b5.js.map": "/26-ideas/static/js/main.0d1a97b5.js.map"
   },
   "entrypoints": [
     "static/css/main.c3a88132.css",
-    "static/js/main.a80d3e9d.js"
+    "static/js/main.0d1a97b5.js"
   ]
 }
